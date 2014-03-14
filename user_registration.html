@@ -1,0 +1,156 @@
+<!--
+  reference by http://bootstrapzero.com/bootstrap-template/portal
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>HowlingProject</title>
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap-tag-cloud/bootstrap-tag-cloud.css" rel="stylesheet">
+    
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <style type="text/css">
+        body {margin-top: 50px;}
+        .wrap { margin-left:0; margin-right:0; }
+    </style>
+</head>
+    
+<body>
+<header class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button data-target=".navbar-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Howling Project</a>
+    </div>
+    <nav role="navigation" class="collapse navbar-collapse">
+      <ul class="nav navbar-right navbar-nav">
+        <li class="dropdown">
+          <a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="glyphicon glyphicon-user"></i></a>
+          <div class="dropdown-menu">
+              <form class="form-inline" role="form" style="padding:15px;width:450px;">
+                <div class="form-group">
+                  <input type="text" placeholder="Username" class="form-control">
+                </div>
+                <div class="form-group">
+                  <input type="password" placeholder="Password" class="form-control">
+                </div>
+                <button type="submit" class="btn">Log in</button>
+              </form>
+              <div class="input-group pull-right">
+                <button type="button" class="btn btn-link">아이디 찾기</button>
+                <button type="button" class="btn btn-link">비밀번호 찾기</button>
+                <button type="button" class="btn btn-link">회원 가입</button>
+              </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="container"> 
+
+<!--form-->
+<form class="form-horizontal" role="form">
+  <h2 class="page-header">회원 가입 </h2>
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">이메일</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="Email" />
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="nickname" class="col-sm-2 control-label">닉네임</label>
+    <div class="col-sm-10">
+      <input type="nickname" class="form-control" id="nickname" placeholder="Nickname" />
+    </div>
+  </div>  
+  <div class="form-group">
+    <label for="inputPassword1" class="col-sm-2 control-label">비밀번호</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputPassword1" placeholder="Password" />
+    </div>
+  </div>  
+  <div class="form-group">
+    <label for="inputPassword2" class="col-sm-2 control-label">비밀번호 확인</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputPassword2" placeholder="Password" />
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="homepage" class="col-sm-2 control-label">홈페이지</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="homepage" placeholder="Homepage" />
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="profile_image" class="col-sm-2 control-label">이미지</label>
+    <div class="col-sm-10">
+      <input type="file" id="profile_image" />
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="interesting" class="col-sm-2 control-label">관심 분야</label>
+    <div class="col-sm-10">
+      <div id="tag-info" class="form-inline">
+        <input type="text" class="form-control" placeholder="Interestring">
+        <button class="btn" type="button">Add <i class="glyphicon glyphicon-plus"></i></button>
+      </div>
+      <ul id="tag-cloud" style="padding-left: 0px; width:100%;"></ul>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10 text-center">
+      <button type="button" class="btn btn-primary btn-lg active">가입 신청</button>
+    </div>
+  </div>
+</form>
+
+
+<!--/form-->
+
+
+</div>
+
+<hr />
+<footer class="container" id="footer">
+  <div class="col-md-12">
+      <ul class="list-inline">
+      <li>사이트 소개</li>
+      <li>Wiki 다운로드</li>
+      <li>Contact Us</li>
+      <li>Home</li>
+    </ul>
+  </div>
+  <div class="col-md-12">
+      <p class="text-left">
+      Copyright © 2014 GLiDERWiki™ OpenSource Team 
+      </p>
+  </div>
+</footer>
+        
+<script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script type='text/javascript' src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script type='text/javascript' src="bootstrap-tag-cloud/bootstrap-tag-cloud.js"></script>
+<script type='text/javascript'>
+$(document).ready(function() {            
+
+});
+</script>
+    
+</body>
+</html>   
