@@ -1,0 +1,14 @@
+
+/**
+*  QNA
+**/
+span.section-category {margin-top: -12px;}
+div.top-buffer { margin-top:15px; }
+div.qna-page-header {padding-bottom: 9px; margin: 10px 0 20px; border-bottom: 1px solid #eee; font-weight: bold; font-size: 16px;}
+div.recently-qna-item {border-bottom: 1px solid #eee; padding-bottom:20px;}
+div.best-qna-item {border-bottom: 1px solid #eee; padding-bottom:5px; margin-bottom: 20px;}
+div.qna-item {padding-bottom: 20px;}
+div.qna-rating-info {width:30px;padding:0px; margin-left:10px;}
+div.best-qna-bottom {font-size: 16px; margin: 10px 0 0 0px; padding-left: 10px;}
+div.best-qna-bottom span { padding:5px}
+img.qna-profile {width: 64px; height: 64px;}
