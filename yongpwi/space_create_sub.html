@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+<script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type='text/javascript' src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+
+
+<title>GliderWiki wiki write</title>
+</head>
+<body>
+
+<div class="container">
+	<form role="form">
+        <div class="form-group">
+            <strong>공개여부</strong>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="input-group">
+                       <span class="input-group-addon">
+                         <input type="radio" name="spaceOpenType" value="public">
+                       </span>
+                        <input type="text" class="form-control" placeholder="전체 공개">
+                    </div><!-- /input-group -->
+                </div><!-- /.col-lg-6 -->
+                <div class="col-lg-6">
+                    <div class="input-group">
+                       <span class="input-group-addon">
+                         <input type="radio" name="spaceOpenType" value="private">
+                       </span>
+                        <input type="text" class="form-control" placeholder="구성원 공개">
+                    </div><!-- /input-group -->
+                </div><!-- /.col-lg-6 -->
+            </div><!-- /.row -->
+        </div>
+
+        <div class="form-inline">
+            <button type="button" class="btn btn-default btn-sm">
+                Quick <span class="glyphicon glyphicon-remove"></span>
+            </button>
+            <button type="button" class="btn btn-default btn-sm">
+                사야 <span class="glyphicon glyphicon-remove"></span>
+            </button>
+            <button type="button" class="btn btn-default btn-sm">
+                악두 <span class="glyphicon glyphicon-remove"></span>
+            </button>
+        </div>
+        <br>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <div class="panel-title row">
+                    <div class="col-md-8">
+                        <h3 class="panel-title">구성원을 선택하세요</h3>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <div class="col-md-1">
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </div>
+                </div>
+            </div>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>선택</th>
+                    <th>회원아이디</th>
+                    <th>닉네임</th>
+                    <th>가입일</th>
+                    <th>이름</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                        </label>
+                    </td>
+                    <td>gliderwiki@gliderwiki.org</td>
+                    <td>QuicK</td>
+                    <td>2012.10.31</td>
+                    <td>어드민</td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox2" value="option1">
+                        </label>
+                    </td>
+                    <td>bluepoet1112@gmail.com</td>
+                    <td>파란시인</td>
+                    <td>2012.10.31</td>
+                    <td>김용훈</td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox3" value="option1">
+                        </label>
+                    </td>
+                    <td>sayanouta@gmail.com</td>
+                    <td>사야</td>
+                    <td>2012.11.02</td>
+                    <td>안형정</td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox4" value="option1">
+                        </label>
+                    </td>
+                    <td>cafeciel@hanmail.net</td>
+                    <td>Yion</td>
+                    <td>2012.11.02</td>
+                    <td>이남희</td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox5" value="option1">
+                        </label>
+                    </td>
+                    <td>includex@naver.com</td>
+                    <td>약두</td>
+                    <td>2012.11.02</td>
+                    <td>약두</td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox6" value="option1">
+                        </label>
+                    </td>
+                    <td>songanji@gmail.com</td>
+                    <td>멋남</td>
+                    <td>2012.11.02</td>
+                    <td>손멋남</td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox7" value="option1">
+                        </label>
+                    </td>
+                    <td>emin002@nate.com</td>
+                    <td>명랑공쥬님</td>
+                    <td>2012.11.02</td>
+                    <td>이민화</td>
+                </tr>
+                <tr>
+                    <td class="container" colspan="5">
+                        <div class="col-md-2 col-md-offset-5">
+                            <button type="button" class="btn btn-primary btn-lg">선택완료</button>
+                        </div>
+                        <div class="col-md-1">
+                            <button type="button" class="btn btn-primary btn-lg">닫기</button>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+	</form>
+
+</div>
+
+</body>
+</html>
