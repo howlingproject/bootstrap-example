@@ -1,19 +1,12 @@
 /* Sticky footer styles
 -------------------------------------------------- */
-html {
-  position: relative;
-  min-height: 100%;
-}
+html {position: relative; min-height: 100%; }
 body {
   /* Margin bottom by footer height */
-  margin-bottom: 60px;
+  margin-bottom: 100px;
 }
-#footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background-color: #f5f5f5;
-  margin-top:20px;
+
+#footer { position: absolute; bottom: 0; width: 100%; background-color: #f5f5f5; margin-top: 20px;
 }
 
 
@@ -24,9 +17,7 @@ body {
 .container {
   /*width: auto;*/
 }
-.container .text-muted {
-  margin: 20px 0;
-}
+.container .text-muted { margin: 20px 0; }
 .contents-container { padding:0px;}
 
 /*
@@ -36,16 +27,17 @@ body {font-size:12px;}
 .wrap { margin-left:0; margin-right:0; }
 .login_member_form {padding:15px;width:470px;}
 .top-buffer { margin-top:20px; }
-footer {border-top: 1px solid #eee; padding-top:20px; margin-top:20px;     background-color: #F8F8F8; border-color: #E7E7E7;}
+footer {border-top: 1px solid #eee; padding-top:20px; margin-top:20px; background-color: #F8F8F8; border-color: #E7E7E7;}
 
 /*
 *  main-qna, my-qna
 */
 div.qna-page-header {padding-bottom: 8px; margin: 10px 0 20px; border-bottom: 1px solid #eee; font-weight: bold; font-size: 16px;}
 span.section-category {margin-top: -7px; font-size: 12px}
-div.qna-item {border-bottom: 1px solid #eee; padding-bottom:20px;}
+div.qna-item {border-bottom: 1px solid #eee; padding-bottom:5px;}
 div.my-qna-item {border-bottom: 1px solid #eee; margin-bottom:25px;}
-div.best-qna-item {border-bottom: 1px solid #eee; margin-bottom: 20px;}
+div.best-qna-item {border-bottom: 1px solid #eee; margin-top:10px;}
+div.best-qna-item .media{margin-bottom:10px;}
 div.qna-rating-info {width:30px; padding:0px; margin-left:5px;}
 div.best-qna-bottom {font-size: 14px; margin: 5px 0 0 10px; padding-left: 10px;}
 div.best-qna-bottom span { padding:5px}
