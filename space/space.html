@@ -1,45 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
+    <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>::Enterprise OpenSource Wiki – GLiDER™</title>
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://bootswatch.com/cerulean/bootstrap.min.css" rel="stylesheet">
+    <!--<link href="http://bootswatch.com/spacelab/bootstrap.min.css" rel="stylesheet">-->
+    <!--<link href="http://bootswatch.com/cosmo/bootstrap.min.css" rel="stylesheet">-->
+    <!--<link href="http://bootswatch.com/darkly/bootstrap.min.css" rel="stylesheet">-->
+    <!--<link href="http://bootswatch.com/simplex/bootstrap.min.css" rel="stylesheet">-->
+    <!--<link href="http://bootswatch.com/amelia/bootstrap.min.css" rel="stylesheet">-->
+    <!--<link href="http://bootswatch.com/flatly/bootstrap.min.css" rel="stylesheet">-->
+    <!--<link href="http://bootswatch.com/spacelab/bootstrap.min.css" rel="stylesheet">-->
+    <!--<link href="http://bootswatch.com/yeti/bootstrap.min.css" rel="stylesheet">-->
+
+    <link href="../css/glyphicons/glyphicons-free.css" rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet">
-    <title>GliderWiki</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
+
+
 <body>
 <!-- header -->
-<header class="navbar navbar-default navbar-fixed-top">
+<header class="navbar navbar-default">
     <div class="container">
         <div class="navbar-header">
-            <button data-target=".navbar-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+            <button data-target=".bs-navbar-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Howling Project</a>
+            <a class="navbar-brand" href="#">GLiDERWiki</a>
         </div>
-        <nav role="navigation" class="collapse navbar-collapse">
-            <ul class="nav navbar-right navbar-nav">
-                <li class="dropdown">
-                    <a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="glyphicon glyphicon-cog"></i></a>
-                    <div class="dropdown-menu">
-                        <form class="form-inline login_member_form" role="form">
-                            <div class="form-group">
-                                <input type="text" placeholder="Username" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <input type="password" placeholder="Password" class="form-control">
-                            </div>
-                            <button type="submit" class="btn">Log in</button>
-                        </form>
-                        <div class="input-group pull-right">
-                            <button type="button" class="btn btn-link">아이디 찾기</button>
-                            <button type="button" class="btn btn-link">비밀번호 찾기</button>
-                            <button type="button" class="btn btn-link">회원 가입</button>
-                        </div>
-                    </div>
+
+        <nav role="navigation" class="navbar-collapse bs-navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="#">Feeds</a>
                 </li>
+                <li>
+                    <a href="#">Q&amp;A</a>
+                </li>
+                <li>
+                    <a href="#">Space</a>
+                </li>
+                <li>
+                    <a href="#">Wiki</a>
+                </li>
+                <li>
+                    <a href="#">My Info</a>
+                </li>
+                <li>
+                    <a href="#">Admin</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><em class='glyphicon-cogwheel'></em></a></li>
+                <li><a href="#"><em class='glyphicon-chat'></em></a></li>
             </ul>
         </nav>
     </div>
@@ -51,32 +78,32 @@
     <nav class="navbar navbar-default" role="navigation">
         <div class="container-fluid">
             <ul class="nav navbar-nav">
-                <li>
+                <li class="active">
                     <a href="#">개설된 공간 수(2000)</a>
                 </li>
-                <li class="active">
+                <li>
                     <a href="#">생성된 위키 수(2000)</a>
                 </li>
                 <li>
                     <a href="#">등록된 키워드(223)</a>
                 </li>
-                <li>
             </ul>
             <form class="navbar-form navbar-right" role="search">
                 <div class="form-group">
                     <input type="text" class="form-control" placeholder="Search">
                 </div>
-                <button type="submit" class="btn btn-default">공간생성</button>
+                <button type="submit" class="btn btn-default">공간 생성</button>
             </form>
         </div>
     </nav>
 </div>
+
 <!-- 메뉴 -->
-<div class="container">
+<div class="container contents-container">
     <!-- lnb -->
     <div class="col-md-2">
-        <div class="well">키워드 분류키워드</div>
-        <ul class="nav nav-stacked">
+        <div class="well">분류키워드</div>
+        <ul class="nav nav-pills nav-stacked">
             <li class="active"><a href="#">Java(120/789)</a></li>
             <li><a href="#">Spring(120/539)</a></li>
             <li><a href="#">Groovy(100/299)</a></li>
@@ -105,32 +132,80 @@
                 <div class="col-md-9">
                     <div class="my-my-qna-item-body">
                         <div class="media-heading">
-                            2014-04-05 12:12
-                            <span class="my-qna-writer">작성자&nbsp;&nbsp;&nbsp;sjune</span>
-                            <strong><span class="pull-right">공간명</span></strong>
+                            생성일 : 2014-04-05 12:12
+                            <span class="my-qna-writer">공간 오너&nbsp;&nbsp;&nbsp;sjune</span>
+                            <strong><span class="pull-right">공간명이 출력됩니다. </span></strong>
                         </div>
-                        Spring 서버사이드 공간 > Spring AOP 위키에 질문을 올렸습니다.- 내용이 잘 이해가...내용이 잘 이해가...내용이 잘 이해가...내용이 잘 이해가...내용이 잘 이해가...
+                        Spring 서버사이드 공간 > Spring AOP 위키에 질문을 올렸습니다.- 공간의 설명이 나옵니다. 공간의 이미지는 따로 옆 아이콘에서 나오구요. 공간 설명은 두줄이에요.
+                        공간의 설명이 나옵니다. 공간의 이미지는 따로 옆 아이콘에서 나오구요. 공간 설명은 두줄이에요.
                     </div>
                 </div>
-                <div class="col-md-2 my-qna-rating">
-                    <button class="btn btn-default">답변 1</button>
-                    <br />
-                    <button class="btn btn-default">추천 33</button>
+                <div class="col-md-2 my-qna-rating ">
+                    <button class="btn btn-sm btn-default pull-right">답변 1</button>
+                    <button class="btn btn-sm btn-default pull-right">추천 33</button>
                 </div>
             </div>
         </div>
+
+        <div class="my-qna-item">
+            <a class="pull-left" href="#">
+                <img alt="64x64" data-src="holder.js/64x64" class="media-object qna-profile" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+">
+            </a>
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="my-my-qna-item-body">
+                        <div class="media-heading">
+                            생성일 : 2014-04-05 12:12
+                            <span class="my-qna-writer">공간 오너&nbsp;&nbsp;&nbsp;sjune</span>
+                            <strong><span class="pull-right">공간명이 출력됩니다. </span></strong>
+                        </div>
+                        Spring 서버사이드 공간 > Spring AOP 위키에 질문을 올렸습니다.- 공간의 설명이 나옵니다. 공간의 이미지는 따로 옆 아이콘에서 나오구요. 공간 설명은 두줄이에요.
+                        공간의 설명이 나옵니다. 공간의 이미지는 따로 옆 아이콘에서 나오구요. 공간 설명은 두줄이에요.
+                    </div>
+                </div>
+                <div class="col-md-2 my-qna-rating ">
+                    <button class="btn btn-sm btn-default pull-right">답변 1</button>
+                    <button class="btn btn-sm btn-default pull-right">추천 33</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="my-qna-item">
+            <a class="pull-left" href="#">
+                <img alt="64x64" data-src="holder.js/64x64" class="media-object qna-profile" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+">
+            </a>
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="my-my-qna-item-body">
+                        <div class="media-heading">
+                            생성일 : 2014-04-05 12:12
+                            <span class="my-qna-writer">공간 오너&nbsp;&nbsp;&nbsp;sjune</span>
+                            <strong><span class="pull-right">공간명이 출력됩니다. </span></strong>
+                        </div>
+                        Spring 서버사이드 공간 > Spring AOP 위키에 질문을 올렸습니다.- 공간의 설명이 나옵니다. 공간의 이미지는 따로 옆 아이콘에서 나오구요. 공간 설명은 두줄이에요.
+                        공간의 설명이 나옵니다. 공간의 이미지는 따로 옆 아이콘에서 나오구요. 공간 설명은 두줄이에요.
+                    </div>
+                </div>
+                <div class="col-md-2 my-qna-rating ">
+                    <button class="btn btn-sm btn-default pull-right">답변 1</button>
+                    <button class="btn btn-sm btn-default pull-right">추천 33</button>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <div class="col-md-6">
 
-        <!-- 최근 Q&A -->
+        <!-- 전체 공간 -->
         <div class="qna-page-header">전체 공간
-            <span class="pull-right section-category">
-                <ul class="nav nav-tabs">
-                    <li class="active"><a href="#">Recent</a></li>
-                    <li><a href="#">All</a></li>
-                </ul>
-            </span>
+                <span class="pull-right section-category">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#">제목정렬</a></li>
+                        <li><a href="#">최근순</a></li>
+                    </ul>
+                </span>
         </div>
 
         <div class="media qna-item">
@@ -140,18 +215,16 @@
             <div class="row">
                 <div class="col-xs-6 col-sm-8 col-md-8">
                     <div class="media-body">
-                        <div class="media-heading">2014-04-05 12:12 <strong><span class="pull-right">Groovy</span></strong></div>
-                        <h5>공간의 제목이 출력됩니다. 제목은 약 30자 내외가 되겠죠.</h5>
-                        <div class="media-body">첫번째 공간의 설명이  어쩌구 저쩌구해서 내용이 나오는데 어쩌구 저쩌구~? 솰라솰라...</div>
+                        <div class="media-heading">2014-04-05 12:12 <strong><span class="pull-right">공간 제목이 출력됩니다.</span></strong></div>
+                        Spring 서버사이드 공간 > Spring AOP 위키에 질문을 올렸습니다.- 내용이 잘 이해가...
                     </div>
                 </div>
-                <div class="col-xs-3 col-sm-2 col-md-2 pull-left" >
-                    <div class="text-right">총 위키</div>
-                    <p class="text-right"><button class="btn btn-default btn-sm">12</button></p>
+                <div class="col-md-2 my-qna-rating">
+                    <button class="btn btn-sm btn-default">위키 33</button>
+                    <button class="btn btn-sm btn-default">공유 33</button>
                 </div>
             </div>
         </div>
-
         <div class="media qna-item">
             <a class="pull-left" href="#">
                 <img alt="64x64" data-src="holder.js/64x64" class="media-object qna-profile" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+">
@@ -159,18 +232,16 @@
             <div class="row">
                 <div class="col-xs-6 col-sm-8 col-md-8">
                     <div class="media-body">
-                        <div class="media-heading">2014-04-05 12:12 <strong><span class="pull-right">Groovy</span></strong></div>
-                        <h5>공간의 제목이 출력됩니다. 제목은 약 30자 내외가 되겠죠.</h5>
-                        <div class="media-body">첫번째 공간의 설명이  어쩌구 저쩌구해서 내용이 나오는데 어쩌구 저쩌구~? 솰라솰라...</div>
+                        <div class="media-heading">2014-04-05 12:12 <strong><span class="pull-right">공간 제목이 출력됩니다.</span></strong></div>
+                        Spring 서버사이드 공간 > Spring AOP 위키에 질문을 올렸습니다.- 내용이 잘 이해가...
                     </div>
                 </div>
-                <div class="col-xs-3 col-sm-2 col-md-2 pull-left" >
-                    <div class="text-right">총 위키</div>
-                    <p class="text-right"><button class="btn btn-default btn-sm">12</button></p>
+                <div class="col-md-2 my-qna-rating">
+                    <button class="btn btn-sm btn-default">위키 33</button>
+                    <button class="btn btn-sm btn-default">공유 33</button>
                 </div>
             </div>
         </div>
-
         <div class="media qna-item">
             <a class="pull-left" href="#">
                 <img alt="64x64" data-src="holder.js/64x64" class="media-object qna-profile" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+">
@@ -178,18 +249,16 @@
             <div class="row">
                 <div class="col-xs-6 col-sm-8 col-md-8">
                     <div class="media-body">
-                        <div class="media-heading">2014-04-05 12:12 <strong><span class="pull-right">Groovy</span></strong></div>
-                        <h5>공간의 제목이 출력됩니다. 제목은 약 30자 내외가 되겠죠.</h5>
-                        <div class="media-body">첫번째 공간의 설명이  어쩌구 저쩌구해서 내용이 나오는데 어쩌구 저쩌구~? 솰라솰라...</div>
+                        <div class="media-heading">2014-04-05 12:12 <strong><span class="pull-right">공간 제목이 출력됩니다.</span></strong></div>
+                        Spring 서버사이드 공간 > Spring AOP 위키에 질문을 올렸습니다.- 내용이 잘 이해가...
                     </div>
                 </div>
-                <div class="col-xs-3 col-sm-2 col-md-2 pull-left" >
-                    <div class="text-right">총 위키</div>
-                    <p class="text-right"><button class="btn btn-default btn-sm">12</button></p>
+                <div class="col-md-2 my-qna-rating">
+                    <button class="btn btn-sm btn-default">위키 33</button>
+                    <button class="btn btn-sm btn-default">공유 33</button>
                 </div>
             </div>
         </div>
-
         <div class="media qna-item">
             <a class="pull-left" href="#">
                 <img alt="64x64" data-src="holder.js/64x64" class="media-object qna-profile" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+">
@@ -197,18 +266,37 @@
             <div class="row">
                 <div class="col-xs-6 col-sm-8 col-md-8">
                     <div class="media-body">
-                        <div class="media-heading">2014-04-05 12:12 <strong><span class="pull-right">Groovy</span></strong></div>
-                        <h5>공간의 제목이 출력됩니다. 제목은 약 30자 내외가 되겠죠.</h5>
-                        <div class="media-body">첫번째 공간의 설명이  어쩌구 저쩌구해서 내용이 나오는데 어쩌구 저쩌구~? 솰라솰라...</div>
+                        <div class="media-heading">2014-04-05 12:12 <strong><span class="pull-right">공간 제목이 출력됩니다.</span></strong></div>
+                        Spring 서버사이드 공간 > Spring AOP 위키에 질문을 올렸습니다.- 내용이 잘 이해가...
                     </div>
                 </div>
-                <div class="col-xs-3 col-sm-2 col-md-2 pull-left" >
-                    <div class="text-right">총 위키</div>
-                    <p class="text-right"><button class="btn btn-default btn-sm">12</button></p>
+                <div class="col-md-2 my-qna-rating">
+                    <button class="btn btn-sm btn-default">위키 33</button>
+                    <button class="btn btn-sm btn-default">공유 33</button>
                 </div>
             </div>
         </div>
-        <!--// 최근 Q&A -->
+        <div class="media qna-item">
+            <a class="pull-left" href="#">
+                <img alt="64x64" data-src="holder.js/64x64" class="media-object qna-profile" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+">
+            </a>
+            <div class="row">
+                <div class="col-xs-6 col-sm-8 col-md-8">
+                    <div class="media-body">
+                        <div class="media-heading">2014-04-05 12:12 <strong><span class="pull-right">공간 제목이 출력됩니다.</span></strong></div>
+                        Spring 서버사이드 공간 > Spring AOP 위키에 질문을 올렸습니다.- 내용이 잘 이해가...
+                    </div>
+                </div>
+                <div class="col-md-2 my-qna-rating">
+                    <button class="btn btn-sm btn-default">위키 33</button>
+                    <button class="btn btn-sm btn-default">공유 33</button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--// 전체 공간 -->
 
         <div class="top-buffer">&nbsp;</div>
 
@@ -216,74 +304,76 @@
 
     <div class="col-md-4">
         <!-- BEST Q&A -->
-        <div class="qna-page-header">최근활동</div>
+        <div class="qna-page-header">최근 활동</div>
         <div class="best-qna-item">
             <div>
-                <strong>[2014-01-23] 제목이 출력됨 (최근 활동 10개 출력)</strong>
+                <span class="label label-primary">Spring</span>
+                <span class="label label-success">JAVA</span>
+                <strong> 공간 명이 출력됩니다.</strong>
             </div>
             <div class="media">
                 <a class="pull-left" href="#">
-                    <img alt="16x16" data-src="holder.js/64x64" class="media-object min-profile" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+">
+                    <img alt="64x64" data-src="holder.js/64x64" class="media-object qna-profile" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+">
                 </a>
-                <div class="media-body">누구 누구님이 공간에 위키를 추가 했습니다.</div>
-            </div>
-            <div class="best-qna-bottom">
+                <div class="media-body">첫번째 타임라인 어쩌구 저쩌구해서 내용이 나오는데 어쩌구 저쩌구~? 솰라솰라...위키를 추가 하였습니다. </div>
+                <div class="media-heading">2014-04-05 12:12  <strong><span class="pull-right">작성자 명</span></strong></div>
             </div>
         </div>
 
         <div class="best-qna-item">
             <div>
-                <strong>[2014-01-23] 제목이 출력됨 (최근 활동 10개 출력)</strong>
+                <span class="label label-warning">JavaScript</span>
+                <strong> 자바스크립트 AOP 설명좀 </strong>
             </div>
             <div class="media">
                 <a class="pull-left" href="#">
-                    <img alt="16x16" data-src="holder.js/64x64" class="media-object min-profile" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+">
+                    <img alt="64x64" data-src="holder.js/64x64" class="media-object qna-profile" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+">
                 </a>
-                <div class="media-body">누구 누구님이 공간에 위키를 추가 했습니다.</div>
-            </div>
-            <div class="best-qna-bottom">
-            </div>
-        </div>
-        <div class="best-qna-item">
-            <div>
-                <strong>[2014-01-23] 제목이 출력됨 (최근 활동 10개 출력)</strong>
-            </div>
-            <div class="media">
-                <a class="pull-left" href="#">
-                    <img alt="16x16" data-src="holder.js/64x64" class="media-object min-profile" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+">
-                </a>
-                <div class="media-body">누구 누구님이 공간에 위키를 추가 했습니다.</div>
-            </div>
-            <div class="best-qna-bottom">
-            </div>
-        </div>
-        <div class="best-qna-item">
-            <div>
-                <strong>[2014-01-23] 제목이 출력됨 (최근 활동 10개 출력)</strong>
-            </div>
-            <div class="media">
-                <a class="pull-left" href="#">
-                    <img alt="16x16" data-src="holder.js/64x64" class="media-object min-profile" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+">
-                </a>
-                <div class="media-body">누구 누구님이 공간에 위키를 추가 했습니다.</div>
-            </div>
-            <div class="best-qna-bottom">
-            </div>
-        </div>
-        <div class="best-qna-item">
-            <div>
-                <strong>[2014-01-23] 제목이 출력됨 (최근 활동 10개 출력)</strong>
-            </div>
-            <div class="media">
-                <a class="pull-left" href="#">
-                    <img alt="16x16" data-src="holder.js/64x64" class="media-object min-profile" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+">
-                </a>
-                <div class="media-body">누구 누구님이 공간에 위키를 추가 했습니다.</div>
-            </div>
-            <div class="best-qna-bottom">
+                <div class="media-body">그런거 없습니다.그런거 없습니다.그런거 없습니다.그런거 없습니다.그런거 없습..</div>
             </div>
         </div>
 
+        <div class="best-qna-item">
+            <div>
+                <span class="label label-primary">Spring</span>
+                <span class="label label-success">JAVA</span>
+                <strong> 스프링 AOP에 대해서 설명 좀</strong>
+            </div>
+            <div class="media">
+                <a class="pull-left" href="#">
+                    <img alt="64x64" data-src="holder.js/64x64" class="media-object qna-profile" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+">
+                </a>
+                <div class="media-body">첫번째 타임라인 어쩌구 저쩌구해서 내용이 나오는데 어쩌구 저쩌구~? 솰라솰라...</div>
+            </div>
+        </div>
+
+        <div class="best-qna-item">
+            <div>
+                <span class="label label-primary">Spring</span>
+                <span class="label label-success">JAVA</span>
+                <strong> 스프링 AOP에 대해서 설명 좀</strong>
+            </div>
+            <div class="media">
+                <a class="pull-left" href="#">
+                    <img alt="64x64" data-src="holder.js/64x64" class="media-object qna-profile" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+">
+                </a>
+                <div class="media-body">첫번째 타임라인 어쩌구 저쩌구해서 내용이 나오는데 어쩌구 저쩌구~? 솰라솰라...</div>
+            </div>
+        </div>
+
+        <div class="best-qna-item">
+            <div>
+                <span class="label label-primary">Spring</span>
+                <span class="label label-success">JAVA</span>
+                <strong> 스프링 AOP에 대해서 설명 좀</strong>
+            </div>
+            <div class="media">
+                <a class="pull-left" href="#">
+                    <img alt="64x64" data-src="holder.js/64x64" class="media-object qna-profile" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+">
+                </a>
+                <div class="media-body">첫번째 타임라인 어쩌구 저쩌구해서 내용이 나오는데 어쩌구 저쩌구~? 솰라솰라...</div>
+            </div>
+        </div>
         <!--// BEST Q&A -->
     </div>
 
