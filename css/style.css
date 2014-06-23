@@ -19,6 +19,8 @@ div.qna-rating-info {width:30px; padding:0px; margin-left:5px;}
 div.best-qna-bottom {font-size: 14px; margin: 5px 0 0 10px; padding-left: 10px;}
 div.best-qna-bottom span { padding:5px}
 img.qna-profile {width: 64px; height: 64px;}
+img.min-profile {width: 16px; height: 16px;}
+img.mid-profile {width: 32px; height: 32px;}
 span.my-qna-writer {margin-left:20px;}
 .my-qna-rating button {margin:5px;}
 

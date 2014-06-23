@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <title>GliderWiki</title>
+</head>
+<body>
+<!-- header -->
+<header class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button data-target=".navbar-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Howling Project</a>
+        </div>
+        <nav role="navigation" class="collapse navbar-collapse">
+            <ul class="nav navbar-right navbar-nav">
+                <li class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="glyphicon glyphicon-cog"></i></a>
+                    <div class="dropdown-menu">
+                        <form class="form-inline login_member_form" role="form">
+                            <div class="form-group">
+                                <input type="text" placeholder="Username" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" placeholder="Password" class="form-control">
+                            </div>
+                            <button type="submit" class="btn">Log in</button>
+                        </form>
+                        <div class="input-group pull-right">
+                            <button type="button" class="btn btn-link">아이디 찾기</button>
+                            <button type="button" class="btn btn-link">비밀번호 찾기</button>
+                            <button type="button" class="btn btn-link">회원 가입</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<!--// header -->
+
+<!-- contents -->
+<div class="container">
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="#">개설된 공간 수(2000)</a>
+                </li>
+                <li class="active">
+                    <a href="#">생성된 위키 수(2000)</a>
+                </li>
+                <li>
+                    <a href="#">등록된 키워드(223)</a>
+                </li>
+                <li>
+            </ul>
+            <form class="navbar-form navbar-right" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">공간생성</button>
+            </form>
+        </div>
+    </nav>
+</div>
+<!-- 메뉴 -->
+<div class="container">
+    <!-- lnb -->
+    <div class="col-md-2">
+        <div class="well">키워드 분류키워드</div>
+        <ul class="nav nav-stacked">
+            <li class="active"><a href="#">Java(120/789)</a></li>
+            <li><a href="#">Spring(120/539)</a></li>
+            <li><a href="#">Groovy(100/299)</a></li>
+            <li><a href="#">Grails(3/300)</a></li>
+            <li><a href="#">Gradle(282/402)</a></li>
+            <li><a href="#">Tomcat(282/402)</a></li>
+            <li><a href="#">Apache(282/402)</a></li>
+            <li><a href="#">Javascript(282/402)</a></li>
+            <li><a href="#">NodeJS(282/402)</a></li>
+            <li><a href="#">MySQL(282/402)</a></li>
+            <li><a href="#">MariaDB(282/402)</a></li>
+        </ul>
+    </div>
+    <!--// lnb -->
+
+    <div class="col-md-10">
+
+        <!-- 내가 작성한 Q&A -->
+        <div class="qna-page-header">내 즐겨찾기 공간</div>
+
+        <div class="my-qna-item">
+            <a class="pull-left" href="#">
+                <img alt="64x64" data-src="holder.js/64x64" class="media-object qna-profile" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+">
+            </a>
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="my-my-qna-item-body">
+                        <div class="media-heading">
+                            2014-04-05 12:12
+                            <span class="my-qna-writer">작성자&nbsp;&nbsp;&nbsp;sjune</span>
+                            <strong><span class="pull-right">공간명</span></strong>
+                        </div>
+                        Spring 서버사이드 공간 > Spring AOP 위키에 질문을 올렸습니다.- 내용이 잘 이해가...내용이 잘 이해가...내용이 잘 이해가...내용이 잘 이해가...내용이 잘 이해가...
+                    </div>
+                </div>
+                <div class="col-md-2 my-qna-rating">
+                    <button class="btn btn-default">답변 1</button>
+                    <br />
+                    <button class="btn btn-default">추천 33</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+
+        <!-- 최근 Q&A -->
+        <div class="qna-page-header">전체 공간
+            <span class="pull-right section-category">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#">Recent</a></li>
+                    <li><a href="#">All</a></li>
+                </ul>
+            </span>
+        </div>
+
+        <div class="media qna-item">
+            <a class="pull-left" href="#">
+                <img alt="64x64" data-src="holder.js/64x64" class="media-object qna-profile" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+">
+            </a>
+            <div class="row">
+                <div class="col-xs-6 col-sm-8 col-md-8">
+                    <div class="media-body">
+                        <div class="media-heading">2014-04-05 12:12 <strong><span class="pull-right">Groovy</span></strong></div>
+                        <h5>공간의 제목이 출력됩니다. 제목은 약 30자 내외가 되겠죠.</h5>
+                        <div class="media-body">첫번째 공간의 설명이  어쩌구 저쩌구해서 내용이 나오는데 어쩌구 저쩌구~? 솰라솰라...</div>
+                    </div>
+                </div>
+                <div class="col-xs-3 col-sm-2 col-md-2 pull-left" >
+                    <div class="text-right">총 위키</div>
+                    <p class="text-right"><button class="btn btn-default btn-sm">12</button></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="media qna-item">
+            <a class="pull-left" href="#">
+                <img alt="64x64" data-src="holder.js/64x64" class="media-object qna-profile" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+">
+            </a>
+            <div class="row">
+                <div class="col-xs-6 col-sm-8 col-md-8">
+                    <div class="media-body">
+                        <div class="media-heading">2014-04-05 12:12 <strong><span class="pull-right">Groovy</span></strong></div>
+                        <h5>공간의 제목이 출력됩니다. 제목은 약 30자 내외가 되겠죠.</h5>
+                        <div class="media-body">첫번째 공간의 설명이  어쩌구 저쩌구해서 내용이 나오는데 어쩌구 저쩌구~? 솰라솰라...</div>
+                    </div>
+                </div>
+                <div class="col-xs-3 col-sm-2 col-md-2 pull-left" >
+                    <div class="text-right">총 위키</div>
+                    <p class="text-right"><button class="btn btn-default btn-sm">12</button></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="media qna-item">
+            <a class="pull-left" href="#">
+                <img alt="64x64" data-src="holder.js/64x64" class="media-object qna-profile" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+">
+            </a>
+            <div class="row">
+                <div class="col-xs-6 col-sm-8 col-md-8">
+                    <div class="media-body">
+                        <div class="media-heading">2014-04-05 12:12 <strong><span class="pull-right">Groovy</span></strong></div>
+                        <h5>공간의 제목이 출력됩니다. 제목은 약 30자 내외가 되겠죠.</h5>
+                        <div class="media-body">첫번째 공간의 설명이  어쩌구 저쩌구해서 내용이 나오는데 어쩌구 저쩌구~? 솰라솰라...</div>
+                    </div>
+                </div>
+                <div class="col-xs-3 col-sm-2 col-md-2 pull-left" >
+                    <div class="text-right">총 위키</div>
+                    <p class="text-right"><button class="btn btn-default btn-sm">12</button></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="media qna-item">
+            <a class="pull-left" href="#">
+                <img alt="64x64" data-src="holder.js/64x64" class="media-object qna-profile" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+">
+            </a>
+            <div class="row">
+                <div class="col-xs-6 col-sm-8 col-md-8">
+                    <div class="media-body">
+                        <div class="media-heading">2014-04-05 12:12 <strong><span class="pull-right">Groovy</span></strong></div>
+                        <h5>공간의 제목이 출력됩니다. 제목은 약 30자 내외가 되겠죠.</h5>
+                        <div class="media-body">첫번째 공간의 설명이  어쩌구 저쩌구해서 내용이 나오는데 어쩌구 저쩌구~? 솰라솰라...</div>
+                    </div>
+                </div>
+                <div class="col-xs-3 col-sm-2 col-md-2 pull-left" >
+                    <div class="text-right">총 위키</div>
+                    <p class="text-right"><button class="btn btn-default btn-sm">12</button></p>
+                </div>
+            </div>
+        </div>
+        <!--// 최근 Q&A -->
+
+        <div class="top-buffer">&nbsp;</div>
+
+    </div>
+
+    <div class="col-md-4">
+        <!-- BEST Q&A -->
+        <div class="qna-page-header">최근활동</div>
+        <div class="best-qna-item">
+            <div>
+                <strong>[2014-01-23] 제목이 출력됨 (최근 활동 10개 출력)</strong>
+            </div>
+            <div class="media">
+                <a class="pull-left" href="#">
+                    <img alt="16x16" data-src="holder.js/64x64" class="media-object min-profile" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+">
+                </a>
+                <div class="media-body">누구 누구님이 공간에 위키를 추가 했습니다.</div>
+            </div>
+            <div class="best-qna-bottom">
+            </div>
+        </div>
+
+        <div class="best-qna-item">
+            <div>
+                <strong>[2014-01-23] 제목이 출력됨 (최근 활동 10개 출력)</strong>
+            </div>
+            <div class="media">
+                <a class="pull-left" href="#">
+                    <img alt="16x16" data-src="holder.js/64x64" class="media-object min-profile" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+">
+                </a>
+                <div class="media-body">누구 누구님이 공간에 위키를 추가 했습니다.</div>
+            </div>
+            <div class="best-qna-bottom">
+            </div>
+        </div>
+        <div class="best-qna-item">
+            <div>
+                <strong>[2014-01-23] 제목이 출력됨 (최근 활동 10개 출력)</strong>
+            </div>
+            <div class="media">
+                <a class="pull-left" href="#">
+                    <img alt="16x16" data-src="holder.js/64x64" class="media-object min-profile" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+">
+                </a>
+                <div class="media-body">누구 누구님이 공간에 위키를 추가 했습니다.</div>
+            </div>
+            <div class="best-qna-bottom">
+            </div>
+        </div>
+        <div class="best-qna-item">
+            <div>
+                <strong>[2014-01-23] 제목이 출력됨 (최근 활동 10개 출력)</strong>
+            </div>
+            <div class="media">
+                <a class="pull-left" href="#">
+                    <img alt="16x16" data-src="holder.js/64x64" class="media-object min-profile" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+">
+                </a>
+                <div class="media-body">누구 누구님이 공간에 위키를 추가 했습니다.</div>
+            </div>
+            <div class="best-qna-bottom">
+            </div>
+        </div>
+        <div class="best-qna-item">
+            <div>
+                <strong>[2014-01-23] 제목이 출력됨 (최근 활동 10개 출력)</strong>
+            </div>
+            <div class="media">
+                <a class="pull-left" href="#">
+                    <img alt="16x16" data-src="holder.js/64x64" class="media-object min-profile" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+">
+                </a>
+                <div class="media-body">누구 누구님이 공간에 위키를 추가 했습니다.</div>
+            </div>
+            <div class="best-qna-bottom">
+            </div>
+        </div>
+
+        <!--// BEST Q&A -->
+    </div>
+
+
+</div>
+<!--// contents -->
+
+<!-- footer -->
+<footer id="footer">
+    <div class="container">
+        <div class="col-md-12">
+            <ul class="list-inline">
+                <li>사이트 소개</li>
+                <li>Wiki 다운로드</li>
+                <li>Contact Us</li>
+                <li>Home</li>
+            </ul>
+        </div>
+        <div class="col-md-12">
+            <p class="text-left">
+                Copyright © 2014 GLiDERWiki™ OpenSource Team
+            </p>
+        </div>
+    </div>
+</footer>
+
+<!--// footer -->
+</body>
+</html>
