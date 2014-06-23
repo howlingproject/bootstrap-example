@@ -1,45 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
+    <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>::Enterprise OpenSource Wiki – GLiDER™</title>
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://bootswatch.com/cerulean/bootstrap.min.css" rel="stylesheet">
+    <!--<link href="http://bootswatch.com/spacelab/bootstrap.min.css" rel="stylesheet">-->
+    <!--<link href="http://bootswatch.com/cosmo/bootstrap.min.css" rel="stylesheet">-->
+    <!--<link href="http://bootswatch.com/darkly/bootstrap.min.css" rel="stylesheet">-->
+    <!--<link href="http://bootswatch.com/simplex/bootstrap.min.css" rel="stylesheet">-->
+    <!--<link href="http://bootswatch.com/amelia/bootstrap.min.css" rel="stylesheet">-->
+    <!--<link href="http://bootswatch.com/flatly/bootstrap.min.css" rel="stylesheet">-->
+    <!--<link href="http://bootswatch.com/spacelab/bootstrap.min.css" rel="stylesheet">-->
+    <!--<link href="http://bootswatch.com/yeti/bootstrap.min.css" rel="stylesheet">-->
+
+    <link href="../css/glyphicons/glyphicons-free.css" rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet">
-    <title>GliderWiki</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
+
 <body>
     <!-- header -->
-    <header class="navbar navbar-default navbar-fixed-top">
+    <header class="navbar navbar-default">
         <div class="container">
             <div class="navbar-header">
-                <button data-target=".navbar-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+                <button data-target=".bs-navbar-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Howling Project</a>
+                <a class="navbar-brand" href="#">GLiDERWiki</a>
             </div>
-            <nav role="navigation" class="collapse navbar-collapse">
-                <ul class="nav navbar-right navbar-nav">
-                    <li class="dropdown">
-                        <a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="glyphicon glyphicon-cog"></i></a>
-                        <div class="dropdown-menu">
-                            <form class="form-inline login_member_form" role="form">
-                                <div class="form-group">
-                                    <input type="text" placeholder="Username" class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <input type="password" placeholder="Password" class="form-control">
-                                </div>
-                                <button type="submit" class="btn">Log in</button>
-                            </form>
-                            <div class="input-group pull-right">
-                                <button type="button" class="btn btn-link">아이디 찾기</button>
-                                <button type="button" class="btn btn-link">비밀번호 찾기</button>
-                                <button type="button" class="btn btn-link">회원 가입</button>
-                            </div>
-                        </div>
+
+            <nav role="navigation" class="navbar-collapse bs-navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="#">Feeds</a>
                     </li>
+                    <li>
+                        <a href="#">Q&amp;A</a>
+                    </li>
+                    <li>
+                        <a href="#">Space</a>
+                    </li>
+                    <li>
+                        <a href="#">Wiki</a>
+                    </li>
+                    <li>
+                        <a href="#">My Info</a>
+                    </li>
+                    <li>
+                        <a href="#">Admin</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><em class='glyphicon-cogwheel'></em></a></li>
+                    <li><a href="#"><em class='glyphicon-chat'></em></a></li>
                 </ul>
             </nav>
         </div>
@@ -74,12 +100,11 @@
         </nav>
     </div>
     <!-- 메뉴 -->
-    <div class="container">
-
+    <div class="container contents-container">
         <!-- lnb -->
         <div class="col-md-2">
-            <div class="well">키워드 분류키워드</div>
-            <ul class="nav nav-stacked">
+            <div class="well">분류키워드</div>
+            <ul class="nav nav-pills nav-stacked">
                 <li class="active"><a href="#">Java(120/789)</a></li>
                 <li><a href="#">Spring(120/539)</a></li>
                 <li><a href="#">Groovy(100/299)</a></li>
@@ -118,13 +143,9 @@
                             Spring 서버사이드 공간 > Spring AOP 위키에 질문을 올렸습니다.- 내용이 잘 이해가...
                         </div>
                     </div>
-                    <div class="qna-rating-info col-xs-3 col-sm-2 col-md-2">
-                        <div class="text-center">답변</div>
-                        <button class="btn btn-default btn-sm">1</button>
-                    </div>
-                    <div class="qna-rating-info col-xs-3 col-sm-2 col-md-2">
-                        <div class="text-center">추천</div>
-                        <button class="btn btn-default btn-sm">33</button>
+                    <div class="col-md-2 my-qna-rating">
+                        <button class="btn btn-sm btn-default">답변 1</button>
+                        <button class="btn btn-sm btn-default">추천 33</button>
                     </div>
                 </div>
             </div>
@@ -140,13 +161,10 @@
                             Spring 서버사이드 공간 > Spring AOP 위키에 질문을 올렸습니다.- 내용이 잘 이해가...
                         </div>
                     </div>
-                    <div class="qna-rating-info col-xs-3 col-sm-2 col-md-2">
-                        <div class="text-center">답변</div>
-                        <button class="btn btn-default btn-sm">1</button>
-                    </div>
-                    <div class="qna-rating-info col-xs-3 col-sm-2 col-md-2">
-                        <div class="text-center">추천</div>
-                        <button class="btn btn-default btn-sm">33</button>
+
+                    <div class="col-md-2 my-qna-rating">
+                        <button class="btn btn-sm btn-default">답변 1</button>
+                        <button class="btn btn-sm btn-default">추천 33</button>
                     </div>
                 </div>
             </div>
@@ -162,13 +180,10 @@
                             Spring 서버사이드 공간 > Spring AOP 위키에 질문을 올렸습니다.- 내용이 잘 이해가...
                         </div>
                     </div>
-                    <div class="qna-rating-info col-xs-3 col-sm-2 col-md-2">
-                        <div class="text-center">답변</div>
-                        <button class="btn btn-default btn-sm">1</button>
-                    </div>
-                    <div class="qna-rating-info col-xs-3 col-sm-2 col-md-2">
-                        <div class="text-center">추천</div>
-                        <button class="btn btn-default btn-sm">33</button>
+
+                    <div class="col-md-2 my-qna-rating">
+                        <button class="btn btn-sm btn-default">답변 1</button>
+                        <button class="btn btn-sm btn-default">추천 33</button>
                     </div>
                 </div>
             </div>
@@ -184,13 +199,10 @@
                             Spring 서버사이드 공간 > Spring AOP 위키에 질문을 올렸습니다.- 내용이 잘 이해가...
                         </div>
                     </div>
-                    <div class="qna-rating-info col-xs-3 col-sm-2 col-md-2">
-                        <div class="text-center">답변</div>
-                        <button class="btn btn-default btn-sm">1</button>
-                    </div>
-                    <div class="qna-rating-info col-xs-3 col-sm-2 col-md-2">
-                        <div class="text-center">추천</div>
-                        <button class="btn btn-default btn-sm">33</button>
+
+                    <div class="col-md-2 my-qna-rating">
+                        <button class="btn btn-sm btn-default">답변 1</button>
+                        <button class="btn btn-sm btn-default">추천 33</button>
                     </div>
                 </div>
             </div>
@@ -207,25 +219,20 @@
                 </span>
             </div>
 
-
             <div class="media qna-item">
                 <a class="pull-left" href="#">
                     <img alt="64x64" data-src="holder.js/64x64" class="media-object qna-profile" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+">
                 </a>
                 <div class="row">
-                    <div class="col-xs-6 col-sm-8 col-md-8">
+                    <div class="col-xs-6 col-md-8">
                         <div class="media-body">
                             <div class="media-heading">2014-04-05 12:12 <strong><span class="pull-right">분류키워드</span></strong></div>
                             Spring 서버사이드 공간 > Spring AOP 위키에 질문을 올렸습니다.- 내용이 잘 이해가...
                         </div>
                     </div>
-                    <div class="qna-rating-info col-xs-3 col-sm-2 col-md-2">
-                        <div class="text-center">답변</div>
-                        <button class="btn btn-default btn-sm">1</button>
-                    </div>
-                    <div class="qna-rating-info col-xs-3 col-sm-2 col-md-2">
-                        <div class="text-center">추천</div>
-                        <button class="btn btn-default btn-sm">33</button>
+                    <div class="col-md-2 my-qna-rating">
+                        <button class="btn btn-sm btn-default">조회 1</button>
+                        <button class="btn btn-sm btn-default">추천 33</button>
                     </div>
                 </div>
             </div>
@@ -241,24 +248,10 @@
                             Spring 서버사이드 공간 > Spring AOP 위키에 질문을 올렸습니다.- 내용이 잘 이해가...
                         </div>
                     </div>
-                    <div class="qna-rating-info col-xs-3 col-md-2 text-center">조회<button class="btn btn-default btn-sm">1</button></div>
-                    <div class="qna-rating-info col-xs-3 col-md-2 text-center">추천<button class="btn btn-default btn-sm">33</button></div>
-                </div>
-            </div>
-
-            <div class="media qna-item">
-                <a class="pull-left" href="#">
-                    <img alt="64x64" data-src="holder.js/64x64" class="media-object qna-profile" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+">
-                </a>
-                <div class="row">
-                    <div class="col-xs-6 col-md-8">
-                        <div class="media-body">
-                            <div class="media-heading">2014-04-05 12:12 <strong><span class="pull-right">분류키워드</span></strong></div>
-                            Spring 서버사이드 공간 > Spring AOP 위키에 질문을 올렸습니다.- 내용이 잘 이해가...
-                        </div>
+                    <div class="col-md-2 my-qna-rating">
+                        <button class="btn btn-sm btn-default">조회 77</button>
+                        <button class="btn btn-sm btn-default">추천 33</button>
                     </div>
-                    <div class="qna-rating-info col-xs-3 col-md-2 text-center">조회<button class="btn btn-default btn-sm">1</button></div>
-                    <div class="qna-rating-info col-xs-3 col-md-2 text-center">추천<button class="btn btn-default btn-sm">33</button></div>
                 </div>
             </div>
         <!--// 답변을 기다리는 Q&A -->
@@ -279,12 +272,6 @@
                     </a>
                     <div class="media-body">첫번째 타임라인 어쩌구 저쩌구해서 내용이 나오는데 어쩌구 저쩌구~? 솰라솰라...</div>
                 </div>
-                <div class="best-qna-bottom">
-                    <span>2014-05-01</span>
-                    <span>조회 20</span>
-                    <span>추천 30</span>
-                    <span>댓글 77</span>
-                </div>
             </div>
 
             <div class="best-qna-item">
@@ -298,11 +285,19 @@
                     </a>
                     <div class="media-body">그런거 없습니다.그런거 없습니다.그런거 없습니다.그런거 없습니다.그런거 없습..</div>
                 </div>
-                <div class="best-qna-bottom">
-                    <span>2014-05-01</span>
-                    <span>조회 20</span>
-                    <span>추천 30</span>
-                    <span>댓글 77</span>
+            </div>
+
+            <div class="best-qna-item">
+                <div>
+                    <span class="label label-primary">Spring</span>
+                    <span class="label label-success">JAVA</span>
+                    <strong> 스프링 AOP에 대해서 설명 좀</strong>
+                </div>
+                <div class="media">
+                    <a class="pull-left" href="#">
+                        <img alt="64x64" data-src="holder.js/64x64" class="media-object qna-profile" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+">
+                    </a>
+                    <div class="media-body">첫번째 타임라인 어쩌구 저쩌구해서 내용이 나오는데 어쩌구 저쩌구~? 솰라솰라...</div>
                 </div>
             </div>
 
@@ -318,12 +313,6 @@
                     </a>
                     <div class="media-body">첫번째 타임라인 어쩌구 저쩌구해서 내용이 나오는데 어쩌구 저쩌구~? 솰라솰라...</div>
                 </div>
-                <div class="best-qna-bottom">
-                    <span>2014-05-01</span>
-                    <span>조회 20</span>
-                    <span>추천 30</span>
-                    <span>댓글 77</span>
-                </div>
             </div>
 
             <div class="best-qna-item">
@@ -337,32 +326,6 @@
                         <img alt="64x64" data-src="holder.js/64x64" class="media-object qna-profile" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+">
                     </a>
                     <div class="media-body">첫번째 타임라인 어쩌구 저쩌구해서 내용이 나오는데 어쩌구 저쩌구~? 솰라솰라...</div>
-                </div>
-                <div class="best-qna-bottom">
-                    <span>2014-05-01</span>
-                    <span>조회 20</span>
-                    <span>추천 30</span>
-                    <span>댓글 77</span>
-                </div>
-            </div>
-
-            <div class="best-qna-item">
-                <div>
-                    <span class="label label-primary">Spring</span>
-                    <span class="label label-success">JAVA</span>
-                    <strong> 스프링 AOP에 대해서 설명 좀</strong>
-                </div>
-                <div class="media">
-                    <a class="pull-left" href="#">
-                        <img alt="64x64" data-src="holder.js/64x64" class="media-object qna-profile" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+">
-                    </a>
-                    <div class="media-body">첫번째 타임라인 어쩌구 저쩌구해서 내용이 나오는데 어쩌구 저쩌구~? 솰라솰라...</div>
-                </div>
-                <div class="best-qna-bottom">
-                    <span>2014-05-01</span>
-                    <span>조회 20</span>
-                    <span>추천 30</span>
-                    <span>댓글 77</span>
                 </div>
             </div>
             <!--// BEST Q&A -->
@@ -373,7 +336,7 @@
     <!-- footer -->
     <footer id="footer">
         <div class="container">
-            <div class="col-md-12">
+            <div class="col-md-12 text-center">
                 <ul class="list-inline">
                     <li>사이트 소개</li>
                     <li>Wiki 다운로드</li>
@@ -381,14 +344,13 @@
                     <li>Home</li>
                 </ul>
             </div>
-            <div class="col-md-12">
-                <p class="text-left">
+            <div class="col-md-12 text-center">
+                <p class="">
                     Copyright © 2014 GLiDERWiki™ OpenSource Team
                 </p>
             </div>
         </div>
     </footer>
-
     <!--// footer -->
 </body>
 </html>
