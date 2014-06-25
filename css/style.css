@@ -2,12 +2,19 @@
 -------------------------------------------------- */
 html {position: relative; min-height: 100%; }
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 100px;
+    /* Margin bottom by footer height */
+    margin-bottom: 100px;
+    font-size:12px;
 }
+#footer { position: absolute; bottom: 0; width: 100%; margin-top: 20px;border-top: 1px solid #eee; padding-top:20px; margin-top:20px; background-color: #F8F8F8; border-color: #E7E7E7;}
 
-#footer { position: absolute; bottom: 0; width: 100%; background-color: #f5f5f5; margin-top: 20px;
-}
+/*
+*  layout
+*/
+.wrap { margin-left:0; margin-right:0; }
+.login_member_form {padding:15px;width:470px;}
+.top-buffer { margin-top:20px; }
+
 
 
 /* Custom page CSS
@@ -20,14 +27,6 @@ body {
 .container .text-muted { margin: 20px 0; }
 .contents-container { padding:0px;}
 
-/*
-*  layout
-*/
-body {font-size:12px;}
-.wrap { margin-left:0; margin-right:0; }
-.login_member_form {padding:15px;width:470px;}
-.top-buffer { margin-top:20px; }
-footer {border-top: 1px solid #eee; padding-top:20px; margin-top:20px; background-color: #F8F8F8; border-color: #E7E7E7;}
 
 /*
 *  main-qna, my-qna
@@ -42,6 +41,8 @@ div.qna-rating-info {width:30px; padding:0px; margin-left:5px;}
 div.best-qna-bottom {font-size: 14px; margin: 5px 0 0 10px; padding-left: 10px;}
 div.best-qna-bottom span { padding:5px}
 img.qna-profile {width: 64px; height: 64px;}
+img.min-profile {width: 16px; height: 16px;}
+img.mid-profile {width: 32px; height: 32px;}
 span.my-qna-writer {margin-left:20px;}
 .my-qna-rating button {margin:5px;}
 
