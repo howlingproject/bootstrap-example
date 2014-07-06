@@ -16,6 +16,146 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <style type="text/css">
+
+.discussions ul li:before {
+    background: url("http://bootstrapmaster.com/live/genius/assets/img/disc-arrow.png") no-repeat scroll 0 0 / 20px 20px rgba(0, 0, 0, 0);
+    content: "";
+    height: 20px;
+    left: -20px;
+    position: absolute;
+    top: 15px;
+    width: 20px;
+}
+
+.discussions ul {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+.discussions ul li .name {
+    background: none repeat scroll 0 0 #e9ebec;
+    left: 10px;
+    padding: 5px 10px;
+    position: absolute;
+    top: 10px;
+    width: 100%;
+}
+
+.discussions ul li {
+    background: none repeat scroll 0 0 white;
+    border: 1px solid #dbdee0;
+    font-size: 12px;
+    margin: 0 40px 20px 80px;
+    padding: 10px;
+    position: relative;
+}
+.discussions ul {
+    list-style: none outside none;
+}
+
+.discussions ul li .author {
+    float: left;
+    left: -80px;
+    position: absolute;
+    top: 0;
+    width: 60px;
+    z-index: 1;
+}
+.discussions ul li {
+    font-size: 12px;
+}
+.discussions ul {
+    list-style: none outside none;
+}
+
+.discussions ul li {
+    font-size: 12px;
+}
+.discussions ul {
+    list-style: none outside none;
+}
+
+.discussions ul li .name {
+    background: none repeat scroll 0 0 #e9ebec;
+    left: 10px;
+    padding: 5px 10px;
+    position: absolute;
+    top: 10px;
+    width: 100%;
+}
+
+.discussions ul li .date {
+    background: none repeat scroll 0 0 #dbdee0;
+    padding: 5px 20px 5px 10px;
+    position: absolute;
+    right: -1px;
+    top: 10px;
+    z-index: 1;
+}
+
+.discussions ul li .delete {
+    background: none repeat scroll 0 0 #ced1d4;
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px 10px;
+    position: absolute;
+    right: -30px;
+    top: 10px;
+}
+.discussions ul li .delete {
+    cursor: pointer;
+}
+.discussions ul li .message {
+    border-bottom: 1px solid #e9ebec;
+    font-size: 12px;
+    margin: 20px -10px 0;
+    padding: 20px;
+}
+
+.discussions ul li ul {
+    overflow: hidden;
+}
+.discussions ul {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+
+.discussions ul li ul li textarea {
+    box-shadow: none;
+    font-size: 12px;
+    padding: 5px;
+    width: 100%;
+    border: 1px solid #e9ebec;
+    border-radius: 2px !important;
+}
+
+.discussions ul li .author img {
+    border-radius: 2px;
+}
+
+.discussions ul li ul li .author img {
+    border-radius: 2px;
+    height: 50px;
+}
+
+.discussions ul li ul li {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: -moz-use-text-color -moz-use-text-color #e9ebec;
+    border-image: none;
+    border-style: none none solid;
+    border-width: 0 0 1px;
+    box-shadow: none;
+    margin: 0 -10px;
+    padding-left: 70px;
+}
+
+    </style>
 </head>
 <body>
 
@@ -65,7 +205,180 @@
 <div class="container">
     <div class="col-md-9">
         <div class="well">피드 글 쓰기</div>
-        <div class="well">피드 글 목록</div>
+        <div class="well">
+
+<div class="discussions">
+
+<ul>
+
+    <li>
+        <div class="author">
+            <img alt="64x64" class="media-object" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+">
+        </div>
+
+        <div class="name">Łukasz Holeczek</div>
+        <div class="date">Today, 1:08 PM</div>
+        <div class="delete"><i class="fa fa-times"></i></div>
+
+        <div class="message">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+            tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+            nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+        </div>
+
+        <ul>
+
+            <li>
+                <div class="author">
+                    <img alt="64x64" class="media-object" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+">
+                </div>
+                <div class="name">Ann Kovalsky</div>
+                <div class="date">Today, 1:08 PM</div>
+                <div class="delete"><i class="fa fa-times"></i></div>
+
+                <div class="message">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                    euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
+                    minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+                    aliquip ex ea commodo consequat.
+                </div>
+
+            </li>
+
+            <li>
+                <div class="author">
+                    <img alt="64x64" class="media-object" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+">
+                </div>
+                <div class="name">Megan Abbott</div>
+                <div class="date">Today, 1:08 PM</div>
+                <div class="delete"><i class="fa fa-times"></i></div>
+
+                <div class="message">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                    euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
+                    minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+                    aliquip ex ea commodo consequat.
+                </div>
+            </li>
+
+            <li>
+                <div class="author">
+                    <img alt="64x64" class="media-object" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+">
+                </div>
+                <textarea placeholder="Write comment" class="diss-form"
+                          style="overflow: hidden; word-wrap: break-word; resize: horizontal; height: 46px;"></textarea>
+            </li>
+
+        </ul>
+
+    </li>
+
+    <li>
+        <div class="author">
+            <img alt="64x64" class="media-object" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+">
+        </div>
+
+        <div class="name">Łukasz Holeczek</div>
+        <div class="date">Today, 1:08 PM</div>
+        <div class="delete"><i class="fa fa-times"></i></div>
+
+        <div class="message row">
+            <div class="col-sm-3 col-xs-6">
+                <img class="img-responsive img-thumbnail" src="assets/img/gallery/photo2.jpg">
+            </div>
+            <div class="col-sm-3 col-xs-6">
+                <img class="img-responsive img-thumbnail" src="assets/img/gallery/photo3.jpg">
+            </div>
+            <div class="col-sm-3 col-xs-6">
+                <img class="img-responsive img-thumbnail" src="assets/img/gallery/photo4.jpg">
+            </div>
+            <div class="col-sm-3 col-xs-6">
+                <img class="img-responsive img-thumbnail" src="assets/img/gallery/photo5.jpg">
+            </div>
+        </div>
+
+        <ul>
+
+            <li>
+                <div class="author">
+                    <img alt="avatar" src="assets/img/avatar.jpg">
+                </div>
+                <textarea placeholder="Write comment" class="diss-form"
+                          style="overflow: hidden; word-wrap: break-word; resize: horizontal; height: 46px;"></textarea>
+            </li>
+
+        </ul>
+
+    </li>
+
+    <li>
+        <div class="author">
+            <img alt="avatar" src="assets/img/avatar9.jpg">
+        </div>
+
+        <div class="name">Tom Allen</div>
+        <div class="date">Today, 1:08 PM</div>
+        <div class="delete"><i class="fa fa-times"></i></div>
+
+        <div class="message">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+            tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+            nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+        </div>
+
+        <ul>
+
+            <li>
+                <div class="author">
+                    <img alt="avatar" src="assets/img/avatar2.jpg">
+                </div>
+                <div class="name">Katie Moss</div>
+                <div class="date">Today, 1:08 PM</div>
+                <div class="delete"><i class="fa fa-times"></i></div>
+
+                <div class="message">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                    euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
+                    minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+                    aliquip ex ea commodo consequat.
+                </div>
+
+            </li>
+
+            <li>
+                <div class="author">
+                    <img alt="avatar" src="assets/img/avatar4.jpg">
+                </div>
+                <div class="name">Anna Holn</div>
+                <div class="date">Today, 1:08 PM</div>
+                <div class="delete"><i class="fa fa-times"></i></div>
+
+                <div class="message">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                    euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
+                    minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+                    aliquip ex ea commodo consequat.
+                </div>
+            </li>
+
+            <li>
+                <div class="author">
+                    <img alt="avatar" src="assets/img/avatar9.jpg">
+                </div>
+                <textarea placeholder="Write comment" class="diss-form"
+                          style="overflow: hidden; word-wrap: break-word; resize: horizontal; height: 46px;"></textarea>
+            </li>
+
+        </ul>
+
+    </li>
+
+</ul>
+
+</div>
+
+
+        </div>
     </div>
     <div class="col-md-3">
         <h1> 이달의 BEST FEED</h1>
