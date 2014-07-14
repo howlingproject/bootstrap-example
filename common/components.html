@@ -1,986 +1,897 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <title>HowlingProject</title>
-    <meta name="generator" content="Bootply" />
+    <meta name="generator" content="Bootply"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
-    <script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script type='text/javascript' src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>        
+    <link href="http://bootswatch.com/cerulean/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/glyphicons/glyphicons-free.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-    <!-- CSS code from Bootply.com editor -->      
+    <!-- CSS code from Bootply.com editor -->
     <style type="text/css">
-        body {margin-top: 50px;}
+        body {
+            margin-top: 50px;
+        }
+
         @media screen and (min-width: 992px) {
-          .the-icons li {
-            width: 12.5%;
-          }
+            .the-icons li {
+                width: 12.5%;
+            }
         }
-          
+
         .the-buttons > li {
-          float: left;
-          height: 80px;
-          padding: 10px;
-          border: 1px solid #ddd;
-          font-size: 12px;
-          line-height: 1.25;
-          text-align: center;
-          -webkit-box-sizing: border-box;
-          -moz-box-sizing: border-box;
-          box-sizing: border-box;
-          margin: 0 -1px -1px 0;
+            float: left;
+            height: 80px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            font-size: 12px;
+            line-height: 1.25;
+            text-align: center;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            margin: 0 -1px -1px 0;
         }
-          
+
         .the-icons .glyphicon {
-          display: block;
-          margin: 5px auto;
-          vertical-align: middle;
-          margin-right: 3px;
-          font-size: 24px;
+            display: block;
+            margin: 5px auto;
+            vertical-align: middle;
+            margin-right: 3px;
+            font-size: 24px;
         }
 
         .the-icons li {
-          float: left;
-          width: 100px;
-          height: 110px;
-          padding: 10px;
-          border: 1px solid #ddd;
-          font-size: 12px;
-          line-height: 1.25;
-          text-align: center;
-          -webkit-box-sizing: border-box;
-          -moz-box-sizing: border-box;
-          box-sizing: border-box;
-          margin: 0 auto;
+            float: left;
+            width: 100px;
+            height: 110px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            font-size: 12px;
+            line-height: 1.25;
+            text-align: center;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            margin: 0 auto;
         }
 
         .the-icons, .the-buttons {
-          list-style:none;
+            list-style: none;
         }
 
         .the-icons .glyphicon {
-          display:inline;
+            display: inline;
         }
     </style>
-  </head>
-  <body>
-      <header class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-          <div class="navbar-header">
+</head>
+<body>
+<header class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
             <button data-target=".navbar-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="#">Howling Project</a>
-          </div>
-          <nav role="navigation" class="collapse navbar-collapse">
-            <ul class="nav navbar-right navbar-nav">
-              <li class="dropdown">
-                <a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="glyphicon glyphicon-user"></i></a>
-                <div class="dropdown-menu">
-                    <form class="form-inline" role="form" style="padding:15px;width:450px;">
-                      <div class="form-group">
-                        <input type="text" placeholder="Username" class="form-control">
-                      </div>
-                      <div class="form-group">
-                        <input type="password" placeholder="Password" class="form-control">
-                      </div>
-                      <button type="submit" class="btn">Log in</button>
-                    </form>
-                    <div class="input-group pull-right">
-                      <button type="button" class="btn btn-link">아이디 찾기</button>
-                      <button type="button" class="btn btn-link">비밀번호 찾기</button>
-                      <button type="button" class="btn btn-link">회원 가입</button>
-                    </div>
-                </div>
-              </li>
-            </ul>
-          </nav>
         </div>
-      </header>
-      <div class="container">
-        <h1>Bootstrap 3 Template</h1>
-        <p class="lead">A Full Featured Example</p>
+        <nav role="navigation" class="collapse navbar-collapse">
+            <ul class="nav navbar-right navbar-nav">
+                <li class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="glyphicon-user"></i></a>
 
-        <!-- Typography
-        ================================================== -->
-        <section id="typography">
-          <div class="page-header">
+                    <div class="dropdown-menu">
+                        <form class="form-inline" role="form" style="padding:15px;width:450px;">
+                            <div class="form-group">
+                                <input type="text" placeholder="Username" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" placeholder="Password" class="form-control">
+                            </div>
+                            <button type="submit" class="btn">Log in</button>
+                        </form>
+                        <div class="input-group pull-right">
+                            <button type="button" class="btn btn-link">아이디 찾기</button>
+                            <button type="button" class="btn btn-link">비밀번호 찾기</button>
+                            <button type="button" class="btn btn-link">회원 가입</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<div class="container">
+<h1>Bootstrap 3 Template</h1>
 
-          </div>
+<p class="lead">A Full Featured Example</p>
 
-          <!-- Headings & Paragraph Copy -->
-          <div class="row">
+<!-- Typography
+================================================== -->
+<section id="typography">
+    <div class="page-header">
 
-            <div class="col-lg-6">
-              <div class="well">
+    </div>
+
+    <!-- Headings & Paragraph Copy -->
+    <div class="row">
+
+        <div class="col-lg-6">
+            <div class="well">
                 <h1>h1. Bootstrap 3</h1>
+
                 <h2>h2. Heading 2</h2>
+
                 <h3>h3. Heading 3</h3>
                 <h4>h4. Heading 4</h4>
                 <h5>h5. Heading 5</h5>
                 <h6>h6. Heading 6</h6>
-              </div>
             </div>
+        </div>
 
-            <div class="col-lg-6">
-              <h3>Bootstrap Framework</h3>
-              <p>In simple terms, a responsive web design figures out what resolution of device it's being served on. Flexible grids then size correctly to fit the screen.</p>
-              <p>The new Bootstrap 3 promises to be a smaller build. The separate Bootstrap base and responsive.css files have now been merged into one. There is no more fixed grid, only fluid.</p>
-              <hr>
-               <blockquote class="pull-right">
-                <p>Have you ever had a project where you thought it would be so much better to just throw everything out and start over? I believe that’s what’s happening with BS3.</p>
+        <div class="col-lg-6">
+            <h3>Bootstrap Framework</h3>
+
+            <p>In simple terms, a responsive web design figures out what resolution of device it's being served on.
+                Flexible grids then size correctly to fit the screen.</p>
+
+            <p>The new Bootstrap 3 promises to be a smaller build. The separate Bootstrap base and responsive.css files
+                have now been merged into one. There is no more fixed grid, only fluid.</p>
+            <hr>
+            <blockquote class="pull-right">
+                <p>Have you ever had a project where you thought it would be so much better to just throw everything out
+                    and start over? I believe that’s what’s happening with BS3.</p>
                 <small><cite title="Source Title">Quasipickle</cite></small>
-              </blockquote>
-              
-            </div>
-          </div>
-        </section>
+            </blockquote>
+
+        </div>
+    </div>
+</section>
 
 
-        <!-- Bootstrap 3 Navbar
-        ================================================== -->
-        <section id="navbar">
-          <div class="page-header">
-            <h1>Bootstrap 3 Navbar</h1>
-          </div>
-          
-            <div class="container">
+<!-- Bootstrap 3 Navbar
+================================================== -->
+<section id="navbar">
+    <div class="page-header">
+        <h1>Bootstrap 3 Navbar</h1>
+    </div>
 
-              <nav class="navbar" role="navigation">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+    <div class="container">
+
+        <nav class="navbar navbar-default" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                  </button>
-                  <a class="navbar-brand" href="#">Title</a>
-                </div>
-              
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse navbar-ex1-collapse">
-                  <ul class="nav navbar-nav">
+                </button>
+                <a class="navbar-brand" href="#">Title</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
                     <li class="active"><a href="#">Home</a></li>
                     <li><a href="#">Link</a></li>
                     <li><a href="#">Link</a></li>
                     <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                      <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">One more separated link</a></li>
-                      </ul>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
                     </li>
-                  </ul>
-                  <ul class="nav navbar-nav navbar-right">
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
                     <li><a href="#">Link</a></li>
-                  </ul>
-                </div><!-- /.navbar-collapse -->
-              </nav>
-
+                </ul>
             </div>
-          
-          
-          
-            <div class="container">
+            <!-- /.navbar-collapse -->
+        </nav>
+    </div>
 
-            <nav class="navbar navbar-inverse" role="navigation">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+    <div class="container">
+
+        <nav class="navbar navbar-inverse" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                  </button>
-                  <a class="navbar-brand" href="#">Title</a>
-                </div>
-              
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse navbar-ex1-collapse">
-                  <ul class="nav navbar-nav">
+                </button>
+                <a class="navbar-brand" href="#">Title</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
                     <li class="active"><a href="#">Home</a></li>
                     <li><a href="#">Link</a></li>
                     <li><a href="#">Link</a></li>
                     <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                      <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">One more separated link</a></li>
-                      </ul>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
                     </li>
-                  </ul>
-                  <ul class="nav navbar-nav navbar-right">
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
                     <li><a href="#">Link</a></li>
-                  </ul>
-                </div><!-- /.navbar-collapse -->
-              </nav>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
 
-          </div>
-          
-        </section>
+    </div>
 
-        <section>
-        <!--Bootstrap 3 Scaffolding-->
-          <div class="page-header">
-            <h1>Grid</h1>
-            <p class="lead">Bootstrap 3 scaffolding has changed for improved display on mobile devices</p>
-          </div>
-          
-        <div class="container">
+</section>
+
+<section>
+    <!--Bootstrap 3 Scaffolding-->
+    <div class="page-header">
+        <h1>Grid</h1>
+
+        <p class="lead">Bootstrap 3 scaffolding has changed for improved display on mobile devices</p>
+    </div>
+
+    <div class="container">
         <div class="row">
-          <div class="col-lg-12"><div class="well"><p>col-lg-12</p></div></div>
+            <div class="col-lg-12">
+                <div class="well"><p>col-lg-12</p></div>
+            </div>
         </div>
         <div class="row">
-            <div class="col-lg-4"><div class="well"><p>col-lg-4</p></div></div>
-          <div class="col-lg-4"><div class="well"><p>col-lg-4</p></div></div>
-          <div class="col-lg-4"><div class="well"><p>col-lg-4</p></div></div>
+            <div class="col-lg-4">
+                <div class="well"><p>col-lg-4</p></div>
+            </div>
+            <div class="col-lg-4">
+                <div class="well"><p>col-lg-4</p></div>
+            </div>
+            <div class="col-lg-4">
+                <div class="well"><p>col-lg-4</p></div>
+            </div>
         </div>
         <div class="row">
-          <div class="col-lg-6 col-sm-6"><div class="well"><p>col-lg-6</p></div></div>
-          <div class="col-lg-6 col-sm-6"><div class="well"><p>col-lg-6</p></div></div>
+            <div class="col-lg-6 col-sm-6">
+                <div class="well"><p>col-lg-6</p></div>
+            </div>
+            <div class="col-lg-6 col-sm-6">
+                <div class="well"><p>col-lg-6</p></div>
+            </div>
         </div>
         <div class="row">
-          <div class="col-lg-9 col-sm-6"><div class="well">col-lg-9 / col-sm-6</div></div>
-          <div class="col-lg-3 col-sm-6"><div class="well">col-lg-3 / col-sm-6</div></div>
-        </div>  
+            <div class="col-lg-9 col-sm-6">
+                <div class="well">col-lg-9 / col-sm-6</div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="well">col-lg-3 / col-sm-6</div>
+            </div>
         </div>
-        </section>
-          
-        <!-- Bootstrap 3 Buttons
-        ================================================== -->
-        <section id="buttons">
-          <div class="page-header">
-            <h1>Bootstrap 3 Buttons</h1>
-            <p class="lead">With no gradients and borders, Bootstrap 3.0 buttons now have a flatter look</p>
-          </div>
-          
-          <h2>Button Sizes (4)</h2>
-          <ul class="the-buttons clearfix">
-              <li><a class="btn btn-xs btn-primary" href="#">btn-xs</a></li>  
-              <li><a class="btn btn-sm btn-primary" href="#">btn-sm</a></li>
-              <li><a class="btn btn-primary" href="#">btn</a></li>
-              <li><a class="btn btn-lg btn-primary" href="#">btn-lg</a></li>
-          </ul>
-          
-          <h2>Button Classes</h2>
-          <ul class="the-buttons clearfix">
-              <li><a class="btn btn-default" href="#">Default</a></li>
-              <li><a class="btn btn-primary" href="#">Primary</a></li>
-              <li><a class="btn btn-success" href="#">Success</a></li>
-              <li><a class="btn btn-info" href="#">Info</a></li>
-              <li><a class="btn btn-warning" href="#">Warning</a></li>
-              <li><a class="btn btn-danger" href="#">Danger</a></li>
-              <li><a class="btn btn-primary disabled" href="#">Disabled</a></li>
-              <li><a class="btn btn-link" href="#">Link</a></li>  
-              <li>
-                <!-- Single button -->
-                <div class="btn-group">
-                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+    </div>
+</section>
+
+<!-- Bootstrap 3 Buttons
+================================================== -->
+<section id="buttons">
+    <div class="page-header">
+        <h1>Bootstrap 3 Buttons</h1>
+
+        <p class="lead">With no gradients and borders, Bootstrap 3.0 buttons now have a flatter look</p>
+    </div>
+
+    <h2>Button Sizes (4)</h2>
+    <ul class="the-buttons clearfix">
+        <li><a class="btn btn-xs btn-primary" href="#">btn-xs</a></li>
+        <li><a class="btn btn-sm btn-primary" href="#">btn-sm</a></li>
+        <li><a class="btn btn-primary" href="#">btn</a></li>
+        <li><a class="btn btn-lg btn-primary" href="#">btn-lg</a></li>
+    </ul>
+
+    <h2>Small Size Fixed buttons</h2>
+    <ul class="the-buttons clearfix">
+        <li><button class="btn btn-sm btn-default btn-sm-fixed">답변 0</button></li>
+        <li><button class="btn btn-sm btn-default btn-sm-fixed">답변 99</button></li>
+        <li><button class="btn btn-sm btn-default btn-sm-fixed">답변 999</button></li>
+        <li><button class="btn btn-sm btn-default btn-sm-fixed">답변 9999</button></li>
+    </ul>
+
+    <h2>Default Size Fixed buttons</h2>
+    <ul class="the-buttons clearfix">
+        <li><button class="btn btn-default btn-fixed">답변 0</button></li>
+        <li><button class="btn btn-default btn-fixed">답변 99</button></li>
+        <li><button class="btn btn-default btn-fixed">답변 999</button></li>
+        <li><button class="btn btn-default btn-fixed">답변 9999</button></li>
+    </ul>
+
+    <h2>Large Size Fixed buttons</h2>
+    <ul class="the-buttons clearfix">
+        <li><button class="btn btn-lg btn-default btn-lg-fixed">답변 0</button></li>
+        <li><button class="btn btn-lg btn-default btn-lg-fixed">답변 99</button></li>
+        <li><button class="btn btn-lg btn-default btn-lg-fixed">답변 999</button></li>
+        <li><button class="btn btn-lg btn-default btn-lg-fixed">답변 9999</button></li>
+    </ul>
+
+    <h2>Button Classes</h2>
+    <ul class="the-buttons clearfix">
+        <li><a class="btn btn-default" href="#">Default</a></li>
+        <li><a class="btn btn-primary" href="#">Primary</a></li>
+        <li><a class="btn btn-success" href="#">Success</a></li>
+        <li><a class="btn btn-info" href="#">Info</a></li>
+        <li><a class="btn btn-warning" href="#">Warning</a></li>
+        <li><a class="btn btn-danger" href="#">Danger</a></li>
+        <li><a class="btn btn-primary disabled" href="#">Disabled</a></li>
+        <li><a class="btn btn-link" href="#">Link</a></li>
+        <li>
+            <!-- Single button -->
+            <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                     Dropdown <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu">
+                </button>
+                <ul class="dropdown-menu">
                     <li><a href="#">Action</a></li>
                     <li><a href="#">Another action</a></li>
                     <li><a href="#">Something else here</a></li>
                     <li class="divider"></li>
                     <li><a href="#">Separated link</a></li>
-                  </ul>
-                </div>
-              </li>
-              <li><a class="btn btn-info" href="#"><i class="glyphicon glyphicon-map-marker"></i> Icon</a></li>
-          </ul>
-          
-          
+                </ul>
+            </div>
+        </li>
+        <li><a class="btn btn-info" href="#"><i class="glyphicon-map-marker"></i> Icon</a></li>
+    </ul>
 
-        </section>
 
-        <!-- Icons
-        ================================================== -->
-        <section id="icons">
-          <div class="page-header">
-            <h2>Bootstrap 3 Icons</h2>
-            <p class="lead">The 2.x icons are now replaced by glyphicons in BS3.</p>
-          </div>
-          <div class="row">
-           
-            <ul class="the-icons clearfix">
-              <li><i class="glyphicon glyphicon-glass"></i> glyphicon-glass</li>
-              <li><i class="glyphicon glyphicon-music"></i> glyphicon-music</li>
-              <li><i class="glyphicon glyphicon-search"></i> glyphicon-search</li>
-              <li><i class="glyphicon glyphicon-envelope"></i> glyphicon-envelope</li>
-              <li><i class="glyphicon glyphicon-heart"></i> glyphicon-heart</li>
-              <li><i class="glyphicon glyphicon-star"></i> glyphicon-star</li>
-              <li><i class="glyphicon glyphicon-star-empty"></i> glyphicon-star-empty</li>
-              <li><i class="glyphicon glyphicon-user"></i> glyphicon-user</li>
-              <li><i class="glyphicon glyphicon-film"></i> glyphicon-film</li>
-              <li><i class="glyphicon glyphicon-th-large"></i> glyphicon-th-large</li>
-              <li><i class="glyphicon glyphicon-th"></i> glyphicon-th</li>
-              <li><i class="glyphicon glyphicon-th-list"></i> glyphicon-th-list</li>
-              <li><i class="glyphicon glyphicon-ok"></i> glyphicon-ok</li>
-              <li><i class="glyphicon glyphicon-remove"></i> glyphicon-remove</li>
-              <li><i class="glyphicon glyphicon-zoom-in"></i> glyphicon-zoom-in</li>
-              <li><i class="glyphicon glyphicon-zoom-out"></i> glyphicon-zoom-out</li>
-              <li><i class="glyphicon glyphicon-off"></i> glyphicon-off</li>
-              <li><i class="glyphicon glyphicon-signal"></i> glyphicon-signal</li>
-              <li><i class="glyphicon glyphicon-cog"></i> glyphicon-cog</li>
-              <li><i class="glyphicon glyphicon-trash"></i> glyphicon-trash</li>
-              <li><i class="glyphicon glyphicon-home"></i> glyphicon-home</li>
-              <li><i class="glyphicon glyphicon-file"></i> glyphicon-file</li>
-              <li><i class="glyphicon glyphicon-time"></i> glyphicon-time</li>
-              <li><i class="glyphicon glyphicon-road"></i> glyphicon-road</li>
-              <li><i class="glyphicon glyphicon-download-alt"></i> glyphicon-download-alt</li>
-              <li><i class="glyphicon glyphicon-download"></i> glyphicon-download</li>
-              <li><i class="glyphicon glyphicon-upload"></i> glyphicon-upload</li>
-              <li><i class="glyphicon glyphicon-inbox"></i> glyphicon-inbox</li>
+</section>
 
-              <li><i class="glyphicon glyphicon-play-circle"></i> glyphicon-play-circle</li>
-              <li><i class="glyphicon glyphicon-repeat"></i> glyphicon-repeat</li>
-              <li><i class="glyphicon glyphicon-refresh"></i> glyphicon-refresh</li>
-              <li><i class="glyphicon glyphicon-list-alt"></i> glyphicon-list-alt</li>
-              <li><i class="glyphicon glyphicon-lock"></i> glyphicon-lock</li>
-              <li><i class="glyphicon glyphicon-flag"></i> glyphicon-flag</li>
-              <li><i class="glyphicon glyphicon-headphones"></i> glyphicon-headphones</li>
-              <li><i class="glyphicon glyphicon-volume-off"></i> glyphicon-volume-off</li>
-              <li><i class="glyphicon glyphicon-volume-down"></i> glyphicon-volume-down</li>
-              <li><i class="glyphicon glyphicon-volume-up"></i> glyphicon-volume-up</li>
-              <li><i class="glyphicon glyphicon-qrcode"></i> glyphicon-qrcode</li>
-              <li><i class="glyphicon glyphicon-barcode"></i> glyphicon-barcode</li>
-              <li><i class="glyphicon glyphicon-tag"></i> glyphicon-tag</li>
-              <li><i class="glyphicon glyphicon-tags"></i> glyphicon-tags</li>
-              <li><i class="glyphicon glyphicon-book"></i> glyphicon-book</li>
-              <li><i class="glyphicon glyphicon-bookmark"></i> glyphicon-bookmark</li>
-              <li><i class="glyphicon glyphicon-print"></i> glyphicon-print</li>
-              <li><i class="glyphicon glyphicon-camera"></i> glyphicon-camera</li>
-              <li><i class="glyphicon glyphicon-font"></i> glyphicon-font</li>
-              <li><i class="glyphicon glyphicon-bold"></i> glyphicon-bold</li>
-              <li><i class="glyphicon glyphicon-italic"></i> glyphicon-italic</li>
-              <li><i class="glyphicon glyphicon-text-height"></i> glyphicon-text-height</li>
-              <li><i class="glyphicon glyphicon-text-width"></i> glyphicon-text-width</li>
-              <li><i class="glyphicon glyphicon-align-left"></i> glyphicon-align-left</li>
-              <li><i class="glyphicon glyphicon-align-center"></i> glyphicon-align-center</li>
-              <li><i class="glyphicon glyphicon-align-right"></i> glyphicon-align-right</li>
-              <li><i class="glyphicon glyphicon-align-justify"></i> glyphicon-align-justify</li>
-              <li><i class="glyphicon glyphicon-list"></i> glyphicon-list</li>
+<!-- Icons
+================================================== -->
+<section id="icons">
+    <div class="page-header">
+        <h2>Glyphicon Icons</h2>
+    </div>
+    <div class="row">
+        <ul class="the-icons clearfix">
+            <li><em class='glyphicon-glass'></em><span>glyphicon-glass</span></li><li><em class='glyphicon-leaf'></em><span>glyphicon-leaf</span></li><li><em class='glyphicon-dog'></em><span>glyphicon-dog</span></li><li><em class='glyphicon-user'></em><span>glyphicon-user</span></li><li><em class='glyphicon-girl'></em><span>glyphicon-girl</span></li><li><em class='glyphicon-car'></em><span>glyphicon-car</span></li><li><em class='glyphicon-user-add'></em><span>glyphicon-user-add</span></li><li><em class='glyphicon-user-remove'></em><span>glyphicon-user-remove</span></li><li><em class='glyphicon-film'></em><span>glyphicon-film</span></li><li><em class='glyphicon-magic'></em><span>glyphicon-magic</span></li><li><em class='glyphicon-envelope'></em><span>glyphicon-envelope</span></li><li><em class='glyphicon-camera'></em><span>glyphicon-camera</span></li><li><em class='glyphicon-heart'></em><span>glyphicon-heart</span></li><li><em class='glyphicon-beach-umbrella'></em><span>glyphicon-beach-umbrella</span></li><li><em class='glyphicon-train'></em><span>glyphicon-train</span></li><li><em class='glyphicon-print'></em><span>glyphicon-print</span></li><li><em class='glyphicon-bin'></em><span>glyphicon-bin</span></li><li><em class='glyphicon-music'></em><span>glyphicon-music</span></li><li><em class='glyphicon-note'></em><span>glyphicon-note</span></li><li><em class='glyphicon-cogwheel'></em><span>glyphicon-cogwheel</span></li><li><em class='glyphicon-home'></em><span>glyphicon-home</span></li><li><em class='glyphicon-snowflake'></em><span>glyphicon-snowflake</span></li><li><em class='glyphicon-fire'></em><span>glyphicon-fire</span></li><li><em class='glyphicon-cogwheels'></em><span>glyphicon-cogwheels</span></li><li><em class='glyphicon-parents'></em><span>glyphicon-parents</span></li><li><em class='glyphicon-binoculars'></em><span>glyphicon-binoculars</span></li><li><em class='glyphicon-road'></em><span>glyphicon-road</span></li><li><em class='glyphicon-search'></em><span>glyphicon-search</span></li><li><em class='glyphicon-cars'></em><span>glyphicon-cars</span></li><li><em class='glyphicon-notes-2'></em><span>glyphicon-notes-2</span></li><li><em class='glyphicon-pencil'></em><span>glyphicon-pencil</span></li><li><em class='glyphicon-bus'></em><span>glyphicon-bus</span></li><li><em class='glyphicon-wifi-alt'></em><span>glyphicon-wifi-alt</span></li><li><em class='glyphicon-luggage'></em><span>glyphicon-luggage</span></li><li><em class='glyphicon-old-man'></em><span>glyphicon-old-man</span></li><li><em class='glyphicon-woman'></em><span>glyphicon-woman</span></li><li><em class='glyphicon-file'></em><span>glyphicon-file</span></li><li><em class='glyphicon-credit'></em><span>glyphicon-credit</span></li><li><em class='glyphicon-airplane'></em><span>glyphicon-airplane</span></li><li><em class='glyphicon-notes'></em><span>glyphicon-notes</span></li><li><em class='glyphicon-stats'></em><span>glyphicon-stats</span></li><li><em class='glyphicon-charts'></em><span>glyphicon-charts</span></li><li><em class='glyphicon-pie-chart'></em><span>glyphicon-pie-chart</span></li><li><em class='glyphicon-group'></em><span>glyphicon-group</span></li><li><em class='glyphicon-keys'></em><span>glyphicon-keys</span></li><li><em class='glyphicon-calendar'></em><span>glyphicon-calendar</span></li><li><em class='glyphicon-router'></em><span>glyphicon-router</span></li><li><em class='glyphicon-camera-small'></em><span>glyphicon-camera-small</span></li><li><em class='glyphicon-dislikes'></em><span>glyphicon-dislikes</span></li><li><em class='glyphicon-star'></em><span>glyphicon-star</span></li><li><em class='glyphicon-link'></em><span>glyphicon-link</span></li><li><em class='glyphicon-eye-open'></em><span>glyphicon-eye-open</span></li><li><em class='glyphicon-eye-close'></em><span>glyphicon-eye-close</span></li><li><em class='glyphicon-alarm'></em><span>glyphicon-alarm</span></li><li><em class='glyphicon-clock'></em><span>glyphicon-clock</span></li><li><em class='glyphicon-stopwatch'></em><span>glyphicon-stopwatch</span></li><li><em class='glyphicon-projector'></em><span>glyphicon-projector</span></li><li><em class='glyphicon-history'></em><span>glyphicon-history</span></li><li><em class='glyphicon-truck'></em><span>glyphicon-truck</span></li><li><em class='glyphicon-cargo'></em><span>glyphicon-cargo</span></li><li><em class='glyphicon-compass'></em><span>glyphicon-compass</span></li><li><em class='glyphicon-keynote'></em><span>glyphicon-keynote</span></li><li><em class='glyphicon-attach'></em><span>glyphicon-attach</span></li><li><em class='glyphicon-power'></em><span>glyphicon-power</span></li><li><em class='glyphicon-lightbulb'></em><span>glyphicon-lightbulb</span></li><li><em class='glyphicon-tag'></em><span>glyphicon-tag</span></li><li><em class='glyphicon-tags'></em><span>glyphicon-tags</span></li><li><em class='glyphicon-cleaning'></em><span>glyphicon-cleaning</span></li><li><em class='glyphicon-ruller'></em><span>glyphicon-ruller</span></li><li><em class='glyphicon-gift'></em><span>glyphicon-gift</span></li><li><em class='glyphicon-umbrella'></em><span>glyphicon-umbrella</span></li><li><em class='glyphicon-book'></em><span>glyphicon-book</span></li><li><em class='glyphicon-bookmark'></em><span>glyphicon-bookmark</span></li><li><em class='glyphicon-signal'></em><span>glyphicon-signal</span></li><li><em class='glyphicon-cup'></em><span>glyphicon-cup</span></li><li><em class='glyphicon-stroller'></em><span>glyphicon-stroller</span></li><li><em class='glyphicon-headphones'></em><span>glyphicon-headphones</span></li><li><em class='glyphicon-headset'></em><span>glyphicon-headset</span></li><li><em class='glyphicon-warning-sign'></em><span>glyphicon-warning-sign</span></li><li><em class='glyphicon-signal'></em><span>glyphicon-signal</span></li><li><em class='glyphicon-retweet'></em><span>glyphicon-retweet</span></li><li><em class='glyphicon-refresh'></em><span>glyphicon-refresh</span></li><li><em class='glyphicon-roundabout'></em><span>glyphicon-roundabout</span></li><li><em class='glyphicon-random'></em><span>glyphicon-random</span></li><li><em class='glyphicon-heat'></em><span>glyphicon-heat</span></li><li><em class='glyphicon-repeat'></em><span>glyphicon-repeat</span></li><li><em class='glyphicon-display'></em><span>glyphicon-display</span></li><li><em class='glyphicon-log-book'></em><span>glyphicon-log-book</span></li><li><em class='glyphicon-adress-book'></em><span>glyphicon-adress-book</span></li><li><em class='glyphicon-magnet'></em><span>glyphicon-magnet</span></li><li><em class='glyphicon-table'></em><span>glyphicon-table</span></li><li><em class='glyphicon-adjust'></em><span>glyphicon-adjust</span></li><li><em class='glyphicon-tint'></em><span>glyphicon-tint</span></li><li><em class='glyphicon-crop'></em><span>glyphicon-crop</span></li><li><em class='glyphicon-vector-path-square'></em><span>glyphicon-vector-path-square</span></li><li><em class='glyphicon-vector-path-circle'></em><span>glyphicon-vector-path-circle</span></li><li><em class='glyphicon-vector-path-polygon'></em><span>glyphicon-vector-path-polygon</span></li><li><em class='glyphicon-vector-path-line'></em><span>glyphicon-vector-path-line</span></li><li><em class='glyphicon-vector-path-curve'></em><span>glyphicon-vector-path-curve</span></li><li><em class='glyphicon-vector-path-all'></em><span>glyphicon-vector-path-all</span></li><li><em class='glyphicon-font'></em><span>glyphicon-font</span></li><li><em class='glyphicon-italic'></em><span>glyphicon-italic</span></li><li><em class='glyphicon-bold'></em><span>glyphicon-bold</span></li><li><em class='glyphicon-text-underline'></em><span>glyphicon-text-underline</span></li><li><em class='glyphicon-text-strike'></em><span>glyphicon-text-strike</span></li><li><em class='glyphicon-text-height'></em><span>glyphicon-text-height</span></li><li><em class='glyphicon-text-width'></em><span>glyphicon-text-width</span></li><li><em class='glyphicon-text-resize'></em><span>glyphicon-text-resize</span></li><li><em class='glyphicon-left-indent'></em><span>glyphicon-left-indent</span></li><li><em class='glyphicon-right-indent'></em><span>glyphicon-right-indent</span></li><li><em class='glyphicon-align-left'></em><span>glyphicon-align-left</span></li><li><em class='glyphicon-align-center'></em><span>glyphicon-align-center</span></li><li><em class='glyphicon-align-right'></em><span>glyphicon-align-right</span></li><li><em class='glyphicon-justify'></em><span>glyphicon-justify</span></li><li><em class='glyphicon-list'></em><span>glyphicon-list</span></li><li><em class='glyphicon-text-smaller'></em><span>glyphicon-text-smaller</span></li><li><em class='glyphicon-text-bigger'></em><span>glyphicon-text-bigger</span></li><li><em class='glyphicon-embed'></em><span>glyphicon-embed</span></li><li><em class='glyphicon-embed-close'></em><span>glyphicon-embed-close</span></li><li><em class='glyphicon-adjust'></em><span>glyphicon-adjust</span></li><li><em class='glyphicon-message-full'></em><span>glyphicon-message-full</span></li><li><em class='glyphicon-message-empty'></em><span>glyphicon-message-empty</span></li><li><em class='glyphicon-message-in'></em><span>glyphicon-message-in</span></li><li><em class='glyphicon-message-out'></em><span>glyphicon-message-out</span></li><li><em class='glyphicon-message-plus'></em><span>glyphicon-message-plus</span></li><li><em class='glyphicon-message-minus'></em><span>glyphicon-message-minus</span></li><li><em class='glyphicon-message-ban'></em><span>glyphicon-message-ban</span></li><li><em class='glyphicon-message-flag'></em><span>glyphicon-message-flag</span></li><li><em class='glyphicon-message-lock'></em><span>glyphicon-message-lock</span></li><li><em class='glyphicon-message-new'></em><span>glyphicon-message-new</span></li><li><em class='glyphicon-inbox'></em><span>glyphicon-inbox</span></li><li><em class='glyphicon-inbox-plus'></em><span>glyphicon-inbox-plus</span></li><li><em class='glyphicon-inbox-minus'></em><span>glyphicon-inbox-minus</span></li><li><em class='glyphicon-inbox-lock'></em><span>glyphicon-inbox-lock</span></li><li><em class='glyphicon-inbox-in'></em><span>glyphicon-inbox-in</span></li><li><em class='glyphicon-inbox-out'></em><span>glyphicon-inbox-out</span></li><li><em class='glyphicon-computer-locked'></em><span>glyphicon-computer-locked</span></li><li><em class='glyphicon-computer-service'></em><span>glyphicon-computer-service</span></li><li><em class='glyphicon-computer-proces'></em><span>glyphicon-computer-proces</span></li><li><em class='glyphicon-phone'></em><span>glyphicon-phone</span></li><li><em class='glyphicon-database-lock'></em><span>glyphicon-database-lock</span></li><li><em class='glyphicon-database-plus'></em><span>glyphicon-database-plus</span></li><li><em class='glyphicon-database-minus'></em><span>glyphicon-database-minus</span></li><li><em class='glyphicon-database-ban'></em><span>glyphicon-database-ban</span></li><li><em class='glyphicon-folder-open'></em><span>glyphicon-folder-open</span></li><li><em class='glyphicon-folder-plus'></em><span>glyphicon-folder-plus</span></li><li><em class='glyphicon-folder-minus'></em><span>glyphicon-folder-minus</span></li><li><em class='glyphicon-folder-lock'></em><span>glyphicon-folder-lock</span></li><li><em class='glyphicon-folder-flag'></em><span>glyphicon-folder-flag</span></li><li><em class='glyphicon-folder-new'></em><span>glyphicon-folder-new</span></li><li><em class='glyphicon-check'></em><span>glyphicon-check</span></li><li><em class='glyphicon-edit'></em><span>glyphicon-edit</span></li><li><em class='glyphicon-new-window'></em><span>glyphicon-new-window</span></li><li><em class='glyphicon-more-windows'></em><span>glyphicon-more-windows</span></li><li><em class='glyphicon-show-big-thumbnails'></em><span>glyphicon-show-big-thumbnails</span></li><li><em class='glyphicon-show-thumbnails'></em><span>glyphicon-show-thumbnails</span></li><li><em class='glyphicon-show-thumbnails-with-lines'></em><span>glyphicon-show-thumbnails-with-lines</span></li><li><em class='glyphicon-show-lines'></em><span>glyphicon-show-lines</span></li><li><em class='glyphicon-playlist'></em><span>glyphicon-playlist</span></li><li><em class='glyphicon-picture'></em><span>glyphicon-picture</span></li><li><em class='glyphicon-imac'></em><span>glyphicon-imac</span></li><li><em class='glyphicon-macbook'></em><span>glyphicon-macbook</span></li><li><em class='glyphicon-ipad'></em><span>glyphicon-ipad</span></li><li><em class='glyphicon-iphone'></em><span>glyphicon-iphone</span></li><li><em class='glyphicon-iphone-transfer'></em><span>glyphicon-iphone-transfer</span></li><li><em class='glyphicon-iphone-exchange'></em><span>glyphicon-iphone-exchange</span></li><li><em class='glyphicon-ipod'></em><span>glyphicon-ipod</span></li><li><em class='glyphicon-ipod-shuffle'></em><span>glyphicon-ipod-shuffle</span></li><li><em class='glyphicon-ear-plugs'></em><span>glyphicon-ear-plugs</span></li><li><em class='glyphicon-albums'></em><span>glyphicon-albums</span></li><li><em class='glyphicon-step-backward'></em><span>glyphicon-step-backward</span></li><li><em class='glyphicon-fast-backward'></em><span>glyphicon-fast-backward</span></li><li><em class='glyphicon-rewind'></em><span>glyphicon-rewind</span></li><li><em class='glyphicon-play'></em><span>glyphicon-play</span></li><li><em class='glyphicon-pause'></em><span>glyphicon-pause</span></li><li><em class='glyphicon-stop'></em><span>glyphicon-stop</span></li><li><em class='glyphicon-forward'></em><span>glyphicon-forward</span></li><li><em class='glyphicon-fast-forward'></em><span>glyphicon-fast-forward</span></li><li><em class='glyphicon-step-forward'></em><span>glyphicon-step-forward</span></li><li><em class='glyphicon-eject'></em><span>glyphicon-eject</span></li><li><em class='glyphicon-facetime-video'></em><span>glyphicon-facetime-video</span></li><li><em class='glyphicon-download-alt'></em><span>glyphicon-download-alt</span></li><li><em class='glyphicon-mute'></em><span>glyphicon-mute</span></li><li><em class='glyphicon-volume-down'></em><span>glyphicon-volume-down</span></li><li><em class='glyphicon-volume-up'></em><span>glyphicon-volume-up</span></li><li><em class='glyphicon-screenshot'></em><span>glyphicon-screenshot</span></li><li><em class='glyphicon-move'></em><span>glyphicon-move</span></li><li><em class='glyphicon-more'></em><span>glyphicon-more</span></li><li><em class='glyphicon-brightness-reduce'></em><span>glyphicon-brightness-reduce</span></li><li><em class='glyphicon-brightness-increase'></em><span>glyphicon-brightness-increase</span></li><li><em class='glyphicon-circle-plus'></em><span>glyphicon-circle-plus</span></li><li><em class='glyphicon-circle-minus'></em><span>glyphicon-circle-minus</span></li><li><em class='glyphicon-circle-remove'></em><span>glyphicon-circle-remove</span></li><li><em class='glyphicon-circle-ok'></em><span>glyphicon-circle-ok</span></li><li><em class='glyphicon-circle-question-mark'></em><span>glyphicon-circle-question-mark</span></li><li><em class='glyphicon-circle-info'></em><span>glyphicon-circle-info</span></li><li><em class='glyphicon-circle-exclamation-mark'></em><span>glyphicon-circle-exclamation-mark</span></li><li><em class='glyphicon-remove'></em><span>glyphicon-remove</span></li><li><em class='glyphicon-ok'></em><span>glyphicon-ok</span></li><li><em class='glyphicon-ban'></em><span>glyphicon-ban</span></li><li><em class='glyphicon-download'></em><span>glyphicon-download</span></li><li><em class='glyphicon-upload'></em><span>glyphicon-upload</span></li><li><em class='glyphicon-shopping-cart'></em><span>glyphicon-shopping-cart</span></li><li><em class='glyphicon-lock'></em><span>glyphicon-lock</span></li><li><em class='glyphicon-unlock'></em><span>glyphicon-unlock</span></li><li><em class='glyphicon-electricity'></em><span>glyphicon-electricity</span></li><li><em class='glyphicon-ok-2'></em><span>glyphicon-ok-2</span></li><li><em class='glyphicon-remove-2'></em><span>glyphicon-remove-2</span></li><li><em class='glyphicon-cart-out'></em><span>glyphicon-cart-out</span></li><li><em class='glyphicon-cart-in'></em><span>glyphicon-cart-in</span></li><li><em class='glyphicon-left-arrow'></em><span>glyphicon-left-arrow</span></li><li><em class='glyphicon-right-arrow'></em><span>glyphicon-right-arrow</span></li><li><em class='glyphicon-down-arrow'></em><span>glyphicon-down-arrow</span></li><li><em class='glyphicon-up-arrow'></em><span>glyphicon-up-arrow</span></li><li><em class='glyphicon-resize-small'></em><span>glyphicon-resize-small</span></li><li><em class='glyphicon-resize-full'></em><span>glyphicon-resize-full</span></li><li><em class='glyphicon-circle-arrow-left'></em><span>glyphicon-circle-arrow-left</span></li><li><em class='glyphicon-circle-arrow-right'></em><span>glyphicon-circle-arrow-right</span></li><li><em class='glyphicon-circle-arrow-top'></em><span>glyphicon-circle-arrow-top</span></li><li><em class='glyphicon-circle-arrow-down'></em><span>glyphicon-circle-arrow-down</span></li><li><em class='glyphicon-play-button'></em><span>glyphicon-play-button</span></li><li><em class='glyphicon-unshare'></em><span>glyphicon-unshare</span></li><li><em class='glyphicon-share'></em><span>glyphicon-share</span></li><li><em class='glyphicon-thin-right-arrow'></em><span>glyphicon-thin-right-arrow</span></li><li><em class='glyphicon-thin-arrow-left'></em><span>glyphicon-thin-arrow-left</span></li><li><em class='glyphicon-bluetooth'></em><span>glyphicon-bluetooth</span></li><li><em class='glyphicon-euro'></em><span>glyphicon-euro</span></li><li><em class='glyphicon-usd'></em><span>glyphicon-usd</span></li><li><em class='glyphicon-bp'></em><span>glyphicon-bp</span></li><li><em class='glyphicon-retweet-2'></em><span>glyphicon-retweet-2</span></li><li><em class='glyphicon-moon'></em><span>glyphicon-moon</span></li><li><em class='glyphicon-sun'></em><span>glyphicon-sun</span></li><li><em class='glyphicon-cloud'></em><span>glyphicon-cloud</span></li><li><em class='glyphicon-direction'></em><span>glyphicon-direction</span></li><li><em class='glyphicon-brush'></em><span>glyphicon-brush</span></li><li><em class='glyphicon-pen'></em><span>glyphicon-pen</span></li><li><em class='glyphicon-zoom-in'></em><span>glyphicon-zoom-in</span></li><li><em class='glyphicon-zoom-out'></em><span>glyphicon-zoom-out</span></li><li><em class='glyphicon-pin'></em><span>glyphicon-pin</span></li><li><em class='glyphicon-riflescope'></em><span>glyphicon-riflescope</span></li><li><em class='glyphicon-rotation-lock'></em><span>glyphicon-rotation-lock</span></li><li><em class='glyphicon-flash'></em><span>glyphicon-flash</span></li><li><em class='glyphicon-google-maps'></em><span>glyphicon-google-maps</span></li><li><em class='glyphicon-anchor'></em><span>glyphicon-anchor</span></li><li><em class='glyphicon-conversation'></em><span>glyphicon-conversation</span></li><li><em class='glyphicon-chat'></em><span>glyphicon-chat</span></li><li><em class='glyphicon-male'></em><span>glyphicon-male</span></li><li><em class='glyphicon-female'></em><span>glyphicon-female</span></li><li><em class='glyphicon-asterisk'></em><span>glyphicon-asterisk</span></li><li><em class='glyphicon-divide'></em><span>glyphicon-divide</span></li><li><em class='glyphicon-snorkel-diving'></em><span>glyphicon-snorkel-diving</span></li><li><em class='glyphicon-scuba-diving'></em><span>glyphicon-scuba-diving</span></li><li><em class='glyphicon-oxygen-bottle'></em><span>glyphicon-oxygen-bottle</span></li><li><em class='glyphicon-fins'></em><span>glyphicon-fins</span></li><li><em class='glyphicon-fishes'></em><span>glyphicon-fishes</span></li><li><em class='glyphicon-boat'></em><span>glyphicon-boat</span></li><li><em class='glyphicon-delete-point'></em><span>glyphicon-delete-point</span></li><li><em class='glyphicon-sheriffs--star'></em><span>glyphicon-sheriffs--star</span></li><li><em class='glyphicon-qrcode'></em><span>glyphicon-qrcode</span></li><li><em class='glyphicon-barcode'></em><span>glyphicon-barcode</span></li><li><em class='glyphicon-pool'></em><span>glyphicon-pool</span></li><li><em class='glyphicon-buoy'></em><span>glyphicon-buoy</span></li><li><em class='glyphicon-spade'></em><span>glyphicon-spade</span></li><li><em class='glyphicon-bank'></em><span>glyphicon-bank</span></li><li><em class='glyphicon-vcard'></em><span>glyphicon-vcard</span></li><li><em class='glyphicon-electrical-plug'></em><span>glyphicon-electrical-plug</span></li><li><em class='glyphicon-flag'></em><span>glyphicon-flag</span></li><li><em class='glyphicon-credit-card'></em><span>glyphicon-credit-card</span></li><li><em class='glyphicon-keyboard-wireless'></em><span>glyphicon-keyboard-wireless</span></li><li><em class='glyphicon-keyboard-wired'></em><span>glyphicon-keyboard-wired</span></li><li><em class='glyphicon-shield'></em><span>glyphicon-shield</span></li><li><em class='glyphicon-ring'></em><span>glyphicon-ring</span></li><li><em class='glyphicon-cake'></em><span>glyphicon-cake</span></li><li><em class='glyphicon-drink'></em><span>glyphicon-drink</span></li><li><em class='glyphicon-beer'></em><span>glyphicon-beer</span></li><li><em class='glyphicon-fast-food'></em><span>glyphicon-fast-food</span></li><li><em class='glyphicon-cutlery'></em><span>glyphicon-cutlery</span></li><li><em class='glyphicon-pizza'></em><span>glyphicon-pizza</span></li><li><em class='glyphicon-birthday-cake'></em><span>glyphicon-birthday-cake</span></li><li><em class='glyphicon-tablet'></em><span>glyphicon-tablet</span></li><li><em class='glyphicon-settings'></em><span>glyphicon-settings</span></li><li><em class='glyphicon-bullets'></em><span>glyphicon-bullets</span></li><li><em class='glyphicon-cardio'></em><span>glyphicon-cardio</span></li><li><em class='glyphicon-t-shirt'></em><span>glyphicon-t-shirt</span></li><li><em class='glyphicon-pants'></em><span>glyphicon-pants</span></li><li><em class='glyphicon-sweater'></em><span>glyphicon-sweater</span></li><li><em class='glyphicon-fabric'></em><span>glyphicon-fabric</span></li><li><em class='glyphicon-leather'></em><span>glyphicon-leather</span></li><li><em class='glyphicon-scissors'></em><span>glyphicon-scissors</span></li><li><em class='glyphicon-podium'></em><span>glyphicon-podium</span></li><li><em class='glyphicon-skull'></em><span>glyphicon-skull</span></li><li><em class='glyphicon-celebration'></em><span>glyphicon-celebration</span></li><li><em class='glyphicon-tea-kettle'></em><span>glyphicon-tea-kettle</span></li><li><em class='glyphicon-french-press'></em><span>glyphicon-french-press</span></li><li><em class='glyphicon-coffe-cup'></em><span>glyphicon-coffe-cup</span></li><li><em class='glyphicon-pot'></em><span>glyphicon-pot</span></li><li><em class='glyphicon-grater'></em><span>glyphicon-grater</span></li><li><em class='glyphicon-kettle'></em><span>glyphicon-kettle</span></li><li><em class='glyphicon-hospital'></em><span>glyphicon-hospital</span></li><li><em class='glyphicon-hospital-h'></em><span>glyphicon-hospital-h</span></li><li><em class='glyphicon-microphone'></em><span>glyphicon-microphone</span></li><li><em class='glyphicon-webcam'></em><span>glyphicon-webcam</span></li><li><em class='glyphicon-temple-christianity-church'></em><span>glyphicon-temple-christianity-church</span></li><li><em class='glyphicon-temple-islam'></em><span>glyphicon-temple-islam</span></li><li><em class='glyphicon-temple-hindu'></em><span>glyphicon-temple-hindu</span></li><li><em class='glyphicon-temple-buddhist'></em><span>glyphicon-temple-buddhist</span></li><li><em class='glyphicon-electrical-socket-eu'></em><span>glyphicon-electrical-socket-eu</span></li><li><em class='glyphicon-electrical-socket-us'></em><span>glyphicon-electrical-socket-us</span></li><li><em class='glyphicon-bomb'></em><span>glyphicon-bomb</span></li><li><em class='glyphicon-comments'></em><span>glyphicon-comments</span></li><li><em class='glyphicon-flower'></em><span>glyphicon-flower</span></li><li><em class='glyphicon-baseball'></em><span>glyphicon-baseball</span></li><li><em class='glyphicon-rugby'></em><span>glyphicon-rugby</span></li><li><em class='glyphicon-ax'></em><span>glyphicon-ax</span></li><li><em class='glyphicon-table-tennis'></em><span>glyphicon-table-tennis</span></li><li><em class='glyphicon-bowling'></em><span>glyphicon-bowling</span></li><li><em class='glyphicon-tree-conifer'></em><span>glyphicon-tree-conifer</span></li><li><em class='glyphicon-tree-deciduous'></em><span>glyphicon-tree-deciduous</span></li><li><em class='glyphicon-more-items'></em><span>glyphicon-more-items</span></li><li><em class='glyphicon-sort'></em><span>glyphicon-sort</span></li><li><em class='glyphicon-filter'></em><span>glyphicon-filter</span></li><li><em class='glyphicon-gamepad'></em><span>glyphicon-gamepad</span></li><li><em class='glyphicon-playing-dices'></em><span>glyphicon-playing-dices</span></li><li><em class='glyphicon-calculator'></em><span>glyphicon-calculator</span></li><li><em class='glyphicon-tie'></em><span>glyphicon-tie</span></li><li><em class='glyphicon-wallet'></em><span>glyphicon-wallet</span></li><li><em class='glyphicon-share'></em><span>glyphicon-share</span></li><li><em class='glyphicon-sampler'></em><span>glyphicon-sampler</span></li><li><em class='glyphicon-piano'></em><span>glyphicon-piano</span></li><li><em class='glyphicon-web-browser'></em><span>glyphicon-web-browser</span></li><li><em class='glyphicon-blog'></em><span>glyphicon-blog</span></li><li><em class='glyphicon-dashboard'></em><span>glyphicon-dashboard</span></li><li><em class='glyphicon-certificate'></em><span>glyphicon-certificate</span></li><li><em class='glyphicon-bell'></em><span>glyphicon-bell</span></li><li><em class='glyphicon-candle'></em><span>glyphicon-candle</span></li><li><em class='glyphicon-pin-classic'></em><span>glyphicon-pin-classic</span></li><li><em class='glyphicon-iphone-shake'></em><span>glyphicon-iphone-shake</span></li><li><em class='glyphicon-pin-flag'></em><span>glyphicon-pin-flag</span></li><li><em class='glyphicon-turtle'></em><span>glyphicon-turtle</span></li><li><em class='glyphicon-rabbit'></em><span>glyphicon-rabbit</span></li><li><em class='glyphicon-globe'></em><span>glyphicon-globe</span></li><li><em class='glyphicon-briefcase'></em><span>glyphicon-briefcase</span></li><li><em class='glyphicon-hdd'></em><span>glyphicon-hdd</span></li><li><em class='glyphicon-thumbs-up'></em><span>glyphicon-thumbs-up</span></li><li><em class='glyphicon-thumbs-down'></em><span>glyphicon-thumbs-down</span></li><li><em class='glyphicon-hand-right'></em><span>glyphicon-hand-right</span></li><li><em class='glyphicon-hand-left'></em><span>glyphicon-hand-left</span></li><li><em class='glyphicon-hand-up'></em><span>glyphicon-hand-up</span></li><li><em class='glyphicon-hand-down'></em><span>glyphicon-hand-down</span></li><li><em class='glyphicon-fullscreen'></em><span>glyphicon-fullscreen</span></li><li><em class='glyphicon-shopping-bag'></em><span>glyphicon-shopping-bag</span></li><li><em class='glyphicon-book-open'></em><span>glyphicon-book-open</span></li><li><em class='glyphicon-nameplate'></em><span>glyphicon-nameplate</span></li><li><em class='glyphicon-nameplate-alt'></em><span>glyphicon-nameplate-alt</span></li><li><em class='glyphicon-vases'></em><span>glyphicon-vases</span></li><li><em class='glyphicon-announcement'></em><span>glyphicon-announcement</span></li><li><em class='glyphicon-dumbbell'></em><span>glyphicon-dumbbell</span></li><li><em class='glyphicon-suitcase'></em><span>glyphicon-suitcase</span></li><li><em class='glyphicon-file-import'></em><span>glyphicon-file-import</span></li><li><em class='glyphicon-file-export'></em><span>glyphicon-file-export</span></li><li><em class='glyphicon-pinterest'></em><span>glyphicon-pinterest</span></li><li><em class='glyphicon-dropbox'></em><span>glyphicon-dropbox</span></li><li><em class='glyphicon-google-alt'></em><span>glyphicon-google-alt</span></li><li><em class='glyphicon-jolicloud'></em><span>glyphicon-jolicloud</span></li><li><em class='glyphicon-yahoo'></em><span>glyphicon-yahoo</span></li><li><em class='glyphicon-blogger'></em><span>glyphicon-blogger</span></li><li><em class='glyphicon-picasa'></em><span>glyphicon-picasa</span></li><li><em class='glyphicon-amazon'></em><span>glyphicon-amazon</span></li><li><em class='glyphicon-tumblr'></em><span>glyphicon-tumblr</span></li><li><em class='glyphicon-wordpress'></em><span>glyphicon-wordpress</span></li><li><em class='glyphicon-instapaper'></em><span>glyphicon-instapaper</span></li><li><em class='glyphicon-evernote'></em><span>glyphicon-evernote</span></li><li><em class='glyphicon-xing'></em><span>glyphicon-xing</span></li><li><em class='glyphicon-zootool'></em><span>glyphicon-zootool</span></li><li><em class='glyphicon-dribbble'></em><span>glyphicon-dribbble</span></li><li><em class='glyphicon-deviantart'></em><span>glyphicon-deviantart</span></li><li><em class='glyphicon-read-it-later'></em><span>glyphicon-read-it-later</span></li><li><em class='glyphicon-linked-in'></em><span>glyphicon-linked-in</span></li><li><em class='glyphicon-forrst'></em><span>glyphicon-forrst</span></li><li><em class='glyphicon-pinboard'></em><span>glyphicon-pinboard</span></li><li><em class='glyphicon-behance'></em><span>glyphicon-behance</span></li><li><em class='glyphicon-github'></em><span>glyphicon-github</span></li><li><em class='glyphicon-youtube'></em><span>glyphicon-youtube</span></li><li><em class='glyphicon-skitch'></em><span>glyphicon-skitch</span></li><li><em class='glyphicon-4square'></em><span>glyphicon-4square</span></li><li><em class='glyphicon-quora'></em><span>glyphicon-quora</span></li><li><em class='glyphicon-google-plus'></em><span>glyphicon-google-plus</span></li><li><em class='glyphicon-spootify'></em><span>glyphicon-spootify</span></li><li><em class='glyphicon-stumbleupon'></em><span>glyphicon-stumbleupon</span></li><li><em class='glyphicon-readability'></em><span>glyphicon-readability</span></li><li><em class='glyphicon-facebook'></em><span>glyphicon-facebook</span></li><li><em class='glyphicon-twitter-t'></em><span>glyphicon-twitter-t</span></li><li><em class='glyphicon-twitter'></em><span>glyphicon-twitter</span></li><li><em class='glyphicon-buzz'></em><span>glyphicon-buzz</span></li><li><em class='glyphicon-vimeo'></em><span>glyphicon-vimeo</span></li><li><em class='glyphicon-flickr'></em><span>glyphicon-flickr</span></li><li><em class='glyphicon-last-fm'></em><span>glyphicon-last-fm</span></li><li><em class='glyphicon-rss'></em><span>glyphicon-rss</span></li><li><em class='glyphicon-skype'></em><span>glyphicon-skype</span></li><li><em class='glyphicon-e-mail'></em><span>glyphicon-e-mail</span></li>
+        </ul>
+    </div>
+</section>
 
-              <li><i class="glyphicon glyphicon-indent-left"></i> glyphicon-indent-left</li>
-              <li><i class="glyphicon glyphicon-indent-right"></i> glyphicon-indent-right</li>
-              <li><i class="glyphicon glyphicon-facetime-video"></i> glyphicon-facetime-video</li>
-              <li><i class="glyphicon glyphicon-picture"></i> glyphicon-picture</li>
-              <li><i class="glyphicon glyphicon-pencil"></i> glyphicon-pencil</li>
-              <li><i class="glyphicon glyphicon-map-marker"></i> glyphicon-map-marker</li>
-              <li><i class="glyphicon glyphicon-adjust"></i> glyphicon-adjust</li>
-              <li><i class="glyphicon glyphicon-tint"></i> glyphicon-tint</li>
-              <li><i class="glyphicon glyphicon-edit"></i> glyphicon-edit</li>
-              <li><i class="glyphicon glyphicon-share"></i> glyphicon-share</li>
-              <li><i class="glyphicon glyphicon-check"></i> glyphicon-check</li>
-              <li><i class="glyphicon glyphicon-move"></i> glyphicon-move</li>
-              <li><i class="glyphicon glyphicon-step-backward"></i> glyphicon-step-backward</li>
-              <li><i class="glyphicon glyphicon-fast-backward"></i> glyphicon-fast-backward</li>
-              <li><i class="glyphicon glyphicon-backward"></i> glyphicon-backward</li>
-              <li><i class="glyphicon glyphicon-play"></i> glyphicon-play</li>
-              <li><i class="glyphicon glyphicon-pause"></i> glyphicon-pause</li>
-              <li><i class="glyphicon glyphicon-stop"></i> glyphicon-stop</li>
-              <li><i class="glyphicon glyphicon-forward"></i> glyphicon-forward</li>
-              <li><i class="glyphicon glyphicon-fast-forward"></i> glyphicon-fast-forward</li>
-              <li><i class="glyphicon glyphicon-step-forward"></i> glyphicon-step-forward</li>
-              <li><i class="glyphicon glyphicon-eject"></i> glyphicon-eject</li>
-              <li><i class="glyphicon glyphicon-chevron-left"></i> glyphicon-chevron-left</li>
-              <li><i class="glyphicon glyphicon-chevron-right"></i> glyphicon-chevron-right</li>
-              <li><i class="glyphicon glyphicon-plus-sign"></i> glyphicon-plus-sign</li>
-              <li><i class="glyphicon glyphicon-minus-sign"></i> glyphicon-minus-sign</li>
-              <li><i class="glyphicon glyphicon-remove-sign"></i> glyphicon-remove-sign</li>
-              <li><i class="glyphicon glyphicon-ok-sign"></i> glyphicon-ok-sign</li>
 
-              <li><i class="glyphicon glyphicon-question-sign"></i> glyphicon-question-sign</li>
-              <li><i class="glyphicon glyphicon-info-sign"></i> glyphicon-info-sign</li>
-              <li><i class="glyphicon glyphicon-screenshot"></i> glyphicon-screenshot</li>
-              <li><i class="glyphicon glyphicon-remove-circle"></i> glyphicon-remove-circle</li>
-              <li><i class="glyphicon glyphicon-ok-circle"></i> glyphicon-ok-circle</li>
-              <li><i class="glyphicon glyphicon-ban-circle"></i> glyphicon-ban-circle</li>
-              <li><i class="glyphicon glyphicon-arrow-left"></i> glyphicon-arrow-left</li>
-              <li><i class="glyphicon glyphicon-arrow-right"></i> glyphicon-arrow-right</li>
-              <li><i class="glyphicon glyphicon-arrow-up"></i> glyphicon-arrow-up</li>
-              <li><i class="glyphicon glyphicon-arrow-down"></i> glyphicon-arrow-down</li>
-              <li><i class="glyphicon glyphicon-share-alt"></i> glyphicon-share-alt</li>
-              <li><i class="glyphicon glyphicon-resize-full"></i> glyphicon-resize-full</li>
-              <li><i class="glyphicon glyphicon-resize-small"></i> glyphicon-resize-small</li>
-              <li><i class="glyphicon glyphicon-plus"></i> glyphicon-plus</li>
-              <li><i class="glyphicon glyphicon-minus"></i> glyphicon-minus</li>
-              <li><i class="glyphicon glyphicon-asterisk"></i> glyphicon-asterisk</li>
-              <li><i class="glyphicon glyphicon-exclamation-sign"></i> glyphicon-exclamation-sign</li>
-              <li><i class="glyphicon glyphicon-gift"></i> glyphicon-gift</li>
-              <li><i class="glyphicon glyphicon-leaf"></i> glyphicon-leaf</li>
-              <li><i class="glyphicon glyphicon-fire"></i> glyphicon-fire</li>
-              <li><i class="glyphicon glyphicon-eye-open"></i> glyphicon-eye-open</li>
-              <li><i class="glyphicon glyphicon-eye-close"></i> glyphicon-eye-close</li>
-              <li><i class="glyphicon glyphicon-warning-sign"></i> glyphicon-warning-sign</li>
-              <li><i class="glyphicon glyphicon-plane"></i> glyphicon-plane</li>
-              <li><i class="glyphicon glyphicon-calendar"></i> glyphicon-calendar</li>
-              <li><i class="glyphicon glyphicon-random"></i> glyphicon-random</li>
-              <li><i class="glyphicon glyphicon-comment"></i> glyphicon-comment</li>
-              <li><i class="glyphicon glyphicon-magnet"></i> glyphicon-magnet</li>
+<!-- Forms
+================================================== -->
+<section id="forms">
+    <div class="page-header">
+        <h2>Forms</h2>
+    </div>
 
-              <li><i class="glyphicon glyphicon-chevron-up"></i> glyphicon-chevron-up</li>
-              <li><i class="glyphicon glyphicon-chevron-down"></i> glyphicon-chevron-down</li>
-              <li><i class="glyphicon glyphicon-retweet"></i> glyphicon-retweet</li>
-              <li><i class="glyphicon glyphicon-shopping-cart"></i> glyphicon-shopping-cart</li>
-              <li><i class="glyphicon glyphicon-folder-close"></i> glyphicon-folder-close</li>
-              <li><i class="glyphicon glyphicon-folder-open"></i> glyphicon-folder-open</li>
-              <li><i class="glyphicon glyphicon-resize-vertical"></i> glyphicon-resize-vertical</li>
-              <li><i class="glyphicon glyphicon-resize-horizontal"></i> glyphicon-resize-horizontal</li>
-              <li><i class="glyphicon glyphicon-hdd"></i> glyphicon-hdd</li>
-              <li><i class="glyphicon glyphicon-bullhorn"></i> glyphicon-bullhorn</li>
-              <li><i class="glyphicon glyphicon-bell"></i> glyphicon-bell</li>
-              <li><i class="glyphicon glyphicon-certificate"></i> glyphicon-certificate</li>
-              <li><i class="glyphicon glyphicon-thumbs-up"></i> glyphicon-thumbs-up</li>
-              <li><i class="glyphicon glyphicon-thumbs-down"></i> glyphicon-thumbs-down</li>
-              <li><i class="glyphicon glyphicon-hand-right"></i> glyphicon-hand-right</li>
-              <li><i class="glyphicon glyphicon-hand-left"></i> glyphicon-hand-left</li>
-              <li><i class="glyphicon glyphicon-hand-up"></i> glyphicon-hand-up</li>
-              <li><i class="glyphicon glyphicon-hand-down"></i> glyphicon-hand-down</li>
-              <li><i class="glyphicon glyphicon-circle-arrow-right"></i> glyphicon-circle-arrow-right</li>
-              <li><i class="glyphicon glyphicon-circle-arrow-left"></i> glyphicon-circle-arrow-left</li>
-              <li><i class="glyphicon glyphicon-circle-arrow-up"></i> glyphicon-circle-arrow-up</li>
-              <li><i class="glyphicon glyphicon-circle-arrow-down"></i> glyphicon-circle-arrow-down</li>
-              <li><i class="glyphicon glyphicon-globe"></i> glyphicon-globe</li>
-              <li><i class="glyphicon glyphicon-wrench"></i> glyphicon-wrench</li>
-              <li><i class="glyphicon glyphicon-tasks"></i> glyphicon-tasks</li>
-              <li><i class="glyphicon glyphicon-filter"></i> glyphicon-filter</li>
-              <li><i class="glyphicon glyphicon-briefcase"></i> glyphicon-briefcase</li>
-              <li><i class="glyphicon glyphicon-fullscreen"></i> glyphicon-fullscreen</li>
+    <div class="row">
+        <div class="col-lg-8">
+            <h3>Form Inline</h3>
 
-              <li><i class="glyphicon glyphicon-dashboard"></i> glyphicon-dashboard</li>
-              <li><i class="glyphicon glyphicon-paperclip"></i> glyphicon-paperclip</li>
-              <li><i class="glyphicon glyphicon-heart-empty"></i> glyphicon-heart-empty</li>
-              <li><i class="glyphicon glyphicon-link"></i> glyphicon-link</li>
-              <li><i class="glyphicon glyphicon-phone"></i> glyphicon-phone</li>
-              <li><i class="glyphicon glyphicon-pushpin"></i> glyphicon-pushpin</li>
-              <li><i class="glyphicon glyphicon-euro"></i> glyphicon-euro</li>
-              <li><i class="glyphicon glyphicon-usd"></i> glyphicon-usd</li>
-              <li><i class="glyphicon glyphicon-gbp"></i> glyphicon-gbp</li>
-              <li><i class="glyphicon glyphicon-sort"></i> glyphicon-sort</li>
-              <li><i class="glyphicon glyphicon-sort-by-alphabet"></i> glyphicon-sort-by-alphabet</li>
-              <li><i class="glyphicon glyphicon-sort-by-alphabet-alt"></i> glyphicon-sort-by-alphabet-alt</li>
-              <li><i class="glyphicon glyphicon-sort-by-order"></i> glyphicon-sort-by-order</li>
-              <li><i class="glyphicon glyphicon-sort-by-order-alt"></i> glyphicon-sort-by-order-alt</li>
-              <li><i class="glyphicon glyphicon-sort-by-attributes"></i> glyphicon-sort-by-attributes</li>
-              <li><i class="glyphicon glyphicon-sort-by-attributes-alt"></i> glyphicon-sort-by-attributes-alt</li>
-              <li><i class="glyphicon glyphicon-unchecked"></i> glyphicon-unchecked</li>
-              <li><i class="glyphicon glyphicon-expand"></i> glyphicon-expand</li>
-              <li><i class="glyphicon glyphicon-collapse"></i> glyphicon-collapse</li>
-              <li><i class="glyphicon glyphicon-collapse-top"></i> glyphicon-collapse-top</li>
-            </ul>
-          </div>
-        </section>
-          
-
-        <!-- Forms
-        ================================================== -->
-        <section id="forms">
-          <div class="page-header">
-            <h2>Forms</h2>
-          </div>
-
-          <div class="row">
-            <div class="col-lg-8">
-              <h3>Form Inline</h3>
-              
-              <form class="form-inline well">
+            <form class="form-inline well">
                 <div class="form-group">
                     <input type="text" class="form-control" placeholder="Email">
                 </div>
                 <div class="form-group">
-                  <input type="password" class="form-control" placeholder="Password">
+                    <input type="password" class="form-control" placeholder="Password">
                 </div>
                 <div class="checkbox">
-                  <label>
-                    <input type="checkbox"> Remember me
-                  </label>
+                    <label>
+                        <input type="checkbox"> Remember me
+                    </label>
                 </div>
                 <button type="submit" class="btn btn-default">Sign in</button>
-              </form>
+            </form>
 
-               <h3>Form Horizontal</h3>
-              <form class="form-horizontal well">
+            <h3>Form Horizontal</h3>
+
+            <form class="form-horizontal well">
                 <fieldset>
-                  <legend>Bootstrap 3 Inputs</legend>
-                  <div class="control-group">
-                    <label class="control-label" for="input01">Text input</label>
-                    <div class="controls">
-                      <input type="text" class="form-control input-xlarge" id="input01">
-                      <p class="help-block">In addition to freeform text, any HTML5 text-based input appears like so.</p>
+                    <legend>Bootstrap 3 Inputs</legend>
+                    <div class="control-group">
+                        <label class="control-label" for="input01">Text input</label>
+
+                        <div class="controls">
+                            <input type="text" class="form-control input-xlarge" id="input01">
+
+                            <p class="help-block">In addition to freeform text, any HTML5 text-based input appears like
+                                so.</p>
+                        </div>
                     </div>
-                  </div>
-                  <div class="control-group">
-                    <label class="control-label" for="optionsCheckbox">Checkbox</label>
-                    <div class="controls">
-                      <label class="checkbox">
-                        <input type="checkbox" id="optionsCheckbox" value="option1">
-                        Option one is this and that—be sure to include why it's great
-                      </label>
+                    <div class="control-group">
+                        <label class="control-label" for="optionsCheckbox">Checkbox</label>
+
+                        <div class="controls">
+                            <label class="checkbox">
+                                <input type="checkbox" id="optionsCheckbox" value="option1">
+                                Option one is this and that—be sure to include why it's great
+                            </label>
+                        </div>
                     </div>
-                  </div>
-                  <div class="control-group">
-                    <label class="control-label" for="select01">Select list</label>
-                    <div class="controls">
-                      <select id="select01" class="form-control">
-                        <option>something</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                      </select>
+                    <div class="control-group">
+                        <label class="control-label" for="select01">Select list</label>
+
+                        <div class="controls">
+                            <select id="select01" class="form-control">
+                                <option>something</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
                     </div>
-                  </div>
-                  <div class="control-group">
-                    <label class="control-label" for="multiSelect">Multicon-select</label>
-                    <div class="controls">
-                      <select multiple="multiple" id="multiSelect" class="form-control">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                      </select>
+                    <div class="control-group">
+                        <label class="control-label" for="multiSelect">Multicon-select</label>
+
+                        <div class="controls">
+                            <select multiple="multiple" id="multiSelect" class="form-control">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
                     </div>
-                  </div>
-                  <div class="control-group">
-                    <label class="control-label" for="fileInput">File input</label>
-                    <div class="controls">
-                      <input class="form-control input-file" id="fileInput" type="file">
+                    <div class="control-group">
+                        <label class="control-label" for="fileInput">File input</label>
+
+                        <div class="controls">
+                            <input class="form-control input-file" id="fileInput" type="file">
+                        </div>
                     </div>
-                  </div>
-                  <div class="control-group">
-                    <label class="control-label" for="textarea">Textarea</label>
-                    <div class="controls">
-                      <textarea class="form-control input-xlarge" id="textarea" rows="3"></textarea>
+                    <div class="control-group">
+                        <label class="control-label" for="textarea">Textarea</label>
+
+                        <div class="controls">
+                            <textarea class="form-control input-xlarge" id="textarea" rows="3"></textarea>
+                        </div>
                     </div>
-                  </div>
-                  <div class="control-group">
-                    <label class="control-label" for="optionsCheckbox2">Disabled checkbox</label>
-                    <div class="controls">
-                      <label class="checkbox">
-                        <input type="checkbox" id="optionsCheckbox2" value="option1" disabled="">
-                        This is a disabled checkbox
-                      </label>
+                    <div class="control-group">
+                        <label class="control-label" for="optionsCheckbox2">Disabled checkbox</label>
+
+                        <div class="controls">
+                            <label class="checkbox">
+                                <input type="checkbox" id="optionsCheckbox2" value="option1" disabled="">
+                                This is a disabled checkbox
+                            </label>
+                        </div>
                     </div>
-                  </div>
-                  <div class="control-group warning">
-                    <label class="control-label" for="inputWarning">Input with warning</label>
-                    <div class="controls">
-                      <input type="text" id="inputWarning" class="form-control">
-                      <span class="help-inline">Something may have gone wrong</span>
+                    <div class="control-group warning">
+                        <label class="control-label" for="inputWarning">Input with warning</label>
+
+                        <div class="controls">
+                            <input type="text" id="inputWarning" class="form-control">
+                            <span class="help-inline">Something may have gone wrong</span>
+                        </div>
                     </div>
-                  </div>
-                 <hr>
-                  <div class="form-actions">
-                    <button type="submit" class="btn btn-primary">Save changes</button>
-                    <button type="reset" class="btn">Cancel</button>
-                  </div>
+                    <hr>
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Save changes</button>
+                        <button type="reset" class="btn">Cancel</button>
+                    </div>
                 </fieldset>
-              </form>
-            </div>
-          </div>
+            </form>
+        </div>
+    </div>
 
-        </section>
+</section>
 
-        <!-- Tables
-        ================================================== -->
-        <section id="tables">
-          <div class="page-header">
-            <h1>Tables</h1>
-          </div>
-          
-          <table class="table table-bordered table-striped table-hover">
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Username</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
+<!-- Tables
+================================================== -->
+<section id="tables">
+    <div class="page-header">
+        <h1>Tables</h1>
+    </div>
 
-
-        <!-- Miscellaneous
-        ================================================== -->
-        <section id="miscellaneous">
-          <div class="page-header">
-            <h1>Miscellaneous</h1>
-          </div>
-
-          <div class="row">
-            <div class="col-lg-4">
-
-              <h3 id="breadcrumbs">Breadcrumbs</h3>
-              <ul class="breadcrumb">
-                <li><a href="#">Home</a> <span class="divider"></span></li>
-                <li><a href="#">Library</a> <span class="divider"></span></li>
-                <li class="active">Data</li>
-              </ul>
-            </div>
-            <div class="col-lg-4">
-              <h3 id="pagination">Pagination</h3>
-                <ul class="pagination">
-                  <li><a href="#">«</a></li>
-                  <li><a href="#">1</a></li>
-                  <li><a href="#">2</a></li>
-                  <li><a href="#">3</a></li>
-                  <li><a href="#">4</a></li>
-                  <li><a href="#">5</a></li>
-                  <li><a href="#">»</a></li>
-                </ul>
-            </div>
-            
-            <div class="col-lg-4">
-              <h3 id="pager">Pagers</h3>
-                
-                <ul class="pager">
-                  <li><a href="#">Previous</a></li>
-                  <li><a href="#">Next</a></li>
-                </ul>
-                
-                <ul class="pager">
-                  <li class="previous disabled"><a href="#">? Older</a></li>
-                  <li class="next"><a href="#">Newer ?</a></li>
-                </ul>
-            </div>
-          </div>
+    <table class="table table-bordered table-striped table-hover">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Username</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+        </tr>
+        </tbody>
+    </table>
+</section>
 
 
-          <!-- Navs
-          ================================================== -->
+<!-- Miscellaneous
+================================================== -->
+<section id="miscellaneous">
+<div class="page-header">
+    <h1>Miscellaneous</h1>
+</div>
 
-          <div class="row">
-            <div class="col-lg-4">
+<div class="row">
+    <div class="col-lg-4">
 
-              <h3 id="tabs">Tabs</h3>
-              <ul class="nav nav-tabs">
-                <li class="active"><a href="#A" data-toggle="tab">Section 1</a></li>
-                <li><a href="#B" data-toggle="tab">Section 2</a></li>
-                <li><a href="#C" data-toggle="tab">Section 3</a></li>
-              </ul>
-              <div class="tabbable">
-                <div class="tab-content">
-                  <div class="tab-pane active" id="A">
+        <h3 id="breadcrumbs">Breadcrumbs</h3>
+        <ul class="breadcrumb">
+            <li><a href="#">Home</a> <span class="divider"></span></li>
+            <li><a href="#">Library</a> <span class="divider"></span></li>
+            <li class="active">Data</li>
+        </ul>
+    </div>
+    <div class="col-lg-4">
+        <h3 id="pagination">Pagination</h3>
+        <ul class="pagination">
+            <li><a href="#">«</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">»</a></li>
+        </ul>
+    </div>
+
+    <div class="col-lg-4">
+        <h3 id="pager">Pagers</h3>
+
+        <ul class="pager">
+            <li><a href="#">Previous</a></li>
+            <li><a href="#">Next</a></li>
+        </ul>
+
+        <ul class="pager">
+            <li class="previous disabled"><a href="#">? Older</a></li>
+            <li class="next"><a href="#">Newer ?</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<!-- Navs
+================================================== -->
+
+<div class="row">
+    <div class="col-lg-4">
+
+        <h3 id="tabs">Tabs</h3>
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#A" data-toggle="tab">Section 1</a></li>
+            <li><a href="#B" data-toggle="tab">Section 2</a></li>
+            <li><a href="#C" data-toggle="tab">Section 3</a></li>
+        </ul>
+        <div class="tabbable">
+            <div class="tab-content">
+                <div class="tab-pane active" id="A">
                     <p></p>
+
                     <p>I'm in Section A.</p>
-                  </div>
-                  <div class="tab-pane" id="B">
-                    <p>Howdy, I'm in Section B.</p>
-                  </div>
-                  <div class="tab-pane" id="C">
-                    <p>What up girl, this is Section C.</p>
-                  </div>
                 </div>
-              </div> <!-- /tabbable -->
-              
+                <div class="tab-pane" id="B">
+                    <p>Howdy, I'm in Section B.</p>
+                </div>
+                <div class="tab-pane" id="C">
+                    <p>What up girl, this is Section C.</p>
+                </div>
             </div>
-            <div class="col-lg-4">
-              <h3 id="pills">Pills</h3>
-              <ul class="nav nav-pills">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Profile</a></li>
-                <li class="dropdown">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Dropdown <b class="caret"></b></a>
-                  <ul class="dropdown-menu">
+        </div>
+        <!-- /tabbable -->
+
+    </div>
+    <div class="col-lg-4">
+        <h3 id="pills">Pills</h3>
+        <ul class="nav nav-pills">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Profile</a></li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Dropdown <b class="caret"></b></a>
+                <ul class="dropdown-menu">
                     <li><a href="#">Action</a></li>
                     <li><a href="#">Another action</a></li>
                     <li><a href="#">Something else here</a></li>
                     <li class="divider"></li>
                     <li><a href="#">Separated link</a></li>
-                  </ul>
-                </li>
-                <li class="disabled"><a href="#">Disabled link</a></li>
-              </ul>
-            </div>
-            
-            <div class="col-lg-4">
-              
-              <h3 id="list">Nav Lists</h3>
-                
-              <div class="well" style="padding: 8px 0;">
-                <ul class="nav nav-list">
-                  <li class="active"><a href="#">Home</a></li>
-                  <li><a href="#">Library</a></li>
-                  <li><a href="#">Applications</a></li>
-                  <li class="divider"></li>
-                  <li><a href="#">Help</a></li>
                 </ul>
-              </div>
-            </div>
-          </div>
+            </li>
+            <li class="disabled"><a href="#">Disabled link</a></li>
+        </ul>
+    </div>
+
+    <div class="col-lg-4">
+
+        <h3 id="list">Nav Lists</h3>
+
+        <div class="well" style="padding: 8px 0;">
+            <ul class="nav nav-list">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Library</a></li>
+                <li><a href="#">Applications</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
 
 
-        <!-- Labels
-        ================================================== -->
+<!-- Labels
+================================================== -->
 
-          <div class="row">
-            <div class="col-lg-4">
-              <h3 id="labels">Labels</h3>
-              <span class="label label-default">Default</span>
-              <span class="label label-success">Success</span>
-              <span class="label label-warning">Warning</span>
-              <span class="label label-danger">Danger</span>
-              <span class="label label-info">Info</span>
-            </div>
-            <div class="col-lg-4">
-              <h3 id="badges">Badges</h3>
-              <span class="badge">Default</span>
-            </div>
-            <div class="col-lg-4">
-              <h3 id="badges">Progress bars</h3>
-              <div class="progress">
-                <div class="progress-bar progress-bar-info" style="width: 20%"></div>
-              </div>
-              <div class="progress">
-                <div class="progress-bar progress-bar-success" style="width: 40%"></div>
-              </div>
-              <div class="progress">
-                <div class="progress-bar progress-bar-warning" style="width: 60%"></div>
-              </div>
-              <div class="progress">
-                <div class="progress-bar progress-bar-danger" style="width: 80%"></div>
-              </div>
-              
-            </div>
-            
-            
-            </div>
-          <br>
-          
-          
-        <!-- Panel & ListGroups
-        ================================================== -->
-        <hr>
+<div class="row">
+    <div class="col-lg-4">
+        <h3 id="labels">Labels</h3>
+        <span class="label label-default">Default</span>
+        <span class="label label-success">Success</span>
+        <span class="label label-warning">Warning</span>
+        <span class="label label-danger">Danger</span>
+        <span class="label label-info">Info</span>
+    </div>
+    <div class="col-lg-4">
+        <h3>Badges</h3>
+        <span class="badge">Default</span>
+    </div>
+    <div class="col-lg-4">
+        <h3>Progress bars</h3>
 
-          <h2 id="panels">Bootstrap 3 Panels</h2>
-          
-          <div class="row">
-            <div class="col-lg-4">
-              <div class="panel panel-default">
-              <div class="panel-heading">Panel heading</div>
-              <div class="panel-body">Hello. This is the Panel content.</div>
-            </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="panel panel-primary">
-              <div class="panel-heading">Panel primary</div>
-              <div class="panel-body">Panels are new in BS3.</div>
-            </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="panel panel-success">
-              <div class="panel-heading">Panel success</div>
-              <div class="panel-body">You can use contextual classes.</div>
-            </div>
-            </div>
-          </div>
-          
-
-        <!-- ListGroups
-        ================================================== -->
-        <hr>
-
-          <h2 id="panels">Bootstrap 3 List Groups</h2>
-          
-          <div class="row">
-            <div class="col-lg-4">
-              <ul class="list-group">
-                <li class="list-group-item">List item 1</li>
-                <li class="list-group-item">List item 2</li>
-                <li class="list-group-item">Mobile-first</li>
-                <li class="list-group-item">Responsive</li>
-                <li class="list-group-item">Lightweight</li>
-              </ul>
-            </div>
-            <div class="col-lg-4">
-              <ul class="list-group">
-                <li class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span> List item 1</li>
-                <li class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span> List item 2</li>
-                <li class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span> Mobile-first</li>
-                <li class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span> Responsive</li>
-                <li class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span> Lightweight</li>
-              </ul>
-            </div>
-            <div class="col-lg-4">
-              <div class="list-group">
-                <a href="#" class="list-group-item active">
-                  Linked list group
-                  <span class="glyphicon glyphicon-chevron-right"></span>
-                </a>
-                <a href="#" class="list-group-item">Dapibus ac facilisis in
-                  <span class="glyphicon glyphicon-chevron-right"></span>
-                </a>
-                <a href="#" class="list-group-item">Morbi leo risus
-                  <span class="glyphicon glyphicon-chevron-right"></span>
-                </a>
-                <a href="#" class="list-group-item">Porta ac consectetur ac
-                  <span class="glyphicon glyphicon-chevron-right"></span>
-                </a>
-                <a href="#" class="list-group-item">Vestibulum at eros
-                  <span class="glyphicon glyphicon-chevron-right"></span>
-                </a>
-              </div>
-            </div>
-          </div>
-          
-          
-        <!-- Well Sizes
-        ================================================== -->
-        <hr>
-        <h2>Well Sizes</h2>
-        <div class="row">
-          <div class="col-lg-12">
-             <div class="well well-sm"> 
-                .well-sm
-              </div>      
-              <div class="well"> 
-                .well
-              </div>
-             <div class="well well-lg"> 
-                .well-lg
-              </div>
-          </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-info" style="width: 20%"></div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-success" style="width: 40%"></div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-warning" style="width: 60%"></div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-danger" style="width: 80%"></div>
         </div>
 
-        <!-- Modal
-        ================================================== -->
-        <hr>
-        <h2>Modal</h2>
-        <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-          Launch demo modal
-        </button>
+    </div>
 
-        <!-- Modal -->
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
+
+</div>
+<br>
+
+
+<!-- Panel & ListGroups
+================================================== -->
+<hr>
+
+<h2 id="panels">Bootstrap 3 Panels</h2>
+
+<div class="row">
+    <div class="col-lg-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">Panel heading</div>
+            <div class="panel-body">Hello. This is the Panel content.</div>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="panel panel-primary">
+            <div class="panel-heading">Panel primary</div>
+            <div class="panel-body">Panels are new in BS3.</div>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="panel panel-success">
+            <div class="panel-heading">Panel success</div>
+            <div class="panel-body">You can use contextual classes.</div>
+        </div>
+    </div>
+</div>
+
+
+<!-- ListGroups
+================================================== -->
+<hr>
+
+<h2 id="panels">Bootstrap 3 List Groups</h2>
+
+<div class="row">
+    <div class="col-lg-4">
+        <ul class="list-group">
+            <li class="list-group-item">List item 1</li>
+            <li class="list-group-item">List item 2</li>
+            <li class="list-group-item">Mobile-first</li>
+            <li class="list-group-item">Responsive</li>
+            <li class="list-group-item">Lightweight</li>
+        </ul>
+    </div>
+    <div class="col-lg-4">
+        <ul class="list-group">
+            <li class="list-group-item"><span class="glyphicon-chevron-right"></span> List item 1</li>
+            <li class="list-group-item"><span class="glyphicon-chevron-right"></span> List item 2</li>
+            <li class="list-group-item"><span class="glyphicon-chevron-right"></span> Mobile-first</li>
+            <li class="list-group-item"><span class="glyphicon-chevron-right"></span> Responsive</li>
+            <li class="list-group-item"><span class="glyphicon-chevron-right"></span> Lightweight</li>
+        </ul>
+    </div>
+    <div class="col-lg-4">
+        <div class="list-group">
+            <a href="#" class="list-group-item active">
+                Linked list group
+                <span class="glyphicon-chevron-right"></span>
+            </a>
+            <a href="#" class="list-group-item">Dapibus ac facilisis in
+                <span class="glyphicon-chevron-right"></span>
+            </a>
+            <a href="#" class="list-group-item">Morbi leo risus
+                <span class="glyphicon-chevron-right"></span>
+            </a>
+            <a href="#" class="list-group-item">Porta ac consectetur ac
+                <span class="glyphicon-chevron-right"></span>
+            </a>
+            <a href="#" class="list-group-item">Vestibulum at eros
+                <span class="glyphicon-chevron-right"></span>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<!-- Well Sizes
+================================================== -->
+<hr>
+<h2>Well Sizes</h2>
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="well well-sm">
+            .well-sm
+        </div>
+        <div class="well">
+            .well
+        </div>
+        <div class="well well-lg">
+            .well-lg
+        </div>
+    </div>
+</div>
+
+<!-- Modal
+================================================== -->
+<hr>
+<h2>Modal</h2>
+<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+    Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 <h4 class="modal-title" id="myModalLabel">Title</h4>
-              </div>
-              <div class="modal-body">
+            </div>
+            <div class="modal-body">
                 blah blahblah blahblah blahblah blahblah blahblah blahblah blah
                 blah blahblah blahblah blahblah blahblah blahblah blahblah blahblah blah
                 blah blahblah blahblah blahblah blahblah blahblah blahblah blahblah blah
                 ....
-              </div>
-              <div class="modal-footer">
+            </div>
+            <div class="modal-footer">
                 <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Don't Save</button>
                 <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
                 <button type="button" class="btn btn-primary">Save changes</button>
-              </div>
             </div>
-          </div>
-        </div>        
-        <hr>
-
-        <!-- Bootstrap Live Editor -->
-        <h2>Boostrap Live Editor - http://innovastudio.com/BootstrapLiveEditor2/</h2>
-        <script src="http://innovastudio.com/BootstrapLiveEditor2/scripts/innovaeditor.js" type="text/javascript"></script>
-        <script src="http://innovastudio.com/BootstrapLiveEditor2/scripts/innovamanager.js" type="text/javascript"></script>
-        
-        <textarea id="textarea1" rows="4" cols="30"></textarea>
-        <script type="text/javascript">
-            $(document).ready(function () {
-                $('#textarea1').liveEdit({
-                    css: ['bootstrap/css/bootstrap.min.css', 'bootstrap/bootstrap_extend.css'] /* Apply bootstrap css into the editing area */ ,            
-                    groups: [
-                            ["group1", "", ["Bold", "Italic", "Underline", "ForeColor", "RemoveFormat"]],
-                            ["group2", "", ["Bullets", "Numbering", "Indent", "Outdent"]],
-                            ["group3", "", ["Paragraph", "FontSize", "FontDialog", "TextDialog"]],
-                            ["group4", "", ["LinkDialog", "ImageDialog", "TableDialog", "Emoticons", "Snippets"]],
-                            ["group5", "", ["Undo", "Redo", "FullScreen", "SourceDialog"]]
-                            ] /* Toolbar configuration */
-                });
-                $('#textarea1').data('liveEdit').startedit(); /* Run the Editor */
-            });
-        </script>
-        <!--// Bootstrap Live Editor -->
-
-        <hr />
-
-        <!-- Simple markdown Editor -->
-        <h2>Bootstrap Markdown Editor - http://toopay.github.io/bootstrap-markdown/</h2>
-        <form class="form-horizontal" role="form">
-          <div class="form-group">
-            <textarea name="content" id="content" data-provide="markdown" rows="10">
-      ### Hello there
-      How are you?
-
-      I have bellow task for you :
-
-      Select from this text...
-      Click the bold on THIS WORD and make THESE ONE italic
-      Link GOOGLE to google.com
-      Test to insert image (and try to tab after write the image description)
-      Test Preview
-      And ending here... Click "List"
-
-      Enjoy!
-            </textarea>
-          </div>
-          <div class="form-group">
-            <label class="checkbox">
-              <input name="publish" type="checkbox"> Publish
-            </label>
-          </div>
-          <div class="form-group">
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </div>
-        </form> 
-
-
-        <link rel="stylesheet" type="text/css" media="screen" href="http://toopay.github.io/bootstrap-markdown/css/bootstrap-markdown.min.css">
-        <script type="text/javascript" src="http://toopay.github.io/bootstrap-markdown/js/markdown.js"></script>
-        <script type="text/javascript" src="http://toopay.github.io/bootstrap-markdown/js/bootstrap-markdown.js"></script>
-        <script type="text/javascript">
-            $(document).ready(function () {
-                $("#content").markdown()
-            });
-        </script>        
-        <!--// BSimple markdown Editor -->
-        <hr />
-
-
-
-      </section>
+        </div>
     </div>
-                     
-    <script type='text/javascript'>
-    $(document).ready(function() {
+</div>
+<hr>
+
+<!-- Bootstrap Live Editor -->
+<h2>Boostrap Live Editor - http://innovastudio.com/BootstrapLiveEditor2/</h2>
+<script src="http://innovastudio.com/BootstrapLiveEditor2/scripts/innovaeditor.js" type="text/javascript"></script>
+<script src="http://innovastudio.com/BootstrapLiveEditor2/scripts/innovamanager.js" type="text/javascript"></script>
+
+<textarea id="textarea1" rows="4" cols="30"></textarea>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#textarea1').liveEdit({
+            css: ['bootstrap/css/bootstrap.min.css', 'bootstrap/bootstrap_extend.css'] /* Apply bootstrap css into the editing area */,
+            groups: [
+                ["group1", "", ["Bold", "Italic", "Underline", "ForeColor", "RemoveFormat"]],
+                ["group2", "", ["Bullets", "Numbering", "Indent", "Outdent"]],
+                ["group3", "", ["Paragraph", "FontSize", "FontDialog", "TextDialog"]],
+                ["group4", "", ["LinkDialog", "ImageDialog", "TableDialog", "Emoticons", "Snippets"]],
+                ["group5", "", ["Undo", "Redo", "FullScreen", "SourceDialog"]]
+            ] /* Toolbar configuration */
+        });
+        $('#textarea1').data('liveEdit').startedit();
+        /* Run the Editor */
+    });
+</script>
+<!--// Bootstrap Live Editor -->
+
+<hr/>
+
+<!-- Simple markdown Editor -->
+<h2>Bootstrap Markdown Editor - http://toopay.github.io/bootstrap-markdown/</h2>
+
+<form class="form-horizontal" role="form">
+    <div class="form-group">
+        <textarea name="content" id="content" data-provide="markdown" rows="10">
+            ### Hello there
+            How are you?
+
+            I have bellow task for you :
+
+            Select from this text...
+            Click the bold on THIS WORD and make THESE ONE italic
+            Link GOOGLE to google.com
+            Test to insert image (and try to tab after write the image description)
+            Test Preview
+            And ending here... Click "List"
+
+            Enjoy!
+        </textarea>
+    </div>
+    <div class="form-group">
+        <label class="checkbox">
+            <input name="publish" type="checkbox"> Publish
+        </label>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
+
+
+<link rel="stylesheet" type="text/css" media="screen"
+      href="http://toopay.github.io/bootstrap-markdown/css/bootstrap-markdown.min.css">
+<script type="text/javascript" src="http://toopay.github.io/bootstrap-markdown/js/markdown.js"></script>
+<script type="text/javascript" src="http://toopay.github.io/bootstrap-markdown/js/bootstrap-markdown.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#content").markdown()
+    });
+</script>
+<!--// BSimple markdown Editor -->
+<hr/>
+
+
+</section>
+</div>
+
+<script type='text/javascript'>
+    $(document).ready(function () {
 
     });
-    </script>
-  </body>
+</script>
+</body>
 </html>
