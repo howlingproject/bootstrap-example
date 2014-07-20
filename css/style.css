@@ -30,12 +30,15 @@ button.btn-lg-fixed { width: 102px !important;}
 /*
 *  main-qna, my-qna
 */
-div.qna-page-header {padding-bottom: 8px; margin: 10px 0 20px; border-bottom: 1px solid #eee; font-weight: bold; font-size: 16px;}
+div.nav-tabs-header {border-bottom: 1px solid #eee; font-weight: bold; font-size: 16px; padding-bottom: 8px;}
 span.section-category {margin-top: -7px; font-size: 12px}
-div.qna-item {border-bottom: 1px solid #eee; padding-bottom:5px;}
-div.my-qna-item {border-bottom: 1px solid #eee; margin-bottom:25px;}
-div.best-qna-item {border-bottom: 1px solid #eee; margin-top:10px;}
-div.best-qna-item .media{margin-bottom:10px;}
+
+div.my-qna-item {border-bottom: 1px solid #eee; padding-bottom: 15px; padding-top: 15px;}
+div.qna-item {border-bottom: 1px solid #eee; padding-bottom:10px}
+
+div.best-qna-item {border-bottom: 1px solid #eee; padding-top: 15px; padding-bottom: 15px; }
+div.best-qna-item .media{}
+
 div.qna-rating-info {width:30px; padding:0px; margin-left:5px;}
 div.best-qna-bottom {font-size: 14px; margin: 5px 0 0 10px; padding-left: 10px;}
 div.best-qna-bottom span { padding:5px}
