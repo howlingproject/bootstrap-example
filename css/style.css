@@ -116,4 +116,8 @@ wiki
 **/
 .wiki-main .panel-info > .panel-heading {
     /*panel 색상*/
+    background-color: #F8F8F8;
+}
+.wiki-main .panel-info > .panel-heading .panel-title {
+    color:#000000;
 }
