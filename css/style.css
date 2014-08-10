@@ -110,3 +110,10 @@ img.mid-profile {width: 32px; height: 32px;}
 span.my-qna-writer {margin-left:20px;}
 .my-qna-rating button {margin:5px;}
 
+
+/**
+wiki
+**/
+.wiki-main .panel-info > .panel-heading {
+    /*panel 색상*/
+}
