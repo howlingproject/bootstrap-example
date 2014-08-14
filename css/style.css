@@ -3,9 +3,9 @@
 /* -------------------------------------------------- */
 /* Not required for template or sticky footer method. */
 
-/*
+/**
 *  layout
-*/
+**/
 html {position: relative; min-height: 100%; min-width: 480px;}
 body { margin-bottom: 100px; font-size:12px; }
 img { vertical-align: middle; border: 0 none; }
@@ -15,21 +15,36 @@ img { vertical-align: middle; border: 0 none; }
 .container .text-muted { margin: 20px 0; }
 .contents-container { padding:0px;}
 
-/*
+/**
 * Sticky footer styles
-*/
+**/
 #footer { position: absolute; bottom: 0; width: 100%; margin-top: 20px; border-top: 1px solid #eee; padding-top:20px; margin-top:20px; background-color: #F8F8F8; border-color: #E7E7E7;}
 
 /**
-*  button
+* Common
 **/
+img.profile-image {width:64px;}
+img.profile-image-sm {width:32px;}
+img.profile-image-xs {width:16px;}
 button.btn-sm-fixed { width: 65px !important;}
 button.btn-fixed { width: 88px !important;}
 button.btn-lg-fixed { width: 102px !important;}
 
+div.user-profile { text-align: right; margin:5px;}
+div.user-profile .nickname { font-weight: bold; font-size: 14px;}
 
 /**
-* feed
+* Components
+**/
+@media screen and (min-width: 992px) { .components .the-icons li { width: 12.5%; } }
+.components ul li { list-style: none;}
+.components .profile-images {display: inline; text-align: center;}
+.components .profile-images li{float: left; border: 1px solid #ddd; padding:10px; margin:5px;}
+.components .the-buttons > li {float: left; height: 80px; padding: 10px; border: 1px solid #ddd; font-size: 12px; line-height: 1.25; text-align: center; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0 -1px -1px 0;}
+.components .the-icons li { float: left; width: 100px; height: 110px;padding: 10px; border: 1px solid #ddd; font-size: 12px; line-height: 1.25; text-align: center; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0 auto;}
+
+/**
+* Feed
 **/
 .feed-write {margin-bottom: 20px;}
 .feed-write .write-box { height:150px;}
@@ -66,9 +81,10 @@ button.btn-lg-fixed { width: 102px !important;}
 
 .best-feed { max-height: 485px; overflow-y:scroll;}
 .best-feed .media-body {cursor: pointer;}
+.popover-content a, .popover-feed-image-content a { padding: 3px; }
+
 #bestFeedModal .modal-dialog {width:900px;}
 #bestFeedModal .modal-body {max-height: 580px; overflow-y:scroll;}
-.popover-content a, .popover-feed-image-content a { padding: 3px; }
 
 .btn-file {
     position: relative;
@@ -96,9 +112,9 @@ button.btn-lg-fixed { width: 102px !important;}
 }
 
 
-/*
-*  main-qna, my-qna
-*/
+/**
+*  Q&A
+**/
 div.nav-tabs-header {border-bottom: 1px solid #eee; font-weight: bold; font-size: 16px; padding-bottom: 8px;}
 span.section-category {margin-top: -7px; font-size: 12px}
 
@@ -111,20 +127,11 @@ div.best-qna-item .media{}
 div.qna-rating-info {width:30px; padding:0px; margin-left:5px;}
 div.best-qna-bottom {font-size: 14px; margin: 5px 0 0 10px; padding-left: 10px;}
 div.best-qna-bottom span { padding:5px}
-img.qna-profile {width: 64px; height: 64px;}
-img.min-profile {width: 16px; height: 16px;}
-img.mid-profile {width: 32px; height: 32px;}
 span.my-qna-writer {margin-left:20px;}
 .my-qna-rating button {margin:5px;}
 
-
-/**
-wiki
+          /**
+*   Wiki
 **/
-.wiki-main .panel-info > .panel-heading {
-    /*panel 색상*/
-    background-color: #F8F8F8;
-}
-.wiki-main .panel-info > .panel-heading .panel-title {
-    color:#000000;
-}
+.wiki-main .panel-info > .panel-heading { background-color: #F8F8F8;}
+.wiki-main .panel-info > .panel-heading .panel-title {color:#000000; }

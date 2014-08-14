@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
@@ -21,60 +20,7 @@
 
     <!-- CSS code from Bootply.com editor -->
     <style type="text/css">
-        body {
-            margin-top: 50px;
-        }
-
-        @media screen and (min-width: 992px) {
-            .the-icons li {
-                width: 12.5%;
-            }
-        }
-
-        .the-buttons > li {
-            float: left;
-            height: 80px;
-            padding: 10px;
-            border: 1px solid #ddd;
-            font-size: 12px;
-            line-height: 1.25;
-            text-align: center;
-            -webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            box-sizing: border-box;
-            margin: 0 -1px -1px 0;
-        }
-
-        .the-icons .glyphicon {
-            display: block;
-            margin: 5px auto;
-            vertical-align: middle;
-            margin-right: 3px;
-            font-size: 24px;
-        }
-
-        .the-icons li {
-            float: left;
-            width: 100px;
-            height: 110px;
-            padding: 10px;
-            border: 1px solid #ddd;
-            font-size: 12px;
-            line-height: 1.25;
-            text-align: center;
-            -webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            box-sizing: border-box;
-            margin: 0 auto;
-        }
-
-        .the-icons, .the-buttons {
-            list-style: none;
-        }
-
-        .the-icons .glyphicon {
-            display: inline;
-        }
+        body { margin-top: 50px; }
     </style>
 </head>
 <body>
@@ -93,6 +39,7 @@
             <ul class="nav navbar-right navbar-nav">
                 <li class="dropdown">
                     <a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="fa fa-user"></i></a>
+
                     <div class="dropdown-menu">
                         <form class="form-inline" role="form" style="padding:15px;width:450px;">
                             <div class="form-group">
@@ -114,21 +61,98 @@
         </nav>
     </div>
 </header>
-<div class="container">
+<div class="container components">
 <h1>Bootstrap 3 Template</h1>
 
 <p class="lead">A Full Featured Example</p>
 
-<!-- Typography
-================================================== -->
-<section id="typography">
+<section>
     <div class="page-header">
-
+        <h1>Profile Images</h1>
+    </div>
+    <div class="container">
+        <ul class="profile-images">
+            <li>
+                <img alt="avatar" class="profile-image-xs" src="../images/avatar.png" />
+                <p>extra small (16x16)</p>
+            </li>
+            <li>
+                <img alt="avatar" class="profile-image-sm" src="../images/avatar.png" />
+                <p>small (32x32)</p>
+            </li>
+            <li>
+                <img alt="avatar" class="profile-image" src="../images/avatar.png" />
+                <p>default (64x64)</p>
+            </li>
+            <li>
+                <div class="user-profile">
+                    <span class="nickname">sjune</span>
+                    <img alt="avatar" class="profile-image-xs" src="../images/avatar.png" />
+                </div>
+                <p>with nickname (16x16)</p>
+            </li>
+            <li>
+                <div class="user-profile">
+                    <span class="nickname">sjune</span>
+                    <img alt="avatar" class="profile-image-sm" src="../images/avatar.png" />
+                </div>
+                <p>with nickname (32x32)</p>
+            </li>
+        </ul>
+    </div>
+</section>
+<section>
+    <div class="page-header">
+        <h1>Media Object List</h1>
     </div>
 
-    <!-- Headings & Paragraph Copy -->
-    <div class="row">
+    <div class="container">
 
+        <div class="media">
+            <a href="#" class="pull-left">
+                <img alt="avatar" class="profile-image-64x64" src="../images/avatar.png" />
+            </a>
+
+            <div class="media-body">
+                <h4 class="media-heading">Media heading</h4>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras
+                purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
+                fringilla. Donec lacinia congue felis in faucibus.
+            </div>
+        </div>
+            <div class="media">
+                <a href="#" class="pull-left">
+                    <img alt="avatar" class="profile-image-64x64" src="../images/avatar.png" />
+                </a>
+
+                <div class="media-body">
+                    <h4 class="media-heading">Media heading</h4>
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras
+                    purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
+                    fringilla. Donec lacinia congue felis in faucibus.
+                    <div class="media">
+                        <a href="#" class="pull-left">
+                            <img alt="avatar" class="profile-image-64x64" src="../images/avatar.png" />
+                        </a>
+
+                        <div class="media-body">
+                            <h4 class="media-heading">Nested media heading</h4>
+                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin
+                            commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum
+                            nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+</section>
+
+<section>
+    <div class="page-header">
+        <h1>Headings & Paragraph</h1>
+    </div>
+    <div class="row">
         <div class="col-lg-6">
             <div class="well">
                 <h1>h1. Bootstrap 3</h1>
@@ -161,10 +185,7 @@
     </div>
 </section>
 
-
-<!-- Bootstrap 3 Navbar
-================================================== -->
-<section id="navbar">
+<section>
     <div class="page-header">
         <h1>Bootstrap 3 Navbar</h1>
     </div>
@@ -389,7 +410,9 @@
 <section id="icons">
     <div class="page-header">
         <h2>Font-awsome Icons</h2>
-        <p class="lead"><a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">http://fortawesome.github.io/Font-Awesome/icons/ 참고</a></p>
+
+        <p class="lead"><a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">http://fortawesome.github.io/Font-Awesome/icons/
+            참고</a></p>
     </div>
 </section>
 
@@ -671,7 +694,7 @@
 
 <div class="row">
     <div class="col-lg-4">
-        <h3 id="labels">Labels</h3>
+        <h3 id="labels">Labels (Tag)</h3>
         <span class="label label-default">Default</span>
         <span class="label label-success">Success</span>
         <span class="label label-warning">Warning</span>
@@ -712,7 +735,7 @@
 ================================================== -->
 <hr>
 
-<h2 id="panels">Bootstrap 3 Panels</h2>
+<h2>Bootstrap 3 Panels</h2>
 
 <div class="row">
     <div class="col-lg-4">
@@ -740,7 +763,7 @@
 ================================================== -->
 <hr>
 
-<h2 id="panels">Bootstrap 3 List Groups</h2>
+<h2>Bootstrap 3 List Groups</h2>
 
 <div class="row">
     <div class="col-lg-4">
@@ -754,30 +777,30 @@
     </div>
     <div class="col-lg-4">
         <ul class="list-group">
-            <li class="list-group-item"><span class="glyphicon-chevron-right"></span> List item 1</li>
-            <li class="list-group-item"><span class="glyphicon-chevron-right"></span> List item 2</li>
-            <li class="list-group-item"><span class="glyphicon-chevron-right"></span> Mobile-first</li>
-            <li class="list-group-item"><span class="glyphicon-chevron-right"></span> Responsive</li>
-            <li class="list-group-item"><span class="glyphicon-chevron-right"></span> Lightweight</li>
+            <li class="list-group-item"><i class="fa fa-chevron-right"></i> List item 1</li>
+            <li class="list-group-item"><i class="fa fa-chevron-right"></i> List item 2</li>
+            <li class="list-group-item"><i class="fa fa-chevron-right"></i> Mobile-first</li>
+            <li class="list-group-item"><i class="fa fa-chevron-right"></i> Responsive</li>
+            <li class="list-group-item"><i class="fa fa-chevron-right"></i> Lightweight</li>
         </ul>
     </div>
     <div class="col-lg-4">
         <div class="list-group">
             <a href="#" class="list-group-item active">
                 Linked list group
-                <span class="glyphicon-chevron-right"></span>
+                <i class="fa fa-chevron-right"></i>
             </a>
             <a href="#" class="list-group-item">Dapibus ac facilisis in
-                <span class="glyphicon-chevron-right"></span>
+                <i class="fa fa-chevron-right"></i>
             </a>
             <a href="#" class="list-group-item">Morbi leo risus
-                <span class="glyphicon-chevron-right"></span>
+                <i class="fa fa-chevron-right"></i>
             </a>
             <a href="#" class="list-group-item">Porta ac consectetur ac
-                <span class="glyphicon-chevron-right"></span>
+                <i class="fa fa-chevron-right"></i>
             </a>
             <a href="#" class="list-group-item">Vestibulum at eros
-                <span class="glyphicon-chevron-right"></span>
+                <i class="fa fa-chevron-right"></i>
             </a>
         </div>
     </div>
@@ -844,7 +867,7 @@
 <script type="text/javascript">
     $(document).ready(function () {
         $('#textarea1').liveEdit({
-            css: ['bootstrap/css/bootstrap.min.css', 'bootstrap/bootstrap_extend.css'] /* Apply bootstrap css into the editing area */,
+//            css: ['bootstrap/css/bootstrap.min.css', 'bootstrap/bootstrap_extend.css'] /* Apply bootstrap css into the editing area */,
             groups: [
                 ["group1", "", ["Bold", "Italic", "Underline", "ForeColor", "RemoveFormat"]],
                 ["group2", "", ["Bullets", "Numbering", "Indent", "Outdent"]],
@@ -861,58 +884,8 @@
 
 <hr/>
 
-<!-- Simple markdown Editor -->
-<h2>Bootstrap Markdown Editor - http://toopay.github.io/bootstrap-markdown/</h2>
-
-<form class="form-horizontal" role="form">
-    <div class="form-group">
-        <textarea name="content" id="content" data-provide="markdown" rows="10">
-            ### Hello there
-            How are you?
-
-            I have bellow task for you :
-
-            Select from this text...
-            Click the bold on THIS WORD and make THESE ONE italic
-            Link GOOGLE to google.com
-            Test to insert image (and try to tab after write the image description)
-            Test Preview
-            And ending here... Click "List"
-
-            Enjoy!
-        </textarea>
-    </div>
-    <div class="form-group">
-        <label class="checkbox">
-            <input name="publish" type="checkbox"> Publish
-        </label>
-    </div>
-    <div class="form-group">
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </div>
-</form>
-
-
-<link rel="stylesheet" type="text/css" media="screen"
-      href="http://toopay.github.io/bootstrap-markdown/css/bootstrap-markdown.min.css">
-<script type="text/javascript" src="http://toopay.github.io/bootstrap-markdown/js/markdown.js"></script>
-<script type="text/javascript" src="http://toopay.github.io/bootstrap-markdown/js/bootstrap-markdown.js"></script>
-<script type="text/javascript">
-    $(document).ready(function () {
-        $("#content").markdown()
-    });
-</script>
-<!--// BSimple markdown Editor -->
-<hr/>
-
-
 </section>
 </div>
 
-<script type='text/javascript'>
-    $(document).ready(function () {
-
-    });
-</script>
 </body>
 </html>
