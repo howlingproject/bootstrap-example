@@ -23,6 +23,7 @@ img { vertical-align: middle; border: 0 none; }
 /**
 * Common
 **/
+form.form-horizontal .control-label {font-size: 14px;}
 img.profile-image {width:64px;}
 img.profile-image-sm {width:32px;}
 img.profile-image-xs {width:16px;}
@@ -31,6 +32,7 @@ button.btn-fixed { width: 88px !important;}
 button.btn-lg-fixed { width: 102px !important;}
 
 div.user-profile { text-align: right; margin:5px;}
+div.user-profile-xs .nickname { font-weight: bold; font-size: 12px;}
 div.user-profile .nickname { font-weight: bold; font-size: 14px;}
 
 /**
