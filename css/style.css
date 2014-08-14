@@ -24,24 +24,33 @@ img { vertical-align: middle; border: 0 none; }
 * Common
 **/
 form.form-horizontal .control-label {font-size: 14px;}
-img.profile-image {width:64px; height: 64px;}
-img.profile-image-sm {width:32px; height: 32px;}
-img.profile-image-xs {width:16px; height: 16px;}
+
 button.btn-sm-fixed { width: 65px !important;}
 button.btn-fixed { width: 88px !important;}
 button.btn-lg-fixed { width: 102px !important;}
 
-div.user-profile { text-align: right; margin:5px;}
-div.user-profile-xs .nickname { font-weight: bold; font-size: 12px;}
-div.user-profile .nickname { font-weight: bold; font-size: 14px;}
+.btn-info, .btn-info:hover, .btn-info.active { border-color: #46b8da; color: #fff; background: #46b8da none;}
+
+div.user-profile, div.user-profile-sm, div.user-profile-xs { margin:1px; display: inline;}
+img.profile-image {border: 1px solid #ddd; border-radius: 4px; background-color: #fff;}
+
+div.user-profile img.profile-image {width:64px; height: 64px;  }
+div.user-profile-sm img.profile-image {width:32px; height: 32px; }
+div.user-profile-xs img.profile-image {width:16px; height: 16px; }
+
+span.nickname {font-weight: bold;}
+div.user-profile-sm span.nickname { font-size: 14px;}
+div.user-profile-xs span.nickname { font-size: 12px;}
+label.error-label {color: #EC6459;}
+label.error-label.hide {display: none;}
 
 /**
 * Components
 **/
 @media screen and (min-width: 992px) { .components .the-icons li { width: 12.5%; } }
 .components ul li { list-style: none;}
-.components .profile-images {display: inline; text-align: center;}
-.components .profile-images li{float: left; border: 1px solid #ddd; padding:10px; margin:5px;}
+.components .user-profiles {display: inline; text-align: center;}
+.components .user-profiles li{float: left; padding:10px; margin:5px;}
 .components .the-buttons > li {float: left; height: 80px; padding: 10px; border: 1px solid #ddd; font-size: 12px; line-height: 1.25; text-align: center; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0 -1px -1px 0;}
 .components .the-icons li { float: left; width: 100px; height: 110px;padding: 10px; border: 1px solid #ddd; font-size: 12px; line-height: 1.25; text-align: center; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0 auto;}
 
@@ -60,7 +69,6 @@ div.user-profile .nickname { font-weight: bold; font-size: 14px;}
 .feed ul li { background: none repeat scroll 0 0 white; border: 1px solid #dbdee0; margin: 0 40px 20px 80px; padding: 10px; position: relative; }
 .feed ul li:before { background: url("http://bootstrapmaster.com/live/genius/assets/img/disc-arrow.png") no-repeat scroll 0 0 / 20px 20px rgba(0, 0, 0, 0); content: ""; height: 20px; left: -20px; position: absolute; top: 15px; width: 20px; }
 .feed ul li .author { float: left; left: -80px; position: absolute; top: 0; width: 60px; z-index: 1; }
-.feed ul li .author img { border-radius: 2px; }
 .feed ul li .action-buttons { margin-bottom: 3px; padding-right: 15px; text-align: right; }
 .feed ul li .action-buttons i { padding: 3px; cursor: pointer; }
 .feed ul li .threaad-message-box {margin-bottom: 10px}
@@ -80,7 +88,7 @@ div.user-profile .nickname { font-weight: bold; font-size: 14px;}
 .feed ul li ul li .config { background: none repeat scroll 0 0 transparent; right: 10px; }
 .feed ul li .feed-comment button{ margin-left:-15px;}
 
-.best-feed { max-height: 485px; overflow-y:scroll;}
+.best-feed { max-height: 540px; overflow-y:scroll;}
 .best-feed .media-body {cursor: pointer;}
 .popover-content a, .popover-feed-image-content a { padding: 3px; }
 
@@ -106,12 +114,6 @@ div.user-profile .nickname { font-weight: bold; font-size: 14px;}
     cursor: inherit;
     display: block;
 }
-.btn-info {
-    border-color: #46b8da;
-    color: #fff;
-    background: #5bc0de none;
-}
-
 
 /**
 *  Q&A
@@ -131,7 +133,7 @@ div.best-qna-bottom span { padding:5px}
 span.my-qna-writer {margin-left:20px;}
 .my-qna-rating button {margin:5px;}
 
-          /**
+/**
 *   Wiki
 **/
 .wiki-main .panel-info > .panel-heading { background-color: #F8F8F8;}
