@@ -27,8 +27,6 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-
-
 <body>
     <!-- header -->
     <header class="navbar navbar-default">
@@ -107,110 +105,84 @@
             <h2>공간 생성하기</h2>
         </div>
 
-        <div class="row">
-            <div class="col-lg-8">
-                <h3>Form Inline</h3>
-
-                <form class="form-inline well">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Email">
-                    </div>
-                    <div class="form-group">
-                        <input type="password" class="form-control" placeholder="Password">
-                    </div>
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox"> Remember me
-                        </label>
-                    </div>
-                    <button type="submit" class="btn btn-default">Sign in</button>
-                </form>
-
-                <h3>Form Horizontal</h3>
+        <div class="row" style="width:100%">
+            <div style="padding-left:30px">
+                <!-- <h3>Form Horizontal</h3> -->
 
                 <form class="form-horizontal well">
                     <fieldset>
-                        <legend>Bootstrap 3 Inputs</legend>
+                        <legend>공간 제목</legend>
                         <div class="control-group">
-                            <label class="control-label" for="input01">Text input</label>
+                            <label class="control-label" for="input01">공간 제목 입력 후 Tab 이동시 공간명 중복 검사를 합니다.</label>
 
                             <div class="controls">
                                 <input type="text" class="form-control input-xlarge" id="input01">
 
-                                <p class="help-block">In addition to freeform text, any HTML5 text-based input appears like
-                                    so.</p>
                             </div>
                         </div>
+                        <p style="padding-top:20px"></p>
+                        <legend>공간 설명</legend>
                         <div class="control-group">
-                            <label class="control-label" for="optionsCheckbox">Checkbox</label>
 
                             <div class="controls">
-                                <label class="checkbox">
-                                    <input type="checkbox" id="optionsCheckbox" value="option1">
-                                    Option one is this and that—be sure to include why it's great
+                                <textarea class="form-control" rows="3"></textarea>
+
+                                <p class="help-block">공간 메인 화면에 입력한 설명이 display 됩니다. (markdown 지원) </p>
+                            </div>
+                        </div>
+
+                        <p style="padding-top:20px"></p>
+                        <legend>공개 여부</legend>
+                        <div class="control-group">
+                            <div class="controls">
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" id="inlineCheckbox1" value="option1"> 공개
                                 </label>
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <label class="control-label" for="select01">Select list</label>
-
-                            <div class="controls">
-                                <select id="select01" class="form-control">
-                                    <option>something</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <label class="control-label" for="multiSelect">Multicon-select</label>
-
-                            <div class="controls">
-                                <select multiple="multiple" id="multiSelect" class="form-control">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <label class="control-label" for="fileInput">File input</label>
-
-                            <div class="controls">
-                                <input class="form-control input-file" id="fileInput" type="file">
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <label class="control-label" for="textarea">Textarea</label>
-
-                            <div class="controls">
-                                <textarea class="form-control input-xlarge" id="textarea" rows="3"></textarea>
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <label class="control-label" for="optionsCheckbox2">Disabled checkbox</label>
-
-                            <div class="controls">
-                                <label class="checkbox">
-                                    <input type="checkbox" id="optionsCheckbox2" value="option1" disabled="">
-                                    This is a disabled checkbox
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" id="inlineCheckbox2" value="option2"> 비공개
                                 </label>
-                            </div>
-                        </div>
-                        <div class="control-group warning">
-                            <label class="control-label" for="inputWarning">Input with warning</label>
 
-                            <div class="controls">
-                                <input type="text" id="inputWarning" class="form-control">
-                                <span class="help-inline">Something may have gone wrong</span>
                             </div>
                         </div>
+                        <p style="padding-top:20px"></p>
+                        <legend>레이아웃</legend>
+                        <div class="control-group">
+
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading"><input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"> 기본형</div>
+                                        <div class="panel-body">Hello. This is the Panel content.</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="panel panel-primary">
+                                        <div class="panel-heading"><input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"> 좌측 메뉴</div>
+                                        <div class="panel-body">Panels are new in BS3.</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="panel panel-success">
+                                        <div class="panel-heading"><input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"> 우측 메뉴</div>
+                                        <div class="panel-body">You can use contextual classes.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p style="padding-top:20px"></p>
+                        <legend>키워드 </legend>
+
+                        <div class="control-group">
+                            <div class="col-lg-8 pull-left">
+                                <input type="text" class="form-control input-xlarge" id="input01" placeholder="키워드는 최대 3개까지 입력 가능합니다.">
+                            </div>
+
+                            <button type="submit" class="btn btn-default">키워드 추가</button>
+                        </div>
+
                         <hr>
-                        <div class="form-actions">
+                        <div class="form-actions text-center">
                             <button type="submit" class="btn btn-primary">Save changes</button>
                             <button type="reset" class="btn">Cancel</button>
                         </div>
