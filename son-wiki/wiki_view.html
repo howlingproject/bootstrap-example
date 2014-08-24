@@ -6,22 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>::Enterprise OpenSource Wiki – GLiDER™</title>
-    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="http://bootswatch.com/cerulean/bootstrap.min.css" rel="stylesheet">
     <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-
 <body>
+
 <!-- header -->
-<header class="navbar navbar-default navbar-fixed-top">
+<header class="navbar navbar-default">
     <div class="container">
         <div class="navbar-header">
             <button data-target=".bs-navbar-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
@@ -30,12 +29,12 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">GLiDERWiki</a>
+            <a class="navbar-brand" href="../">GLiDERWiki</a>
         </div>
 
         <nav role="navigation" class="navbar-collapse bs-navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li class="active">
+                <li>
                     <a href="#">Feeds</a>
                 </li>
                 <li>
@@ -44,7 +43,7 @@
                 <li>
                     <a href="#">Space</a>
                 </li>
-                <li>
+                <li class="active">
                     <a href="#">Wiki</a>
                 </li>
                 <li>
@@ -65,8 +64,269 @@
 
 
 <div class="container">
+    <div class="col-md" >
+		<div style="padding-bottom: 45px;">
+			<div class="btn-group" data-toggle="buttons" style="float: left">
+				<a href="#" class="btn btn-primary"><i class="fa fa-plus"></i></a>
+				<a href="#" class="btn btn-primary"><i class="fa fa-minus"></i></a>
+				<a href="#" class="btn btn-primary"><i class="fa fa-laptop"></i></a>
+				<a href="#" class="btn btn-primary"><i class="fa fa-star-o"></i></a>
+			</div>
+			<div class="btn-group" data-toggle="buttons" style="float: right">
+				<a href="#" class="btn btn-primary">히스토리</a>
+				<a href="#" class="btn btn-primary">편집</a>
+				<a href="#" class="btn btn-primary">삭제</a>
+				<a href="#" class="btn btn-primary">잠금</a>
+				<a href="#" class="btn btn-primary">자식위키생성</a>
+				<a href="#" class="btn btn-primary">공간메인</a>
+			</div>
+        </div>
 
+		<div class="panel panel-default">
+			<div class="panel-heading">글라이더 위키를 소개합니다. <span class="text-right">[변경내역]</span></div>
+			<div class="panel-body">
+				컨텐츠
+			</div>
+		</div>
+		
+		
+		<div class="col-md-9">
+			<div style="padding-bottom: 5px">
+				링크목록
+				<ul>
+					<li>1. 다운로드 - http://son.com</li>
+					<li>2. 다운로드 - http://son.com</li>
+				</ul>
+			</div>
+			<div style="padding-bottom: 10px">
+				관련키워드
+	            <div>
+	                <span class="label label-primary">Spring</span>
+	                <span class="label label-success">JAVA</span>
+	            </div>
+			</div>
+			<div style="padding-bottom: 5px">
+				주석
+				<ul>
+					<li>son.js : 설명~~~</li>
+					<li>glider.js : 설명~~~</li>
+				</ul>
+			</div>
+			<div style="padding-bottom: 5px">
+				첨부파일
+				<div>
+					<i class="fa fa-file">압축파일.zip</i>
+					<i class="fa fa-file">압축파일.zip</i>
+					<i class="fa fa-file">압축파일.zip</i>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>작성자</th>
+						<th>SON.js</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>작성일</td>
+						<td>2013.08.01 00:00:00</td>
+					</tr>
+					<tr>
+						<td>수정일</td>
+						<td>2013.08.01 00:00:00</td>
+					</tr>
+					<tr>
+						<td>조회수</td>
+						<td>312</td>
+					</tr>
+					<tr>
+						<td>공감수</td>
+						<td>1</td>
+					</tr>
+					<tr>
+						<td>글상태</td>
+						<td>기본</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-md text-center">
+				<a href="#" class="btn btn-primary">추천하기</a>
+				<a href="#" class="btn btn-primary">인쇄하기</a>
+				<div class="btn-group">
+					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+				    	EXPORT <span class="caret"></span>
+				  	</button>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="#">HTML</a></li>
+						<li><a href="#">PDF</a></li>
+					</ul>
+				</div>
+				<div class="btn-group">
+					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+				    	이 위키에 질문하기 <span class="caret"></span>
+				  	</button>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="#">HTML</a></li>
+						<li><a href="#">PDF</a></li>
+					</ul>
+				</div>
+				<div class="btn-group">
+					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+				    	이 위키에 공유하기 <span class="caret"></span>
+				  	</button>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="#">HTML</a></li>
+						<li><a href="#">PDF</a></li>
+					</ul>
+				</div>
+		</div>
+		
+		<div class="col-md">
+			<div class="nav-tabs-header">10개의 댓글</div>
+			
+	        <div class="my-qna-item">
+	            <a class="pull-left" href="#">
+	                <div class="user-profile">
+	                    <img alt="avatar" class="profile-image" src="../images/avatar.png" />
+	                </div>
+	            </a>
+	            <div class="row">
+	                <div class="col-md-10">
+	                    <div class="my-my-qna-item-body">
+	                        <div class="media-heading">
+	                            2014-04-05 12:12
+	                            <span class="my-qna-writer">작성자 &nbsp;&nbsp;&nbsp;이온</span>
+	                            <strong><span class="pull-right">form facebook</span></strong>
+	                        </div>
+	                        여기서 질문을 해야 합니다. 질문은 제목만 보여주고요.내용은 일부만 보여줍니다. 첫 줄만? 
+	                        나머지는 디테일...  내용은 일부만 보여줍니다. 첫 줄만? 나머지는 디테일...  내용은 일부만 보여줍니다. 첫 줄
+	                    </div>
+	                </div>
+	                <div class="col-md-1 my-qna-rating pull-right">
+	                    <button class="btn btn-sm btn-default btn-sm-fixed pull-right">추천 1</button>
+	                    <button class="btn btn-sm btn-default btn-sm-fixed pull-right">비추천 1</button>
+	                </div>
+	            </div>
+        	</div>
 
+	        <div class="my-qna-item">
+	            <a class="pull-left" href="#">
+	                <div class="user-profile">
+	                    <img alt="avatar" class="profile-image" src="../images/avatar.png" />
+	                </div>
+	            </a>
+	            <div class="row">
+	                <div class="col-md-10">
+	                    <div class="my-my-qna-item-body">
+	                        <div class="media-heading">
+	                            2014-04-05 12:12
+	                            <span class="my-qna-writer">작성자 &nbsp;&nbsp;&nbsp;이온</span>
+	                            <strong><span class="pull-right">form facebook</span></strong>
+	                        </div>
+	                        여기서 질문을 해야 합니다. 질문은 제목만 보여주고요.내용은 일부만 보여줍니다. 첫 줄만? 
+	                        나머지는 디테일...  내용은 일부만 보여줍니다. 첫 줄만? 나머지는 디테일...  내용은 일부만 보여줍니다. 첫 줄
+	                    </div>
+	                </div>
+	                <div class="col-md-1 my-qna-rating pull-right">
+	                    <button class="btn btn-sm btn-default btn-sm-fixed pull-right">추천 1</button>
+	                    <button class="btn btn-sm btn-default btn-sm-fixed pull-right">비추천 1</button>
+	                </div>
+	            </div>
+        	</div>
+        	
+	        <div class="my-qna-item">
+	            <a class="pull-left" href="#">
+	                <div class="user-profile">
+	                    <img alt="avatar" class="profile-image" src="../images/avatar.png" />
+	                </div>
+	            </a>
+	            <div class="row">
+	                <div class="col-md-10">
+	                    <div class="my-my-qna-item-body">
+	                        <div class="media-heading">
+	                            2014-04-05 12:12
+	                            <span class="my-qna-writer">작성자 &nbsp;&nbsp;&nbsp;이온</span>
+	                            <strong><span class="pull-right">form facebook</span></strong>
+	                        </div>
+	                        여기서 질문을 해야 합니다. 질문은 제목만 보여주고요.내용은 일부만 보여줍니다. 첫 줄만? 
+	                        나머지는 디테일...  내용은 일부만 보여줍니다. 첫 줄만? 나머지는 디테일...  내용은 일부만 보여줍니다. 첫 줄
+	                    </div>
+	                </div>
+	                <div class="col-md-1 my-qna-rating pull-right">
+	                    <button class="btn btn-sm btn-default btn-sm-fixed pull-right">추천 1</button>
+	                    <button class="btn btn-sm btn-default btn-sm-fixed pull-right">비추천 1</button>
+	                </div>
+	            </div>
+        	</div>
+        	
+		</div>
+		
+		
+		<br>
+		<div class="col-md">
+			<div class="nav-tabs-header">10개의 활동</div>
+			
+	        <div class="my-qna-item">
+	            <a class="pull-left" href="#">
+	                <div class="user-profile">
+	                    <img alt="avatar" class="profile-image" src="../images/avatar.png" />
+	                </div>
+	            </a>
+	            <div class="row">
+	                <div class="col-md-10">
+	                    <div class="my-my-qna-item-body">
+	                        <div class="media-heading">
+	                            2014-04-05 12:12
+	                            <span class="my-qna-writer">XXX님이 이 위키를 5명의 이메일로 전송했습니다.</span>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+        	</div>
+
+	        <div class="my-qna-item">
+	            <a class="pull-left" href="#">
+	                <div class="user-profile">
+	                    <img alt="avatar" class="profile-image" src="../images/avatar.png" />
+	                </div>
+	            </a>
+	            <div class="row">
+	                <div class="col-md-10">
+	                    <div class="my-my-qna-item-body">
+	                        <div class="media-heading">
+	                            2014-04-05 12:12
+	                            <span class="my-qna-writer">XXX님이 이 위키를 5명의 facebook 전송했습니다.</span>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+        	</div>
+        	
+	        <div class="my-qna-item">
+	            <a class="pull-left" href="#">
+	                <div class="user-profile">
+	                    <img alt="avatar" class="profile-image" src="../images/avatar.png" />
+	                </div>
+	            </a>
+	            <div class="row">
+	                <div class="col-md-10">
+	                    <div class="my-my-qna-item-body">
+	                        <div class="media-heading">
+	                            2014-04-05 12:12
+	                            <span class="my-qna-writer">XXX님이 이 위키를 추천했습니다.</span>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+        	</div>
+		</div>
+
+		
+	</div>
 </div>
 
 <!-- footer -->
