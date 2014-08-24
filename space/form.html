@@ -136,10 +136,10 @@
                         <div class="control-group">
                             <div class="controls">
                                 <label class="checkbox-inline">
-                                    <input type="checkbox" id="inlineCheckbox1" value="option1"> 공개
+                                    <input type="radio" name="privacy" id="inlineCheckbox1" value="option1"> 공개
                                 </label>
                                 <label class="checkbox-inline">
-                                    <input type="checkbox" id="inlineCheckbox2" value="option2"> 비공개
+                                    <input type="radio" name="privacy" id="inlineCheckbox2" value="option2"> 비공개
                                 </label>
 
                             </div>
@@ -152,43 +152,102 @@
                                 <div class="col-lg-4">
                                     <div class="panel panel-default">
                                         <div class="panel-heading"><input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"> 기본형</div>
-                                        <div class="panel-body">Hello. This is the Panel content.</div>
+                                        <div class="panel-body">
+                                            <table class="table table-bordered">
+                                                <thead>
+                                                <tr>
+                                                    <th colspan="2" class="text-center">
+                                                        <div style="margin: 30px">공간설명</div>
+                                                    </th>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">
+                                                        <div style="margin: 30px">메뉴목록</div>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <div style="margin: 30px">최근위키</div>
+                                                    </td>
+                                                </tr>
+                                                </thead>
+                                            </table>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="panel panel-primary">
                                         <div class="panel-heading"><input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"> 좌측 메뉴</div>
-                                        <div class="panel-body">Panels are new in BS3.</div>
+                                        <div class="panel-body">
+                                            <table class="table table-bordered">
+                                                <thead>
+                                                <tr>
+                                                    <th rowspan="2" class="text-center" style="width:80px">
+                                                        <div style="margin: 30px">메뉴목록</div>
+                                                    </th>
+                                                    <th class="text-center">
+                                                        <div style="margin: 30px">공간설명</div>
+                                                    </th>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">
+                                                        <div style="margin: 30px">최근위키</div>
+                                                    </td>
+                                                </tr>
+                                                </thead>
+                                            </table>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="panel panel-success">
                                         <div class="panel-heading"><input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"> 우측 메뉴</div>
-                                        <div class="panel-body">You can use contextual classes.</div>
+                                        <div class="panel-body">
+                                            <table class="table table-bordered">
+                                                <thead>
+                                                <tr>
+                                                    <th class="text-center">
+                                                        <div style="margin: 30px">공간설명</div>
+                                                    </th>
+                                                    <th rowspan="2" class="text-center" style="width:80px">
+                                                        <div style="margin: 30px">메뉴목록</div>
+                                                    </th>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">
+                                                        <div style="margin: 30px">최근위키</div>
+                                                    </td>
+                                                </tr>
+                                                </thead>
+                                            </table>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <p style="padding-top:20px"></p>
-                        <legend>키워드 </legend>
+                                <legend>키워드 </legend>
 
-                        <div class="control-group">
-                            <div class="col-lg-8 pull-left">
-                                <input type="text" class="form-control input-xlarge" id="input01" placeholder="키워드는 최대 3개까지 입력 가능합니다.">
+                                <div class="control-group">
+                                    <div class="col-sm-5 col-md-5">
+                                        <div id="tag-info" class="form-inline" style="padding-bottom: 10px">
+                                    <input type="text" class="form-control" id="interesting" placeholder="Interestring">
+                                    <button class="btn" type="button">Add <i class="glyphicon glyphicon-plus"></i></button>
+                                </div>
+
+                                <ul id="tag-cloud" style="padding-left: 0px; width:100%;"></ul>
                             </div>
 
-                            <button type="submit" class="btn btn-default">키워드 추가</button>
-                        </div>
-
-                        <hr>
-                        <div class="form-actions text-center">
-                            <button type="submit" class="btn btn-primary">Save changes</button>
-                            <button type="reset" class="btn">Cancel</button>
                         </div>
                     </fieldset>
                 </form>
             </div>
+
+            <div class="form-actions text-center">
+                <button type="submit" class="btn btn-primary">Save changes</button>
+                <button type="reset" class="btn">Cancel</button>
+            </div>
+
+
         </div>
 
     </section>
@@ -214,5 +273,15 @@
     </div>
 </footer>
 <!--// footer -->
+
+    <link href="../js/bootstrap-tag-cloud/bootstrap-tag-cloud.css" rel="stylesheet">
+    <script type='text/javascript' src="../js/bootstrap-tag-cloud/bootstrap-tag-cloud.js"></script>
+    <script type='text/javascript'>
+        $(function () {
+
+        });
+    </script>
+
+
 </body>
 </html>

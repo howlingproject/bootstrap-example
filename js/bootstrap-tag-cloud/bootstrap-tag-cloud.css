@@ -10,11 +10,11 @@
     color: #FFFFFF;
     cursor: pointer;
     display: inline-block;
-    font-size: 11.844px;
+    font-size: 12px;
     font-weight: bold;
     line-height: 21px;
     margin: 2px 3px 2px 2px;
-    padding: 1px 4px 2px;
+    padding: 5px 8px 5px 8px;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
     vertical-align: baseline;
 }
@@ -33,7 +33,7 @@
 	/* Colors */
 
 .tag-cloud.tag-cloud-info {
-    background-color: #3A87AD;
+    background-color: #2fa4e7;
 }
 .tag-cloud.tag-cloud-success {
     background-color: #468847;
