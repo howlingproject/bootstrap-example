@@ -20,7 +20,7 @@
 </head>
 <body>
 <!-- header -->
-<header class="navbar navbar-default">
+<header class="navbar navbar-default" id="header">
     <div class="container">
         <div class="navbar-header">
             <button data-target=".bs-navbar-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
@@ -29,31 +29,33 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">GLiDERWiki</a>
+            <a class="navbar-brand" href="../">GLiDERWiki</a>
         </div>
 
         <nav role="navigation" class="navbar-collapse bs-navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown">
-                    <a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="fa fa-user"></i></a>
-
-                    <div class="dropdown-menu">
-                        <form class="form-inline login_member_form" role="form">
-                            <div class="form-group">
-                                <input type="text" placeholder="Username" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <input type="password" placeholder="Password" class="form-control">
-                            </div>
-                            <button type="submit" class="btn">Log in</button>
-                        </form>
-                        <div class="input-group pull-right">
-                            <button type="button" class="btn btn-link">아이디 찾기</button>
-                            <button type="button" class="btn btn-link">비밀번호 찾기</button>
-                            <button type="button" class="btn btn-link">회원 가입</button>
-                        </div>
-                    </div>
+            <ul class="nav navbar-nav navi-menu">
+                <li>
+                    <a href="#">Feeds</a>
                 </li>
+                <li>
+                    <a href="#">Q&amp;A</a>
+                </li>
+                <li>
+                    <a href="#">Space</a>
+                </li>
+                <li>
+                    <a href="#">Wiki</a>
+                </li>
+                <li>
+                    <a href="#">My Info</a>
+                </li>
+                <li>
+                    <a href="#">Admin</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right navi-info">
+                <li><a href="#"><i class="fa fa-user fa-2x"></i></a></li>
+                <li><a href="#"><i class="fa fa-weixin fa-2x"></i></a></li>
             </ul>
         </nav>
     </div>
