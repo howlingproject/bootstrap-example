@@ -7,7 +7,7 @@
 *  layout
 **/
 html {position: relative; min-height: 100%; min-width: 480px;}
-body { margin-bottom: 100px; font-size:14px; font-family: "verdana", "tohoma"}
+body { font-family: "verdana", "tohoma" font-size:14px; margin-bottom: 100px; }
 img { vertical-align: middle; border: 0 none; }
 .wrap { margin-left:0; margin-right:0; }
 .login_member_form {padding:15px;width:470px;}
