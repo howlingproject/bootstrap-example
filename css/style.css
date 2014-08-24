@@ -7,13 +7,17 @@
 *  layout
 **/
 html {position: relative; min-height: 100%; min-width: 480px;}
-body { margin-bottom: 100px; font-size:12px; }
+body { margin-bottom: 100px; font-size:14px; font-family: "verdana", "tohoma"}
 img { vertical-align: middle; border: 0 none; }
 .wrap { margin-left:0; margin-right:0; }
 .login_member_form {padding:15px;width:470px;}
 .top-buffer { margin-top:20px; }
 .container .text-muted { margin: 20px 0; }
 .contents-container { padding:0px;}
+
+/*header */
+#header .navi-menu li {width:90px; text-align: center; }
+#header .navi-info li a {padding: 10px 10px 12px 10px}
 
 /**
 * Sticky footer styles
