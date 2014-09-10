@@ -6,28 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>::Enterprise OpenSource Wiki – GLiDER™</title>
-    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="http://bootswatch.com/cerulean/bootstrap.min.css" rel="stylesheet">
-    <!--<link href="http://bootswatch.com/spacelab/bootstrap.min.css" rel="stylesheet">-->
-    <!--<link href="http://bootswatch.com/cosmo/bootstrap.min.css" rel="stylesheet">-->
-    <!--<link href="http://bootswatch.com/darkly/bootstrap.min.css" rel="stylesheet">-->
-    <!--<link href="http://bootswatch.com/simplex/bootstrap.min.css" rel="stylesheet">-->
-    <!--<link href="http://bootswatch.com/amelia/bootstrap.min.css" rel="stylesheet">-->
-    <!--<link href="http://bootswatch.com/flatly/bootstrap.min.css" rel="stylesheet">-->
-    <!--<link href="http://bootswatch.com/spacelab/bootstrap.min.css" rel="stylesheet">-->
-    <!--<link href="http://bootswatch.com/yeti/bootstrap.min.css" rel="stylesheet">-->
-
     <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
 <body>
+
 <!-- header -->
 <header class="navbar navbar-default" id="header">
     <div class="container">
@@ -71,32 +62,29 @@
 </header>
 <!--// header -->
 
+
 <!-- contents -->
 <div class="container">
-    <nav class="navbar navbar-default" role="navigation">
-        <div class="container-fluid">
-            <ul class="nav navbar-nav">
-                <li>
-                    <a href="#">총 질문(2000)</a>
-                </li>
-                <li class="active">
-                    <a href="#">총 답변(2000)</a>
-                </li>
-                <li>
-                    <a href="#">총 키워드(223)</a>
-                </li>
-                <li>
-                    <a href="#">답변을 기다리는 Q & A (157)</a>
-                </li>
-            </ul>
-            <form class="navbar-form navbar-right" role="search">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Search">
-                </div>
-                <button type="submit" class="btn btn-default">질문 하기</button>
-            </form>
+    <!--
+    <div class="col-md" >
+        <div style="padding-bottom: 45px;">
+            <div class="btn-group" data-toggle="buttons" style="float: left">
+                <a href="#" class="btn btn-primary"><i class="fa fa-plus"></i></a>
+                <a href="#" class="btn btn-primary"><i class="fa fa-minus"></i></a>
+                <a href="#" class="btn btn-primary"><i class="fa fa-laptop"></i></a>
+                <a href="#" class="btn btn-primary"><i class="fa fa-star-o"></i></a>
+            </div>
+            <div class="btn-group" data-toggle="buttons" style="float: right">
+                <a href="#" class="btn btn-primary">히스토리</a>
+                <a href="#" class="btn btn-primary">편집</a>
+                <a href="#" class="btn btn-primary">삭제</a>
+                <a href="#" class="btn btn-primary">잠금</a>
+                <a href="#" class="btn btn-primary">자식위키생성</a>
+                <a href="#" class="btn btn-primary">공간메인</a>
+            </div>
         </div>
-    </nav>
+    </div>
+    -->
 </div>
 
 <div class="container">
@@ -113,11 +101,9 @@
                     <fieldset>
                         <legend>공간 제목</legend>
                         <div class="control-group">
-                            <label class="control-label" for="input01">공간 제목 입력 후 Tab 이동시 공간명 중복 검사를 합니다.</label>
-
                             <div class="controls">
                                 <input type="text" class="form-control input-xlarge" id="input01">
-
+                                <p class="help-block">공간 제목 입력 후 Tab 이동시 공간명 중복 검사를 합니다.</p>
                             </div>
                         </div>
                         <p style="padding-top:20px"></p>
@@ -230,7 +216,7 @@
                                 <div class="control-group">
                                     <div class="col-sm-5 col-md-5">
                                         <div id="tag-info" class="form-inline" style="padding-bottom: 10px">
-                                    <input type="text" class="form-control" id="interesting" placeholder="Interestring">
+                                    <input type="text" class="form-control" id="interesting" placeholder="Keyword">
                                     <button class="btn" type="button">Add <i class="glyphicon glyphicon-plus"></i></button>
                                 </div>
 
