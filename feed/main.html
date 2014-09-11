@@ -16,6 +16,25 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <style type="text/css">
+        #right-panel-container {
+            position: absolute;
+            right: -5%;
+            top: 0;
+        }
+
+        .right-panel {
+            display: none;
+            width: 650px;
+            padding: 20px;
+        }
+
+        .right-panel .panel {
+            margin-top: 50px;
+        }
+
+    </style>
 </head>
 <body>
 
@@ -63,7 +82,7 @@
 <!--// header -->
 
 <div class="container">
-    <div class="col-md-11" id="feed-area">
+    <div class="col-md-12 col-xs-12" id="feed-area">
         <!-- feed 글 쓰기 start -->
         <div class="feed feed-write well">
             <div class="feed-write-top">
@@ -337,174 +356,181 @@
             </ul>
         </div>
         <!-- feed 글 목록 end -->
+        <div id="right-panel-container">
+            <a id="right-panel-link" href="#right-panel"><i class="fa fa-bars fa-3x"></i></a>
+        </div>
     </div>
 
-    <div class="col-md-1" id="best-feed-area">
-        <div id="best-feed-close">
-            <a href="javascript:void(0)" onclick="BestFeed.toggle()"><i class="fa fa-chevron-left fa-3x"></i></a>
-        </div>
-        <div id="best-feed-open" style="display: none;">
-            <div class="col-md-1">
-                <a href="javascript:void(0)" onclick="BestFeed.toggle()"><i class="fa fa-chevron-right fa-3x"></i></a>
-            </div>
-            <div class="col-md-10">
-                <div class="panel panel-default panel-primary">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">이달의 Best Feed</h3>
-                    </div>
-                    <div class="panel-body best-feed">
-                        <ul class="media-list">
-                            <li class="media">
-                                <a href="#" class="pull-left">
-                                    <div class="author">
-                                        <div class="user-profile-sm">
-                                            <img alt="avatar" class="profile-image" src="../images/avatar.png" />
-                                        </div>
+</div>
+
+
+        <div id="right-panel" class="right-panel">
+            <div class="panel panel-default panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">이달의 Best Feed</h3>
+                </div>
+                <div class="panel-body best-feed">
+                    <ul class="media-list">
+                        <li class="media">
+                            <a href="#" class="pull-left">
+                                <div class="author">
+                                    <div class="user-profile-sm">
+                                        <img alt="avatar" class="profile-image" src="../images/avatar.png"/>
                                     </div>
-                                </a>
-                                <div class="media-body" data-toggle="modal" data-target="#bestFeedModal">
-                                    <p>첫번째 타임라인 어쩌구 저쭈구 해서리 잉~? 어쩌고 저쩌고 블라블라 저쩌고.... &nbsp;<span class="badge">30</span></p>
                                 </div>
-                            </li>
-                            <li class="media">
-                                <a href="#" class="pull-left">
-                                    <div class="author">
-                                        <div class="user-profile-sm">
-                                            <img alt="avatar" class="profile-image" src="../images/avatar.png" />
-                                        </div>
+                            </a>
+
+                            <div class="media-body" data-toggle="modal" data-target="#bestFeedModal">
+                                <p>첫번째 타임라인 어쩌구 저쭈구 해서리 잉~? 어쩌고 저쩌고 블라블라 저쩌고.... &nbsp;<span class="badge">30</span></p>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <a href="#" class="pull-left">
+                                <div class="author">
+                                    <div class="user-profile-sm">
+                                        <img alt="avatar" class="profile-image" src="../images/avatar.png"/>
                                     </div>
-                                </a>
-                                <div class="media-body" data-toggle="modal" data-target="#bestFeedModal">
-                                    <p>첫번째 타임라인 어쩌구 저쭈구 해서리 잉~? 어쩌고 저쩌고 블라블라 저쩌고.... &nbsp;<span class="badge">30</span></p>
                                 </div>
-                            </li>
-                            <li class="media">
-                                <a href="#" class="pull-left">
-                                    <div class="author">
-                                        <div class="user-profile-sm">
-                                            <img alt="avatar" class="profile-image" src="../images/avatar.png" />
-                                        </div>
+                            </a>
+
+                            <div class="media-body" data-toggle="modal" data-target="#bestFeedModal">
+                                <p>첫번째 타임라인 어쩌구 저쭈구 해서리 잉~? 어쩌고 저쩌고 블라블라 저쩌고.... &nbsp;<span class="badge">30</span></p>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <a href="#" class="pull-left">
+                                <div class="author">
+                                    <div class="user-profile-sm">
+                                        <img alt="avatar" class="profile-image" src="../images/avatar.png"/>
                                     </div>
-                                </a>
-                                <div class="media-body" data-toggle="modal" data-target="#bestFeedModal">
-                                    <p>첫번째 타임라인 어쩌구 저쭈구 해서리 잉~? 어쩌고 저쩌고 블라블라 저쩌고.... &nbsp;<span class="badge">30</span></p>
                                 </div>
-                            </li>
-                            <li class="media">
-                                <a href="#" class="pull-left">
-                                    <div class="author">
-                                        <div class="user-profile-sm">
-                                            <img alt="avatar" class="profile-image" src="../images/avatar.png" />
-                                        </div>
+                            </a>
+
+                            <div class="media-body" data-toggle="modal" data-target="#bestFeedModal">
+                                <p>첫번째 타임라인 어쩌구 저쭈구 해서리 잉~? 어쩌고 저쩌고 블라블라 저쩌고.... &nbsp;<span class="badge">30</span></p>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <a href="#" class="pull-left">
+                                <div class="author">
+                                    <div class="user-profile-sm">
+                                        <img alt="avatar" class="profile-image" src="../images/avatar.png"/>
                                     </div>
-                                </a>
-                                <div class="media-body" data-toggle="modal" data-target="#bestFeedModal">
-                                    <p>첫번째 타임라인 어쩌구 저쭈구 해서리 잉~? 어쩌고 저쩌고 블라블라 저쩌고.... &nbsp;<span class="badge">30</span></p>
                                 </div>
-                            </li>
-                            <li class="media">
-                                <a href="#" class="pull-left">
-                                    <div class="author">
-                                        <div class="user-profile-sm">
-                                            <img alt="avatar" class="profile-image" src="../images/avatar.png" />
-                                        </div>
+                            </a>
+
+                            <div class="media-body" data-toggle="modal" data-target="#bestFeedModal">
+                                <p>첫번째 타임라인 어쩌구 저쭈구 해서리 잉~? 어쩌고 저쩌고 블라블라 저쩌고.... &nbsp;<span class="badge">30</span></p>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <a href="#" class="pull-left">
+                                <div class="author">
+                                    <div class="user-profile-sm">
+                                        <img alt="avatar" class="profile-image" src="../images/avatar.png"/>
                                     </div>
-                                </a>
-                                <div class="media-body" data-toggle="modal" data-target="#bestFeedModal">
-                                    <p>첫번째 타임라인 어쩌구 저쭈구 해서리 잉~? 어쩌고 저쩌고 블라블라 저쩌고.... &nbsp;<span class="badge">30</span></p>
                                 </div>
-                            </li>
-                            <li class="media">
-                                <a href="#" class="pull-left">
-                                    <div class="author">
-                                        <div class="user-profile-sm">
-                                            <img alt="avatar" class="profile-image" src="../images/avatar.png" />
-                                        </div>
+                            </a>
+
+                            <div class="media-body" data-toggle="modal" data-target="#bestFeedModal">
+                                <p>첫번째 타임라인 어쩌구 저쭈구 해서리 잉~? 어쩌고 저쩌고 블라블라 저쩌고.... &nbsp;<span class="badge">30</span></p>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <a href="#" class="pull-left">
+                                <div class="author">
+                                    <div class="user-profile-sm">
+                                        <img alt="avatar" class="profile-image" src="../images/avatar.png"/>
                                     </div>
-                                </a>
-                                <div class="media-body" data-toggle="modal" data-target="#bestFeedModal">
-                                    <p>첫번째 타임라인 어쩌구 저쭈구 해서리 잉~? 어쩌고 저쩌고 블라블라 저쩌고.... &nbsp;<span class="badge">30</span></p>
                                 </div>
-                            </li>
-                            <li class="media">
-                                <a href="#" class="pull-left">
-                                    <div class="author">
-                                        <div class="user-profile-sm">
-                                            <img alt="avatar" class="profile-image" src="../images/avatar.png" />
-                                        </div>
+                            </a>
+
+                            <div class="media-body" data-toggle="modal" data-target="#bestFeedModal">
+                                <p>첫번째 타임라인 어쩌구 저쭈구 해서리 잉~? 어쩌고 저쩌고 블라블라 저쩌고.... &nbsp;<span class="badge">30</span></p>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <a href="#" class="pull-left">
+                                <div class="author">
+                                    <div class="user-profile-sm">
+                                        <img alt="avatar" class="profile-image" src="../images/avatar.png"/>
                                     </div>
-                                </a>
-                                <div class="media-body" data-toggle="modal" data-target="#bestFeedModal">
-                                    <p>첫번째 타임라인 어쩌구 저쭈구 해서리 잉~? 어쩌고 저쩌고 블라블라 저쩌고.... &nbsp;<span class="badge">30</span></p>
                                 </div>
-                            </li>
-                            <li class="media">
-                                <a href="#" class="pull-left">
-                                    <div class="author">
-                                        <div class="user-profile-sm">
-                                            <img alt="avatar" class="profile-image" src="../images/avatar.png" />
-                                        </div>
+                            </a>
+
+                            <div class="media-body" data-toggle="modal" data-target="#bestFeedModal">
+                                <p>첫번째 타임라인 어쩌구 저쭈구 해서리 잉~? 어쩌고 저쩌고 블라블라 저쩌고.... &nbsp;<span class="badge">30</span></p>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <a href="#" class="pull-left">
+                                <div class="author">
+                                    <div class="user-profile-sm">
+                                        <img alt="avatar" class="profile-image" src="../images/avatar.png"/>
                                     </div>
-                                </a>
-                                <div class="media-body" data-toggle="modal" data-target="#bestFeedModal">
-                                    <p>첫번째 타임라인 어쩌구 저쭈구 해서리 잉~? 어쩌고 저쩌고 블라블라 저쩌고.... &nbsp;<span class="badge">30</span></p>
                                 </div>
-                            </li>
-                            <li class="media">
-                                <a href="#" class="pull-left">
-                                    <div class="author">
-                                        <div class="user-profile-sm">
-                                            <img alt="avatar" class="profile-image" src="../images/avatar.png" />
-                                        </div>
+                            </a>
+
+                            <div class="media-body" data-toggle="modal" data-target="#bestFeedModal">
+                                <p>첫번째 타임라인 어쩌구 저쭈구 해서리 잉~? 어쩌고 저쩌고 블라블라 저쩌고.... &nbsp;<span class="badge">30</span></p>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <a href="#" class="pull-left">
+                                <div class="author">
+                                    <div class="user-profile-sm">
+                                        <img alt="avatar" class="profile-image" src="../images/avatar.png"/>
                                     </div>
-                                </a>
-                                <div class="media-body" data-toggle="modal" data-target="#bestFeedModal">
-                                    <p>첫번째 타임라인 어쩌구 저쭈구 해서리 잉~? 어쩌고 저쩌고 블라블라 저쩌고.... &nbsp;<span class="badge">30</span></p>
                                 </div>
-                            </li>
-                            <li class="media">
-                                <a href="#" class="pull-left">
-                                    <div class="author">
-                                        <div class="user-profile-sm">
-                                            <img alt="avatar" class="profile-image" src="../images/avatar.png" />
-                                        </div>
+                            </a>
+
+                            <div class="media-body" data-toggle="modal" data-target="#bestFeedModal">
+                                <p>첫번째 타임라인 어쩌구 저쭈구 해서리 잉~? 어쩌고 저쩌고 블라블라 저쩌고.... &nbsp;<span class="badge">30</span></p>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <a href="#" class="pull-left">
+                                <div class="author">
+                                    <div class="user-profile-sm">
+                                        <img alt="avatar" class="profile-image" src="../images/avatar.png"/>
                                     </div>
-                                </a>
-                                <div class="media-body" data-toggle="modal" data-target="#bestFeedModal">
-                                    <p>첫번째 타임라인 어쩌구 저쭈구 해서리 잉~? 어쩌고 저쩌고 블라블라 저쩌고.... &nbsp;<span class="badge">30</span></p>
                                 </div>
-                            </li>
-                            <li class="media">
-                                <a href="#" class="pull-left">
-                                    <div class="author">
-                                        <div class="user-profile-sm">
-                                            <img alt="avatar" class="profile-image" src="../images/avatar.png" />
-                                        </div>
+                            </a>
+
+                            <div class="media-body" data-toggle="modal" data-target="#bestFeedModal">
+                                <p>첫번째 타임라인 어쩌구 저쭈구 해서리 잉~? 어쩌고 저쩌고 블라블라 저쩌고.... &nbsp;<span class="badge">30</span></p>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <a href="#" class="pull-left">
+                                <div class="author">
+                                    <div class="user-profile-sm">
+                                        <img alt="avatar" class="profile-image" src="../images/avatar.png"/>
                                     </div>
-                                </a>
-                                <div class="media-body" data-toggle="modal" data-target="#bestFeedModal">
-                                    <p>첫번째 타임라인 어쩌구 저쭈구 해서리 잉~? 어쩌고 저쩌고 블라블라 저쩌고.... &nbsp;<span class="badge">30</span></p>
                                 </div>
-                            </li>
-                            <li class="media">
-                                <a href="#" class="pull-left">
-                                    <div class="author">
-                                        <div class="user-profile-sm">
-                                            <img alt="avatar" class="profile-image" src="../images/avatar.png" />
-                                        </div>
+                            </a>
+
+                            <div class="media-body" data-toggle="modal" data-target="#bestFeedModal">
+                                <p>첫번째 타임라인 어쩌구 저쭈구 해서리 잉~? 어쩌고 저쩌고 블라블라 저쩌고.... &nbsp;<span class="badge">30</span></p>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <a href="#" class="pull-left">
+                                <div class="author">
+                                    <div class="user-profile-sm">
+                                        <img alt="avatar" class="profile-image" src="../images/avatar.png"/>
                                     </div>
-                                </a>
-                                <div class="media-body" data-toggle="modal" data-target="#bestFeedModal">
-                                    <p>첫번째 타임라인 어쩌구 저쭈구 해서리 잉~? 어쩌고 저쩌고 블라블라 저쩌고.... &nbsp;<span class="badge">30</span></p>
                                 </div>
-                            </li>
-                        </ul>
-                    </div>
+                            </a>
+
+                            <div class="media-body" data-toggle="modal" data-target="#bestFeedModal">
+                                <p>첫번째 타임라인 어쩌구 저쭈구 해서리 잉~? 어쩌고 저쩌고 블라블라 저쩌고.... &nbsp;<span class="badge">30</span></p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </div>
-</div>
 
 <!-- best feed modal start -->
 <div class="modal fade" id="bestFeedModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
@@ -638,25 +664,6 @@
 <!-- popover-config end -->
 
 <script type="text/javascript">
-    var BestFeed = (function () {
-        var isClosed = false;
-        return {
-            toggle: function () {
-                if (!isClosed) {
-                    $('#feed-area').removeClass().addClass('col-md-7');
-                    $('#best-feed-area').removeClass().addClass('col-md-5');
-                } else {
-                    $('#feed-area').removeClass().addClass('col-md-11');
-                    $('#best-feed-area').removeClass().addClass('col-md-1');
-                }
-
-                $('#best-feed-close').toggle();
-                $('#best-feed-open').toggle();
-                isClosed = !isClosed;
-            }
-        }
-    })();
-
 
     $('.popover-config').popover({
         trigger: 'click',
@@ -673,6 +680,11 @@
             return $('#popover-feed-image-content').html();
         }
     })
+</script>
+
+<script src="http://eduardomb.github.io/jquery-panelslider/jquery.panelslider.min.js"></script>
+<script type="text/javascript">
+    $('#right-panel-link').panelslider({side: 'right', clickClose: true, duration: 200 });
 </script>
 
 <!-- footer -->

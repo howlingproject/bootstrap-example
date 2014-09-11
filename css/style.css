@@ -92,10 +92,11 @@ label.error-label.hide {display: none;}
 .feed ul li ul li .config { background: none repeat scroll 0 0 transparent; right: 10px; }
 .feed ul li .feed-comment button{ margin-left:-15px;}
 
-.best-feed { max-height: 540px; overflow-y:scroll;}
+.best-feed { max-height: 800px; overflow-y:scroll;}
 .best-feed .media-body {cursor: pointer;}
 .popover-content a, .popover-feed-image-content a { padding: 3px; }
 
+#bestFeedModal {z-index: 999999;}
 #bestFeedModal .modal-dialog {width:900px;}
 #bestFeedModal .modal-body {max-height: 580px; overflow-y:scroll;}
 
