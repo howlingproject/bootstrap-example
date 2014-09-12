@@ -92,7 +92,7 @@ label.error-label.hide {display: none;}
 .feed ul li ul li .config { background: none repeat scroll 0 0 transparent; right: 10px; }
 .feed ul li .feed-comment button{ margin-left:-15px;}
 
-.best-feed { max-height: 800px; overflow-y:scroll;}
+.best-feed { max-height: 1024px; overflow-y:scroll;}
 .best-feed .media-body {cursor: pointer;}
 .popover-content a, .popover-feed-image-content a { padding: 3px; }
 
