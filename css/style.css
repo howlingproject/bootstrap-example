@@ -138,6 +138,10 @@ div.best-qna-bottom span { padding:5px}
 span.my-qna-writer {margin-left:20px;}
 .my-qna-rating button {margin:5px;}
 
+.cat-keyword{font-size: 13px; text-align: right}
+.cat-keyword li{line-height: 0.7;}
+
+.readCnt{margin-left: 30px}
 /**
 *   Wiki
 **/
