@@ -10,12 +10,32 @@
     <link href="http://bootswatch.com/cerulean/bootstrap.min.css" rel="stylesheet">
     <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet">
+    <link href="http://getbootstrap.com/assets/css/docs.min.css" rel="stylesheet">
+    
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.1.1.min.js"></script>
+    <script src="../js/edit/fn-editor-util.js"></script>
+	<script src="../js/edit/fn-layer-select.js"></script>
+	<script src="../js/edit/fn-editor-selector-v4.js"></script>
+	<script src="../js/edit/fn-editor.js"></script>
+	<script src="../js/edit/fn-son-markdown.js"></script>
+    <script src="../js/edit/imsi-edit-mini.js"></script>
+    
+	<script type="text/javascript">
+	$(document).ready(function() {
+		var askEdit = document.getElementById("askEdit");
+		$.sonEdit(askEdit);
+		
+	});
+	
+	</script>
 </head>
 <body>
 
@@ -82,7 +102,7 @@
         </div>
 
         <div class="row">
-        <div class="col-md-9" role="main">
+        <div class="col-md-9" role="main" style="padding-bottom: 20px;">
 
 
         <div class="bs-docs-section">
@@ -146,10 +166,10 @@
 
 
         <!-- Inline text elements -->
-        <h2 id="type-inline-text">Inline text elements</h2>
+        <h2 id="type-lnline">Inline text elements</h2>
 
         <h3>Bold</h3>
-        <div class="bs-example">
+        <div id="type-lnline-bold" class="bs-example">
             <p>The following snippet of text is <strong>rendered as bold text</strong>.</p>
         </div>
         <div class="highlight">
@@ -160,7 +180,7 @@
         </div>
 
         <h3>Italics</h3>
-        <div class="bs-example">
+        <div id="type-lnline-italics" class="bs-example">
             <p>The following snippet of text is <em>rendered as italicized text</em>.</p>
         </div>
         <div class="highlight">
@@ -171,7 +191,7 @@
         </div>
 
         <h3>Deleted text</h3>
-        <div class="bs-example">
+        <div id="type-lnline-deleted" class="bs-example">
             <p><del>This line of text is meant to be treated as deleted text.</del></p>
         </div>
         <div class="highlight">
@@ -181,7 +201,7 @@
         </div>
 
         <h3>Underlined text</h3>
-        <div class="bs-example">
+        <div id="type-lnline-underlined" class="bs-example">
             <p><ins>This line of text will render as underlined</ins></p>
         </div>
         <div class="highlight">
@@ -227,7 +247,7 @@
         </div>
 
         <!-- Blockquotes -->
-        <h3>Blockquote</h3>
+        <h3 id="type-division-blockquote">Blockquote</h3>
         <div class="bs-example">
             <blockquote>
                 <span class="nt">&lt;p&gt;</span> HTML CODE <span class="nt">&lt;p&gt;</span>
@@ -242,7 +262,7 @@
         <!-- Lists -->
         <h2 id="type-lists">Lists</h2>
 
-        <h3>Unordered</h3>
+        <h3 id="type-lists-unordered">Unordered</h3>
         <p>A list of items in which the order does <em>not</em> explicitly matter.</p>
         <div class="zero-clipboard"><span class="btn-clipboard with-example">Copy</span></div><div class="bs-example">
             <ul>
@@ -274,7 +294,7 @@
             </code></pre>
         </div>
 
-        <h3>Ordered</h3>
+        <h3 id="type-lists-ordered">Ordered</h3>
         <p>A list of items in which the order <em>does</em> explicitly matter.</p>
         <div class="zero-clipboard"><span class="btn-clipboard with-example">Copy</span></div><div class="bs-example">
             <ol>
@@ -340,7 +360,7 @@
             </code></pre>
         </div>
 
-        <h2 id="type-link">Link Url </h2>
+        <h2 id="type-link">Link Url</h2>
         <div class="bs-example">
             <span class="nt">&lt;a href="#"&gt;</span>a link<span class="nt">&lt;/ a&gt;</span>
             <span class="nt">&lt;img src="#"&gt;</span>
@@ -394,13 +414,32 @@
                     <li class="active">
                         <a href="#type">Typography</a>
                         <ul class="nav">
-                            <li class=""><a href="#type-headings">Headings</a></li>
-                            <li class=""><a href="#type-style">Body copy</a></li>
-                            <li class=""><a href="#type-headings">type-headings</a></li>
+                            <li class=""><a href="#type-style">스타일</a></li>
+                            <li class=""><a href="#type-headings">제목</a></li>
+                            <li class="">
+                            	<a href="#type-lnline">Inline text elements</a>
+	                             <ul class="nav">
+	                             	<li class=""><a href="#type-lnline-bold">Bold</a></li>
+	                             	<li class=""><a href="#type-lnline-italics">Italics</a></li>
+	                             	<li class=""><a href="#type-lnline-deleted">Deleted text</a></li>
+	                             	<li class=""><a href="#type-lnline-underlined">Underlined text</a></li>
+	                             </ul>
+                            </li>
                             <li class=""><a href="#type-alignment">Alignment classes</a></li>
-                            <li class=""><a href="#type-script">Script</a></li>
-                            <li class=""><a href="#type-division">Division</a></li>
-                            <li class=""><a href="#type-lists">Lists</a></li>
+                            <li class=""><a href="#type-script">subscript, supscript</a></li>
+                            <li class="">
+                            	<a href="#type-division">Division line</a>
+	                             <ul class="nav">
+	                             	<li class=""><a href="#type-division-blockquote">Blockquote</a></li>
+	                             </ul>
+                            </li>
+                            <li class="">
+                            	<a href="#type-lists">Lists</a>
+	                             <ul class="nav">
+	                             	<li class=""><a href="#type-lists-unordered">Unordered</a></li>
+	                             	<li class=""><a href="#type-lists-ordered">Ordered</a></li>
+	                             </ul>
+                            </li>
                             <li class=""><a href="#type-talbe">Table</a></li>
                             <li class=""><a href="#type-link">Link</a></li>
                             <li class=""><a href="#type-field-panels">Field Panels</a></li>
@@ -497,21 +536,17 @@
 					</ul>
 				</div>
 				<div class="btn-group">
-					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-				    	이 위키에 질문하기 <span class="caret"></span>
+					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="modal" data-target="#askModal">
+				    	이 위키에 질문하기
 				  	</button>
-					<ul class="dropdown-menu" role="menu">
-						<li><a href="#">HTML</a></li>
-						<li><a href="#">PDF</a></li>
-					</ul>
 				</div>
 				<div class="btn-group">
 					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
 				    	이 위키에 공유하기 <span class="caret"></span>
 				  	</button>
 					<ul class="dropdown-menu" role="menu">
-						<li><a href="#">HTML</a></li>
-						<li><a href="#">PDF</a></li>
+						<li><a href="#">페이스북에 공유</a></li>
+						<li><a href="#" data-toggle="modal" data-target="#emailShareModal">이메일에 공유</a></li>
 					</ul>
 				</div>
 		</div>
@@ -679,6 +714,53 @@
     </div>
 </footer>
 <!--// footer -->
+
+
+<div class="modal fade" id="askModal" tabindex="-1" role="dialog" aria-labelledby="askModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="askModalLabel">위키에 질문하기</h4>
+      </div>
+      <div class="modal-body" id="askEdit">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="emailShareModal" tabindex="-1" role="dialog" aria-labelledby="emailShareModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="emailShareModalLabel">이메일로 공유하기</h4>
+      </div>
+      <div class="modal-body">
+		<form class="form-inline" role="form">
+			<div class="form-group">
+				<input type="text" class="form-control">
+			</div>
+			<button type="button" class="btn btn-primary">추가</button>
+		</form>
+		<br>
+		<button type="button" class="btn btn-default btn-sm">cafeciel@hanmail.net <span class="glyphicon glyphicon-remove"></span></button>
+		<button type="button" class="btn btn-default btn-sm">cafeciel@hanmail.net <span class="glyphicon glyphicon-remove"></span></button>
+		<button type="button" class="btn btn-default btn-sm">cafeciel@hanmail.net <span class="glyphicon glyphicon-remove"></span></button>	
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 </body>
 </html>
