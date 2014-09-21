@@ -64,50 +64,44 @@
     <!--// header -->
 
     <!-- contents -->
-    <div class="container">
-        <nav class="navbar navbar-default" role="navigation">
-            <div class="container-fluid">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="#">총 질문(2000)</a>
-                    </li>
-                    <li class="active">
-                        <a href="#">총 답변(2000)</a>
-                    </li>
-                    <li>
-                        <a href="#">총 키워드(223)</a>
-                    </li>
-                    <li>
-                        <a href="#">답변을 기다리는 Q & A (157)</a>
-                    </li>
-                </ul>
-                <form class="navbar-form navbar-right" role="search">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search">
-                    </div>
-                    <button type="submit" class="btn btn-default">질문 하기</button>
-                </form>
+    <!-- qna top contents -->
+    <div class="container qna-top-search">
+        <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
             </div>
-        </nav>
+            <a href="#" class="form-control btn btn-primary">검색</a>
+        </form>
+        <div class="btn-group pull-right" data-toggle="buttons">
+            <a href="#" class="btn btn-primary">수정1</a>
+            <a href="#" class="btn btn-primary">수정2</a>
+            <a href="#" class="btn btn-primary">수정3</a>
+            <a href="#" class="btn btn-primary">수정4</a>
+            <a href="#" class="btn btn-primary">질문하기</a>
+        </div>
     </div>
+    <!--// qna top contents -->
+
     <!-- 메뉴 -->
-    <div class="container contents-container">
-        <!-- lnb -->
+    <div class="container contents-container top-buffer">
+        <!-- keyword -->
         <div class="col-md-2">
-            <div class="well">분류키워드</div>
-            <ul class="nav nav-pills nav-stacked">
-                <li class="active"><a href="#">Java(120/789)</a></li>
-                <li><a href="#">Spring(120/539)</a></li>
-                <li><a href="#">Groovy(100/299)</a></li>
-                <li><a href="#">Grails(3/300)</a></li>
-                <li><a href="#">Gradle(282/402)</a></li>
-                <li><a href="#">Tomcat(282/402)</a></li>
-                <li><a href="#">Apache(282/402)</a></li>
-                <li><a href="#">Javascript(282/402)</a></li>
-                <li><a href="#">NodeJS(282/402)</a></li>
-                <li><a href="#">MySQL(282/402)</a></li>
-                <li><a href="#">MariaDB(282/402)</a></li>
-            </ul>
+            <div class="nav-tabs-header">분류키워드</div>
+            <div class="media qna-item">
+                <ul class="nav nav-pills nav-stacked cat-keyword">
+                    <li class="active"><a href="#">Java(120/789)</a></li>
+                    <li><a href="#">Spring(120/539)</a></li>
+                    <li><a href="#">Groovy(100/299)</a></li>
+                    <li><a href="#">Grails(3/300)</a></li>
+                    <li><a href="#">Gradle(282/402)</a></li>
+                    <li><a href="#">Tomcat(282/402)</a></li>
+                    <li><a href="#">Apache(282/402)</a></li>
+                    <li><a href="#">Javascript(282/402)</a></li>
+                    <li><a href="#">NodeJS(282/402)</a></li>
+                    <li><a href="#">MySQL(282/402)</a></li>
+                    <li><a href="#">MariaDB(282/402)</a></li>
+                </ul>
+            </div>
         </div>
         <!--// lnb -->
 
@@ -126,20 +120,19 @@
                     <div class="col-xs-9 col-sm-9 col-md-9 col-lg-10">
                         <div class="media-body">
                             <div class="media-heading">
-                                <span class="media">2014-04-05 12:12</span>
+                                <span>2014-04-05 12:12</span>
                                 <span class="my-qna-writer">
                                     <div class="user-profile-xs">
                                         <span class="nickname">Yion</span>
                                         <img alt="avatar" class="profile-image" src="../images/avatar.png" />
-                                        <span class="label label-primary readCnt">6</span>
                                     </div>
                                 </span>
                                 <div class="pull-right">
                                     <span class="label label-primary">Spring</span>
                                     <span class="label label-success">JAVA</span>
                                 </div>
-                                <div>
-                                    <strong><span>제목</span></strong>
+                                <div class="qna-title">
+                                    <span>Spring 정복하기!</span>
                                 </div>
                                 <div>
                                     Spring 서버사이드 공간 > Spring AOP 위키에 질문을 올렸습니다.- 내용이 잘 이해가...
@@ -150,8 +143,8 @@
                         </div>
                     </div>
                     <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 my-qna-rating pull-right">
-                        <button class="btn btn-sm btn-default btn-sm-fixed pull-right">추천 33</button>
-                        <button class="btn btn-sm btn-default btn-sm-fixed pull-right">답변 1</button>
+                        <button class="btn btn-sm btn-default btn-sm-fixed pull-right">조회 33</button>
+                        <button class="btn btn-sm btn-default btn-sm-fixed pull-right">추천 1</button>
                     </div>
                 </div>
             </div>
@@ -171,15 +164,14 @@
                                     <div class="user-profile-xs">
                                         <span class="nickname">Yion</span>
                                         <img alt="avatar" class="profile-image" src="../images/avatar.png" />
-                                        <span class="label label-default readCnt">6</span>
                                     </div>
                                 </span>
                                 <div class="pull-right">
                                     <span class="label label-primary">Spring</span>
                                     <span class="label label-success">JAVA</span>
                                 </div>
-                                <div>
-                                    <strong><span>제목</span></strong>
+                                <div class="qna-title">
+                                    <span>Spring 정복하기!</span>
                                 </div>
                                 <div>
                                     Spring 서버사이드 공간 > Spring AOP 위키에 질문을 올렸습니다.- 내용이 잘 이해가...
@@ -190,8 +182,8 @@
                         </div>
                     </div>
                     <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 my-qna-rating pull-right">
-                        <button class="btn btn-sm btn-default btn-sm-fixed pull-right">추천 33</button>
-                        <button class="btn btn-sm btn-default btn-sm-fixed pull-right">답변 1</button>
+                        <button class="btn btn-sm btn-default btn-sm-fixed pull-right">조회 33</button>
+                        <button class="btn btn-sm btn-default btn-sm-fixed pull-right">추천 1</button>
                     </div>
                 </div>
             </div>
@@ -211,15 +203,14 @@
                                     <div class="user-profile-xs">
                                         <span class="nickname">Yion</span>
                                         <img alt="avatar" class="profile-image" src="../images/avatar.png" />
-                                        <span class="readCnt">조회수 : 123</span>
                                     </div>
                                 </span>
                                 <div class="pull-right">
                                     <span class="label label-primary">Spring</span>
                                     <span class="label label-success">JAVA</span>
                                 </div>
-                                <div>
-                                    <strong><span>제목</span></strong>
+                                <div class="qna-title">
+                                    <span>Spring 정복하기!</span>
                                 </div>
                                 <div>
                                     Spring 서버사이드 공간 > Spring AOP 위키에 질문을 올렸습니다.- 내용이 잘 이해가...
@@ -230,8 +221,8 @@
                         </div>
                     </div>
                     <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 my-qna-rating pull-right">
-                        <button class="btn btn-sm btn-default btn-sm-fixed pull-right">추천 33</button>
-                        <button class="btn btn-sm btn-default btn-sm-fixed pull-right">답변 1</button>
+                        <button class="btn btn-sm btn-default btn-sm-fixed pull-right">조회 33</button>
+                        <button class="btn btn-sm btn-default btn-sm-fixed pull-right">추천 1</button>
                     </div>
                 </div>
             </div>
@@ -251,15 +242,14 @@
                                     <div class="user-profile-xs">
                                         <span class="nickname">Yion</span>
                                         <img alt="avatar" class="profile-image" src="../images/avatar.png" />
-                                        <span class="readCnt">조회수 : 123</span>
                                     </div>
                                 </span>
                                 <div class="pull-right">
                                     <span class="label label-primary">Spring</span>
                                     <span class="label label-success">JAVA</span>
                                 </div>
-                                <div>
-                                    <strong><span>제목</span></strong>
+                                <div class="qna-title">
+                                    <span>Spring 정복하기!</span>
                                 </div>
                                 <div>
                                     Spring 서버사이드 공간 > Spring AOP 위키에 질문을 올렸습니다.- 내용이 잘 이해가...
@@ -270,8 +260,8 @@
                         </div>
                     </div>
                     <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 my-qna-rating pull-right">
-                        <button class="btn btn-sm btn-default btn-sm-fixed pull-right">추천 33</button>
-                        <button class="btn btn-sm btn-default btn-sm-fixed pull-right">답변 1</button>
+                        <button class="btn btn-sm btn-default btn-sm-fixed pull-right">조회 33</button>
+                        <button class="btn btn-sm btn-default btn-sm-fixed pull-right">추천 1</button>
                     </div>
                 </div>
             </div>
@@ -291,15 +281,14 @@
                                     <div class="user-profile-xs">
                                         <span class="nickname">Yion</span>
                                         <img alt="avatar" class="profile-image" src="../images/avatar.png" />
-                                        <span class="readCnt">조회수 : 123</span>
                                     </div>
                                 </span>
                                 <div class="pull-right">
                                     <span class="label label-primary">Spring</span>
                                     <span class="label label-success">JAVA</span>
                                 </div>
-                                <div>
-                                    <strong><span>제목</span></strong>
+                                <div class="qna-title">
+                                    <span>Spring 정복하기!</span>
                                 </div>
                                 <div>
                                     Spring 서버사이드 공간 > Spring AOP 위키에 질문을 올렸습니다.- 내용이 잘 이해가...
@@ -310,8 +299,8 @@
                         </div>
                     </div>
                     <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 my-qna-rating pull-right">
-                        <button class="btn btn-sm btn-default btn-sm-fixed pull-right">추천 33</button>
-                        <button class="btn btn-sm btn-default btn-sm-fixed pull-right">답변 1</button>
+                        <button class="btn btn-sm btn-default btn-sm-fixed pull-right">조회 33</button>
+                        <button class="btn btn-sm btn-default btn-sm-fixed pull-right">추천 1</button>
                     </div>
                 </div>
             </div>
@@ -337,15 +326,14 @@
                                     <div class="user-profile-xs">
                                         <span class="nickname">Yion</span>
                                         <img alt="avatar" class="profile-image" src="../images/avatar.png" />
-                                        <span class="readCnt">조회수 : 123</span>
                                     </div>
                                 </span>
                                 <div class="pull-right">
                                     <span class="label label-primary">Spring</span>
                                     <span class="label label-success">JAVA</span>
                                 </div>
-                                <div>
-                                    <strong><span>제목</span></strong>
+                                <div class="qna-title">
+                                    <span>Spring 정복하기!</span>
                                 </div>
                                 <div>
                                     Spring 서버사이드 공간 > Spring AOP 위키에 질문을 올렸습니다.- 내용이 잘 이해가...
@@ -356,8 +344,8 @@
                         </div>
                     </div>
                     <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 my-qna-rating pull-right">
-                        <button class="btn btn-sm btn-default btn-sm-fixed pull-right">추천 33</button>
-                        <button class="btn btn-sm btn-default btn-sm-fixed pull-right">답변 1</button>
+                        <button class="btn btn-sm btn-default btn-sm-fixed pull-right">조회 33</button>
+                        <button class="btn btn-sm btn-default btn-sm-fixed pull-right">추천 1</button>
                     </div>
                 </div>
             </div>
@@ -377,15 +365,14 @@
                                     <div class="user-profile-xs">
                                         <span class="nickname">Yion</span>
                                         <img alt="avatar" class="profile-image" src="../images/avatar.png" />
-                                        <span class="readCnt">조회수 : 123</span>
                                     </div>
                                 </span>
                                 <div class="pull-right">
                                     <span class="label label-primary">Spring</span>
                                     <span class="label label-success">JAVA</span>
                                 </div>
-                                <div>
-                                    <strong><span>제목</span></strong>
+                                <div class="qna-title">
+                                    <span>Spring 정복하기!</span>
                                 </div>
                                 <div>
                                     Spring 서버사이드 공간 > Spring AOP 위키에 질문을 올렸습니다.- 내용이 잘 이해가...
@@ -396,8 +383,8 @@
                         </div>
                     </div>
                     <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 my-qna-rating pull-right">
-                        <button class="btn btn-sm btn-default btn-sm-fixed pull-right">추천 33</button>
-                        <button class="btn btn-sm btn-default btn-sm-fixed pull-right">답변 1</button>
+                        <button class="btn btn-sm btn-default btn-sm-fixed pull-right">조회 33</button>
+                        <button class="btn btn-sm btn-default btn-sm-fixed pull-right">추천 1</button>
                     </div>
                 </div>
             </div>
@@ -417,15 +404,14 @@
                                     <div class="user-profile-xs">
                                         <span class="nickname">Yion</span>
                                         <img alt="avatar" class="profile-image" src="../images/avatar.png" />
-                                        <span class="readCnt">조회수 : 123</span>
                                     </div>
                                 </span>
                                 <div class="pull-right">
                                     <span class="label label-primary">Spring</span>
                                     <span class="label label-success">JAVA</span>
                                 </div>
-                                <div>
-                                    <strong><span>제목</span></strong>
+                                <div class="qna-title">
+                                    <span>Spring 정복하기!</span>
                                 </div>
                                 <div>
                                     Spring 서버사이드 공간 > Spring AOP 위키에 질문을 올렸습니다.- 내용이 잘 이해가...
@@ -436,8 +422,8 @@
                         </div>
                     </div>
                     <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 my-qna-rating pull-right">
-                        <button class="btn btn-sm btn-default btn-sm-fixed pull-right">추천 33</button>
-                        <button class="btn btn-sm btn-default btn-sm-fixed pull-right">답변 1</button>
+                        <button class="btn btn-sm btn-default btn-sm-fixed pull-right">조회 33</button>
+                        <button class="btn btn-sm btn-default btn-sm-fixed pull-right">추천 1</button>
                     </div>
                 </div>
             </div>
@@ -457,15 +443,14 @@
                                     <div class="user-profile-xs">
                                         <span class="nickname">Yion</span>
                                         <img alt="avatar" class="profile-image" src="../images/avatar.png" />
-                                        <span class="readCnt">조회수 : 123</span>
                                     </div>
                                 </span>
                                 <div class="pull-right">
                                     <span class="label label-primary">Spring</span>
                                     <span class="label label-success">JAVA</span>
                                 </div>
-                                <div>
-                                    <strong><span>제목</span></strong>
+                                <div class="qna-title">
+                                    <span>Spring 정복하기!</span>
                                 </div>
                                 <div>
                                     Spring 서버사이드 공간 > Spring AOP 위키에 질문을 올렸습니다.- 내용이 잘 이해가...
@@ -476,8 +461,8 @@
                         </div>
                     </div>
                     <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 my-qna-rating pull-right">
-                        <button class="btn btn-sm btn-default btn-sm-fixed pull-right">추천 33</button>
-                        <button class="btn btn-sm btn-default btn-sm-fixed pull-right">답변 1</button>
+                        <button class="btn btn-sm btn-default btn-sm-fixed pull-right">조회 33</button>
+                        <button class="btn btn-sm btn-default btn-sm-fixed pull-right">추천 1</button>
                     </div>
                 </div>
             </div>
@@ -497,15 +482,14 @@
                                     <div class="user-profile-xs">
                                         <span class="nickname">Yion</span>
                                         <img alt="avatar" class="profile-image" src="../images/avatar.png" />
-                                        <span class="readCnt">조회수 : 123</span>
                                     </div>
                                 </span>
                                 <div class="pull-right">
                                     <span class="label label-primary">Spring</span>
                                     <span class="label label-success">JAVA</span>
                                 </div>
-                                <div>
-                                    <strong><span>제목</span></strong>
+                                <div class="qna-title">
+                                    <span>Spring 정복하기!</span>
                                 </div>
                                 <div>
                                     Spring 서버사이드 공간 > Spring AOP 위키에 질문을 올렸습니다.- 내용이 잘 이해가...
@@ -516,8 +500,8 @@
                         </div>
                     </div>
                     <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 my-qna-rating pull-right">
-                        <button class="btn btn-sm btn-default btn-sm-fixed pull-right">추천 33</button>
-                        <button class="btn btn-sm btn-default btn-sm-fixed pull-right">답변 1</button>
+                        <button class="btn btn-sm btn-default btn-sm-fixed pull-right">조회 33</button>
+                        <button class="btn btn-sm btn-default btn-sm-fixed pull-right">추천 1</button>
                     </div>
                 </div>
             </div>
